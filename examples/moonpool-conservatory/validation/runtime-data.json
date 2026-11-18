@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "checks": "stock runtime decoder, CPU upload/expansion, transforms, animation and sorting",
+  "distinctAssets": 9,
+  "instances": 43,
+  "gaussians": 275505,
+  "instancesPerAsset": {
+    "tide-arch": 2,
+    "broken-arch": 1,
+    "glazing-bay": 1,
+    "basalt-bank": 19,
+    "drowned-basin": 1,
+    "moonpool-water": 1,
+    "lantern-bloom": 8,
+    "indigo-fronds": 9,
+    "tide-gauge": 1
+  },
+  "biggestTexture": [
+    1024,
+    1346
+  ],
+  "projectedModelAllocationBytes": 23157636,
+  "pixelLayout960x720": {
+    "scale": 3,
+    "resolution": [
+      320,
+      240
+    ],
+    "viewport": [
+      0,
+      0,
+      960,
+      720
+    ],
+    "sourceOrigin": [
+      0,
+      0
+    ]
+  },
+  "visiblyUnverifiedByScript": [
+    "GPU shader execution",
+    "camera controls",
+    "real-time frame rate"
+  ],
+  "movedBetween1_25and2_25s": {
+    "water": 15060,
+    "foliage": 31857
+  },
+  "sha256": {
+    "tide-arch": {
+      "splat": "2171b6212442ccc4c5c0f8eb0fb3109fec8ae2ce10d905726d068cc6b8bd71a8",
+      "editable": "43934c0fb37217d4e183c59d82924d30f6fc659907ec564cb066752a4d70a5e2"
+    },
+    "broken-arch": {
+      "splat": "8ea65ab6f00c005f0df8287abb64f681b4c48b97e124907bb7b07db0d42bac26",
+      "editable": "da5a21b648983d271497edd91a3a7fae5dc78a380950e0d42531c14bb62bf545"
+    },
+    "glazing-bay": {
+      "splat": "265f8275cad9f5ddfacf16b2dee9c32f213d8e48bff614b52f076121d33acaea",
+      "editable": "b96e2be7c5bf5e958ccf3d1763ce54c9a3799217c8eebec62213fe29121c8b83"
+    },
+    "basalt-bank": {
+      "splat": "e1b8974277075683111ad59ba2c46e25451de7b7460790af4289125de3d56544",
+      "editable": "014b52402a8e674d306935a689704d4eeed9f3288a4b9f4e47839f8d6887c1d4"
+    },
+    "drowned-basin": {
+      "splat": "3dac1dea3c2d1da5b2964e613cb6aba8ca2ad73a4fc99cfe0fe6b614e953554c",
+      "editable": "6de7c1d604c279f0e535fb8b276c7f11de51077e5eed1aff336b56c0f10ce899"
+    },
+    "moonpool-water": {
+      "splat": "06099bb119473b60169b8fba54d6d6356e2cb33e18288982979bb1e43088b6cb",
+      "editable": "8267995aa3fb4adacbc0bca44ab6e39bdfe129c00650c63ac77e0532b3667426"
+    },
+    "lantern-bloom": {
+      "splat": "154baa3f74978ae4a91befc10fdfe5b4e441fdba118faf3e9ef8c3162fd55a8f",
+      "editable": "c30b98c130560a024262019e9fb96c36dd2e29857e8e07041d985e659b6fb678"
+    },
+    "indigo-fronds": {
+      "splat": "2e9ea821336c41872a9b64d9bc42642dfc155d27c7a7eaa2afde25a2adc683f9",
+      "editable": "32f66be5522c9ef58147d98fdb49fb98bf0795d01de552d0942c7b53b42dbe77"
+    },
+    "tide-gauge": {
+      "splat": "b9b99e1f19d21cd363c03fc5f9a486d3607ddce89bad8cada0dfd78eb4ca230f",
+      "editable": "3b89fad65472c38f8c0b24965b6318630f0d446ffee96493530f170edab9c810"
+    }
+  }
+}

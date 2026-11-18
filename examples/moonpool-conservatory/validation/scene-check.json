@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "assetsInPack": 9,
+  "assetsUsed": 9,
+  "instances": 43,
+  "uniqueGaussians": 101000,
+  "instancedGaussians": 275505,
+  "maxSceneGaussians": 285000
+}

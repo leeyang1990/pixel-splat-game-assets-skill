@@ -1,0 +1,741 @@
+{
+  "version": 2,
+  "pipeline": "pixel-gaussian-splat",
+  "pack": "moonpool-conservatory",
+  "style": "style.json",
+  "units": {
+    "up": "+Y",
+    "forward": "+Z",
+    "tile": 1
+  },
+  "budgets": {
+    "maxGaussiansPerAsset": 45000,
+    "maxSceneGaussians": 285000
+  },
+  "assets": [
+    {
+      "id": "tide-arch",
+      "type": "building",
+      "usage": "vault-rib",
+      "anchors": {
+        "westFoot": [
+          -3.53,
+          0,
+          0
+        ],
+        "eastFoot": [
+          3.53,
+          0,
+          0
+        ],
+        "crown": [
+          0,
+          4.91,
+          0
+        ],
+        "rearBay": [
+          0,
+          0,
+          -1.5
+        ],
+        "frontBay": [
+          0,
+          0,
+          1.5
+        ]
+      },
+      "colliders": [
+        {
+          "shape": "box",
+          "center": [
+            -3.53,
+            0.52,
+            0
+          ],
+          "size": [
+            0.66,
+            1.08,
+            0.62
+          ]
+        },
+        {
+          "shape": "box",
+          "center": [
+            3.53,
+            0.52,
+            0
+          ],
+          "size": [
+            0.66,
+            1.08,
+            0.62
+          ]
+        }
+      ],
+      "license": "original",
+      "representation": "gaussian-splat",
+      "file": "assets/tide-arch.splat",
+      "editable": "assets/tide-arch.gaussians.json",
+      "source": "src/architecture.mjs",
+      "seed": 2815854638,
+      "gaussianCount": 24673,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -4.05793,
+          -0.09272,
+          -0.50381
+        ],
+        "max": [
+          4.05675,
+          5.22786,
+          0.50425
+        ]
+      },
+      "material": {
+        "kind": "solid"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 2336,
+          "kind": "solid"
+        },
+        {
+          "start": 2336,
+          "count": 21244,
+          "kind": "solid"
+        },
+        {
+          "start": 23580,
+          "count": 1093,
+          "kind": "emissive"
+        }
+      ],
+      "pixelDetailRanges": [
+        {
+          "start": 2336,
+          "count": 21244
+        },
+        {
+          "start": 23580,
+          "count": 1093
+        }
+      ]
+    },
+    {
+      "id": "broken-arch",
+      "type": "building",
+      "usage": "damaged-vault-rib",
+      "anchors": {
+        "westFoot": [
+          -3.53,
+          0,
+          0
+        ],
+        "eastFoot": [
+          3.53,
+          0,
+          0
+        ]
+      },
+      "colliders": [
+        {
+          "shape": "box",
+          "center": [
+            -3.53,
+            0.52,
+            0
+          ],
+          "size": [
+            0.66,
+            1.08,
+            0.62
+          ]
+        },
+        {
+          "shape": "box",
+          "center": [
+            3.53,
+            0.52,
+            0
+          ],
+          "size": [
+            0.66,
+            1.08,
+            0.62
+          ]
+        }
+      ],
+      "license": "original",
+      "representation": "gaussian-splat",
+      "file": "assets/broken-arch.splat",
+      "editable": "assets/broken-arch.gaussians.json",
+      "source": "src/architecture.mjs",
+      "seed": 3781973729,
+      "gaussianCount": 13592,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -4.05931,
+          -0.09235,
+          -0.50362
+        ],
+        "max": [
+          4.05551,
+          3.76561,
+          0.61352
+        ]
+      },
+      "material": {
+        "kind": "solid"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 2336,
+          "kind": "solid"
+        },
+        {
+          "start": 2336,
+          "count": 10700,
+          "kind": "solid"
+        },
+        {
+          "start": 13036,
+          "count": 556,
+          "kind": "emissive"
+        }
+      ],
+      "pixelDetailRanges": [
+        {
+          "start": 2336,
+          "count": 10700
+        },
+        {
+          "start": 13036,
+          "count": 556
+        }
+      ]
+    },
+    {
+      "id": "glazing-bay",
+      "type": "building",
+      "usage": "partial-roof-connector",
+      "anchors": {
+        "rearRib": [
+          0,
+          0,
+          -1.5
+        ],
+        "frontRib": [
+          0,
+          0,
+          1.5
+        ]
+      },
+      "license": "original",
+      "representation": "gaussian-splat",
+      "file": "assets/glazing-bay.splat",
+      "editable": "assets/glazing-bay.gaussians.json",
+      "source": "src/architecture.mjs",
+      "seed": 3700080260,
+      "gaussianCount": 3581,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -3.28946,
+          2.70296,
+          -1.62302
+        ],
+        "max": [
+          -0.52184,
+          4.95897,
+          1.86686
+        ]
+      },
+      "material": {
+        "kind": "solid"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 2376,
+          "kind": "solid"
+        },
+        {
+          "start": 2376,
+          "count": 1205,
+          "kind": "emissive"
+        }
+      ],
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 2376
+        },
+        {
+          "start": 2376,
+          "count": 1205
+        }
+      ]
+    },
+    {
+      "id": "basalt-bank",
+      "type": "terrain",
+      "usage": "top-origin-shore-module",
+      "anchors": {
+        "walkTop": [
+          0,
+          0,
+          0
+        ],
+        "leftJoin": [
+          -1.29,
+          -0.064,
+          0
+        ],
+        "rightJoin": [
+          1.29,
+          -0.064,
+          0
+        ]
+      },
+      "colliders": [
+        {
+          "shape": "box",
+          "center": [
+            -0.02,
+            -0.32,
+            -0.072
+          ],
+          "size": [
+            2.42,
+            0.62,
+            0.76
+          ]
+        }
+      ],
+      "license": "original",
+      "representation": "gaussian-splat",
+      "file": "assets/basalt-bank.splat",
+      "editable": "assets/basalt-bank.gaussians.json",
+      "source": "src/terrain.mjs",
+      "seed": 1456946367,
+      "gaussianCount": 5018,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.6982,
+          -0.75885,
+          -0.70597
+        ],
+        "max": [
+          1.64075,
+          0.1293,
+          0.88766
+        ]
+      },
+      "material": {
+        "kind": "solid"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 5018,
+          "kind": "solid"
+        }
+      ]
+    },
+    {
+      "id": "drowned-basin",
+      "type": "terrain",
+      "usage": "shallow-basin-foundation",
+      "anchors": {
+        "waterDatum": [
+          0,
+          0.205,
+          0
+        ],
+        "floorDatum": [
+          0,
+          -0.25,
+          0
+        ]
+      },
+      "license": "original",
+      "representation": "gaussian-splat",
+      "file": "assets/drowned-basin.splat",
+      "editable": "assets/drowned-basin.gaussians.json",
+      "source": "src/terrain.mjs",
+      "seed": 4210646970,
+      "gaussianCount": 25717,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -5.95979,
+          -0.91589,
+          -6.78505
+        ],
+        "max": [
+          6.16095,
+          0.27318,
+          6.14823
+        ]
+      },
+      "material": {
+        "kind": "solid"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 25717,
+          "kind": "solid"
+        }
+      ]
+    },
+    {
+      "id": "moonpool-water",
+      "type": "vfx",
+      "usage": "horizontal-water-patch",
+      "anchors": {
+        "surface": [
+          0,
+          0,
+          0
+        ]
+      },
+      "license": "original",
+      "representation": "gaussian-splat",
+      "file": "assets/moonpool-water.splat",
+      "editable": "assets/moonpool-water.gaussians.json",
+      "source": "src/terrain.mjs",
+      "seed": 2644801518,
+      "gaussianCount": 15062,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -5.28957,
+          -0.02401,
+          -5.87722
+        ],
+        "max": [
+          5.22289,
+          0.02901,
+          5.34612
+        ]
+      },
+      "animationBounds": {
+        "min": [
+          -5.28957,
+          -0.03851,
+          -5.87722
+        ],
+        "max": [
+          5.22289,
+          0.04351,
+          5.34612
+        ]
+      },
+      "material": {
+        "kind": "water",
+        "reflect": false
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 14518,
+          "kind": "water"
+        },
+        {
+          "start": 14518,
+          "count": 544,
+          "kind": "water"
+        }
+      ],
+      "pixelDetailRanges": [
+        {
+          "start": 14518,
+          "count": 544
+        }
+      ]
+    },
+    {
+      "id": "lantern-bloom",
+      "type": "foliage",
+      "usage": "luminous-tall-waterside-cluster",
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "upperFlower": [
+          0.3,
+          1.46,
+          0.077
+        ]
+      },
+      "license": "original",
+      "representation": "gaussian-splat",
+      "file": "assets/lantern-bloom.splat",
+      "editable": "assets/lantern-bloom.gaussians.json",
+      "source": "src/plants.mjs",
+      "seed": 3644663443,
+      "gaussianCount": 5404,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.90529,
+          -0.28466,
+          -1.00099
+        ],
+        "max": [
+          0.98022,
+          2.01012,
+          0.93314
+        ]
+      },
+      "animationBounds": {
+        "min": [
+          -0.92329,
+          -0.28466,
+          -1.00099
+        ],
+        "max": [
+          0.99822,
+          2.01012,
+          0.93314
+        ]
+      },
+      "material": {
+        "kind": "solid"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 388,
+          "kind": "solid"
+        },
+        {
+          "start": 388,
+          "count": 1564,
+          "kind": "foliage"
+        },
+        {
+          "start": 1952,
+          "count": 672,
+          "kind": "solid"
+        },
+        {
+          "start": 2624,
+          "count": 2775,
+          "kind": "emissive"
+        },
+        {
+          "start": 5399,
+          "count": 5,
+          "kind": "emissive"
+        }
+      ],
+      "pixelDetailRanges": [
+        {
+          "start": 1952,
+          "count": 672
+        },
+        {
+          "start": 2624,
+          "count": 2775
+        }
+      ]
+    },
+    {
+      "id": "indigo-fronds",
+      "type": "foliage",
+      "usage": "low-violet-waterside-cluster",
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "license": "original",
+      "representation": "gaussian-splat",
+      "file": "assets/indigo-fronds.splat",
+      "editable": "assets/indigo-fronds.gaussians.json",
+      "source": "src/plants.mjs",
+      "seed": 130888548,
+      "gaussianCount": 2710,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.1683,
+          -0.31176,
+          -1.05568
+        ],
+        "max": [
+          1.18658,
+          0.80674,
+          0.83044
+        ]
+      },
+      "animationBounds": {
+        "min": [
+          -1.1863,
+          -0.31176,
+          -1.05568
+        ],
+        "max": [
+          1.20458,
+          0.80674,
+          0.83044
+        ]
+      },
+      "material": {
+        "kind": "solid"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 243,
+          "kind": "solid"
+        },
+        {
+          "start": 243,
+          "count": 2152,
+          "kind": "foliage"
+        },
+        {
+          "start": 2395,
+          "count": 315,
+          "kind": "emissive"
+        }
+      ],
+      "pixelDetailRanges": [
+        {
+          "start": 2395,
+          "count": 315
+        }
+      ]
+    },
+    {
+      "id": "tide-gauge",
+      "type": "prop",
+      "usage": "observatory-plinth",
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "gem": [
+          0,
+          1.788,
+          0
+        ]
+      },
+      "colliders": [
+        {
+          "shape": "box",
+          "center": [
+            0,
+            0.52,
+            0
+          ],
+          "size": [
+            0.88,
+            1.1,
+            0.71
+          ]
+        }
+      ],
+      "license": "original",
+      "representation": "gaussian-splat",
+      "file": "assets/tide-gauge.splat",
+      "editable": "assets/tide-gauge.gaussians.json",
+      "source": "src/architecture.mjs",
+      "seed": 892264125,
+      "gaussianCount": 5243,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.72616,
+          -0.09882,
+          -0.57749
+        ],
+        "max": [
+          0.72755,
+          2.34468,
+          0.57821
+        ]
+      },
+      "material": {
+        "kind": "solid"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 2124,
+          "kind": "solid"
+        },
+        {
+          "start": 2124,
+          "count": 2655,
+          "kind": "solid"
+        },
+        {
+          "start": 4779,
+          "count": 464,
+          "kind": "emissive"
+        }
+      ],
+      "pixelDetailRanges": [
+        {
+          "start": 2124,
+          "count": 2655
+        },
+        {
+          "start": 4779,
+          "count": 464
+        }
+      ]
+    }
+  ]
+}

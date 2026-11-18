@@ -1,0 +1,153 @@
+{
+  "id": 132,
+  "time": 0,
+  "camera": {
+    "yaw": 0.27,
+    "pitch": 0.31,
+    "span": 3.2585876000000003,
+    "target": [
+      0.03746499999999997,
+      0.86273,
+      -0.03392500000000004
+    ]
+  },
+  "sourceResolution": [
+    1110,
+    624
+  ],
+  "sourceFingerprint": "59652f8c",
+  "rawFingerprint": "59652f8c",
+  "rawMatchesSource": true,
+  "raw": {
+    "resolution": [
+      1110,
+      624
+    ],
+    "bloom": 0,
+    "palette": false,
+    "dither": 0
+  },
+  "pixel": {
+    "scale": 2,
+    "resolution": [
+      555,
+      312
+    ],
+    "viewport": [
+      0,
+      0,
+      1110,
+      624
+    ],
+    "sourceOrigin": [
+      0,
+      0
+    ],
+    "height": 288,
+    "minScale": 2,
+    "paletteEnabled": true,
+    "ditherStrength": 0,
+    "detailBias": 0.43,
+    "bloomStrength": 0.13,
+    "palette": [
+      "#080e1d",
+      "#101626",
+      "#172033",
+      "#20283d",
+      "#2b334b",
+      "#3a415a",
+      "#4e526a",
+      "#62657a",
+      "#7a7d8c",
+      "#9a9ba5",
+      "#b6b8bc",
+      "#0f2935",
+      "#133641",
+      "#17434e",
+      "#1e515c",
+      "#26626c",
+      "#2d727b",
+      "#37838a",
+      "#499698",
+      "#64aca7",
+      "#86c3bb",
+      "#addad1",
+      "#daefe0",
+      "#132b28",
+      "#1c3b36",
+      "#245049",
+      "#326251",
+      "#45775f",
+      "#60916b",
+      "#73a879",
+      "#94c387",
+      "#b8d998",
+      "#d2efad",
+      "#413034",
+      "#5d4340",
+      "#795448",
+      "#986c53",
+      "#b98a61",
+      "#d9af78",
+      "#f1cc91",
+      "#fff0ba",
+      "#28253e",
+      "#363056",
+      "#49406b",
+      "#595183",
+      "#716599",
+      "#8c7bae",
+      "#a695c7",
+      "#c5add9",
+      "#e2c6eb",
+      "#357c70",
+      "#4aa089",
+      "#65bba0",
+      "#83d5b1",
+      "#a4e8c3",
+      "#c7f5d4",
+      "#eeffe9"
+    ],
+    "fineDetailResolution": [
+      1110,
+      624
+    ],
+    "markedPixels": 51158,
+    "policy": "coarse clusters; marked lines and foliage use native palette pixels"
+  },
+  "sameSourceFrame": true,
+  "scene": "moonpool-conservatory",
+  "asset": "lantern-bloom",
+  "diagnostics": {
+    "gaussians": 5404,
+    "drawCalls": 3,
+    "groups": 1,
+    "modelTextureUploads": 3,
+    "gpuBytes": 9468368,
+    "sourceResolution": [
+      1110,
+      624
+    ],
+    "internalResolution": [
+      555,
+      312
+    ],
+    "displayResolution": [
+      1110,
+      624
+    ],
+    "pixelScale": 2,
+    "detailResolution": [
+      1110,
+      624
+    ],
+    "pixelPolicy": "coarse clusters and native marked detail",
+    "paletteEnabled": true,
+    "paletteColors": 57,
+    "bloom": 0.13,
+    "cpuFrameMs": 0.3999999761581421,
+    "projection": "GPU anisotropic Gaussian",
+    "sorting": "16-bit global counting",
+    "reflections": false
+  }
+}
