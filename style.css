@@ -30,6 +30,9 @@ canvas:active { cursor: grabbing; }
 a { color: #eccd93; text-underline-offset: .2em; }
 #play { flex: none; padding-top: 4px; }
 details { border-top: 1px solid #2c3137; padding-top: 11px; color: #d0d6da; }
+.references { margin-top: 14px; }
+.references ul { padding-left: 20px; margin: 10px 0 0; }
+.references li + li { margin-top: 6px; }
 summary { width: fit-content; }
 .controls, .links, #captures { margin-top: 12px; }
 .controls { gap: 10px; }

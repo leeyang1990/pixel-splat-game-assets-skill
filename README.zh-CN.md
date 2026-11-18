@@ -38,6 +38,17 @@ python3 -m http.server 8776 --bind 127.0.0.1
 
 静态服务可以直接加载仓库里预生成的资产。重建命令见 [暮雪信标说明](examples/frostline-beacon/NOTICE.md)、[熔潮铸炉说明](examples/ember-foundry/NOTICE.md)、[月汐温室说明](examples/moonpool-conservatory/NOTICE.md)和[风尽之城说明](examples/windward-citadel/使用说明.md)。
 
+## 《红色警戒 2》经典场景
+
+从原版盟军战役选了四个地点。可在展示页展开「红色警戒 2 原版关卡实录」，也可从下表直接打开 ParallaxDG 的原版游戏录像。
+
+| 盟军关卡 | 场景 | 实录 |
+| --- | --- | --- |
+| 第 1 关 · Lone Guardian | 纽约港与自由女神像 | [观看](https://www.youtube.com/watch?v=OITgFTEUTFI) |
+| 第 7 关 · Deep Sea | 珍珠港、岛屿与海军设施 | [观看](https://www.youtube.com/watch?v=Rhv3rNEdT14) |
+| 第 9 关 · Sun Temple | 图卢姆的热带海岸和遗迹 | [观看](https://www.youtube.com/watch?v=oZx_sbLsN9A) |
+| 第 10 关 · Mirage | 德国黑森林与爱因斯坦实验室 | [观看](https://www.youtube.com/watch?v=gC3nP2FsMSc) |
+
 ## 安装与使用
 
 克隆仓库后，将整个 [make-game-assets](make-game-assets/) 目录放进本机 Codex 的 skills 目录。

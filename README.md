@@ -38,6 +38,17 @@ Open [Frostline Beacon](http://127.0.0.1:8776/#frostline-beacon) in a WebGL2 bro
 
 The prebuilt demos run from the static server. Build instructions are provided for [Frostline Beacon](examples/frostline-beacon/NOTICE.md), [Ember Foundry](examples/ember-foundry/NOTICE.md), [Moonpool Conservatory](examples/moonpool-conservatory/NOTICE.md), and [Windward Citadel](examples/windward-citadel/使用说明.md).
 
+## Classic Red Alert 2 scenes
+
+Four locations from the base game's Allied campaign are available under **Red Alert 2 gameplay references (红色警戒 2 原版关卡实录)** in the gallery. The links open ParallaxDG's recordings of the original missions.
+
+| Allied mission | Setting | Recording |
+| --- | --- | --- |
+| 1 · Lone Guardian | New York and the Statue of Liberty waterfront | [Watch](https://www.youtube.com/watch?v=OITgFTEUTFI) |
+| 7 · Deep Sea | Pearl Harbor, islands and naval facilities | [Watch](https://www.youtube.com/watch?v=Rhv3rNEdT14) |
+| 9 · Sun Temple | Tulum, tropical coast and ruins | [Watch](https://www.youtube.com/watch?v=oZx_sbLsN9A) |
+| 10 · Mirage | The Black Forest and Einstein's laboratory | [Watch](https://www.youtube.com/watch?v=gC3nP2FsMSc) |
+
 ## Install the skill
 
 From the cloned repository, copy the [make-game-assets](make-game-assets/) skill directory into your Codex skills directory.
