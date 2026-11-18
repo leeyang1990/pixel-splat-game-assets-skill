@@ -17,7 +17,7 @@ nav, .controls, .links { display: flex; gap: 8px; align-items: center; flex-wrap
 button, select { font: inherit; color: inherit; padding: 6px 12px; border: 1px solid #343b42; border-radius: 5px; background: #151a20; }
 button:not(:disabled), select:not(:disabled), summary { cursor: pointer; }
 nav button { border-color: transparent; background: transparent; color: #b3b9bf; }
-nav button[aria-pressed=true], #motion[aria-pressed=true] { color: #f2e2b9; background: #272420; border-color: #4c4232; }
+nav button[aria-pressed=true], .controls button[aria-pressed=true] { color: #f2e2b9; background: #272420; border-color: #4c4232; }
 button:disabled, select:disabled { opacity: .55; }
 button:hover:not(:disabled), select:hover:not(:disabled) { border-color: #8b8274; }
 :focus-visible { outline: 2px solid #dcba79; outline-offset: 3px; }

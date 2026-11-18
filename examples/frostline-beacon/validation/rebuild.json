@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "tool": "Blender 4.5.9 LTS and Python 3",
+  "files": {
+    "manifest.json": "3c113ed70ffc3522bd9963341ec6ed290f7384e500b6870bcb473ca0620a44bf",
+    "scene.json": "17f14fd7c0dfd45dcbd951239706f682ffef7e66dc7f115e6dfb3a6a442b0bac",
+    "style.json": "16aa16eaf2ca401e3a0252ea8e343600fe5aadc1d9624e502c97585047017f03",
+    "assets/frost-pine.gaussians.json": "37047c4f1eb359f90d655f6ffe432ed12d07c04e0afa28d34a038badd80a7f88",
+    "assets/frost-pine.splat": "00cc0e0d8efad976ba80191f73c2021534bcfd3e189749f8eabb03bc9499e96d",
+    "assets/receiver-dish.gaussians.json": "3ce6c9a32c1a247fd37006330a88d6e33ce89b37422d1ccc9f97a4e36a4a8cf3",
+    "assets/receiver-dish.splat": "eef20c231e4a043aa6322670060a81f9dc0bcf590b12686e93531fe28aea996c",
+    "assets/relay-tower.gaussians.json": "83255963185c4ec8d4b8ff223a8e94a9f5d52f27fe18bb65fe7dea3bd702500e",
+    "assets/relay-tower.splat": "9410bf46a23bd443cd736bce2afeec92b809026f2ef253632dcc8b968a99a22e",
+    "assets/ridge-stairs.gaussians.json": "0c43c989efbbd32ca2c81784ff74c92280be6b9b9440cfe1a487f8c9aac70263",
+    "assets/ridge-stairs.splat": "7330d040998b7dc6b659e53370b72b93454244cd80839ee49bfd3bd1ddeb1a88",
+    "assets/signal-cabin.gaussians.json": "d90509db9bcda59966ee49165b2be4374beed836cd8d898d11fa490d24b7b0db",
+    "assets/signal-cabin.splat": "8defd43635669df4a2889c6b01820b5b375fb366c7e23d032ec78e9d9d7418bd",
+    "assets/signal-glow.gaussians.json": "5418503e92c991cc672d9f8e1f8b873838f21277a5b59d727ef013e05725280e",
+    "assets/signal-glow.splat": "dcffd992d3e1250bf62c28b2bbb30d3d6c765014ba40121428daa3230bc8da1a",
+    "assets/signal-lens.gaussians.json": "b86313ba9cadd8d1f95ed14e1c037a44cdf4d81803ab96f86f8953dd991f206f",
+    "assets/signal-lens.splat": "04790662126c94599373d4627bb5525557cdc91c0c8ff8771688972950a2af76",
+    "assets/snow-flurry.gaussians.json": "1ac37c681ab6b409d6c464c013d3141e1fdaf2ba0b1319c38bb89f06a25dc115",
+    "assets/snow-flurry.splat": "2b8a4ec1b585be8e06e7a14e4afc4cde6edf5292dcddd3628f2733d0639025c6",
+    "assets/snow-shelf.gaussians.json": "58c45f5e40e5796babf4b2a1c354ba7a51647eae5ca5f5ae007ed35999044d79",
+    "assets/snow-shelf.splat": "40d55cebea40f10fea18b95d0eef25b79b0de668736385056f04357221c2167d"
+  }
+}

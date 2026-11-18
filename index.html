@@ -15,6 +15,7 @@
         <button type="button" data-scene="ember-foundry" aria-pressed="true">熔潮铸炉</button>
         <button type="button" data-scene="moonpool-conservatory" aria-pressed="false">月汐温室</button>
         <button type="button" data-scene="windward-citadel" aria-pressed="false">风尽之城</button>
+        <button type="button" data-scene="frostline-beacon" aria-pressed="false">暮雪信标</button>
       </nav>
     </header>
     <section aria-labelledby="scene-name">
@@ -36,6 +37,7 @@
         <label>查看 <select id="asset" aria-label="查看独立资产" disabled><option value="">完整场景</option></select></label>
         <label>出图 <select id="mode"><option value="pixel">像素后处理</option><option value="raw">原始高斯</option></select></label>
         <button type="button" id="motion" aria-pressed="false" disabled>播放动态</button>
+        <button type="button" id="beacon" aria-pressed="false" title="画面获得焦点后也可按 B" hidden>信标</button>
         <button type="button" id="reset" disabled>复位镜头</button>
         <button type="button" id="compare" disabled>导出同帧对比</button>
       </div>

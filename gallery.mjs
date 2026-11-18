@@ -1,5 +1,6 @@
 import { GaussianRenderer } from './make-game-assets/assets/advanced-runtime/renderer.mjs';
 import { decodeSplat } from './make-game-assets/assets/advanced-runtime/gaussians.mjs';
+import { createBeacon } from './examples/frostline-beacon/src/beacon.mjs';
 
 const catalog = {
   'ember-foundry': {
@@ -22,6 +23,10 @@ const catalog = {
       ],
     },
   },
+  'frostline-beacon': {
+    name: '暮雪信标',
+    description: '雪岭上的信号站。展开「资产与出图」可控制信标，并播放天线与飘雪。',
+  },
 };
 
 const ui = Object.fromEntries([...document.querySelectorAll('[id]')].map(el => [el.id, el]));
@@ -43,10 +48,15 @@ async function loadPack(id, signal) {
   const [manifest, scene, style] = await Promise.all(
     ['manifest.json', 'scene.json', 'style.json'].map(path => get(base + path, signal)),
   );
-  const definitions = await Promise.all(manifest.assets.map(async asset => [
-    asset.id, {asset, data: decodeSplat(await get(base + asset.file, signal, 'arrayBuffer'))},
-  ]));
-  const pack = {id, base, scene, style, definitions: new Map(definitions)};
+  const definitions = new Map();
+  for (let offset = 0; offset < manifest.assets.length; offset += 4) {
+    const batch = manifest.assets.slice(offset, offset + 4);
+    const loaded = await Promise.all(batch.map(async asset => ({
+      asset, data: decodeSplat(await get(base + asset.file, signal, 'arrayBuffer')),
+    })));
+    for (const definition of loaded) definitions.set(definition.asset.id, definition);
+  }
+  const pack = {id, base, scene, style, definitions};
   cache.set(id, pack);
   return pack;
 }
@@ -66,9 +76,11 @@ async function switchScene(id) {
     if (request !== controller) return;
     next = new GaussianRenderer(canvas, pack.style);
     for (const {asset, data} of pack.definitions.values()) next.upload(asset, data);
-    next.setScene(pack.scene.items);
+    const items = structuredClone(pack.scene.items);
+    const beacon = pack.scene.demo?.beacon ? createBeacon(pack.scene.demo.beacon, items) : null;
+    next.setScene(items);
     renderer?.dispose();
-    active = pack;
+    active = {...pack, items, beacon};
     renderer = next;
     next = null;
     ui.asset.replaceChildren(new Option('完整场景', ''));
@@ -119,6 +131,7 @@ function setMotion(on) {
 
 function setView(id, ready = false) {
   selected = id;
+  const beacon = id ? null : active.beacon;
   const lighting = active.scene.lighting ?? catalog[active.id].lighting ?? {};
   renderer.waterReflections = !id && Boolean(lighting.waterReflections);
   renderer.waterLevel = lighting.waterLevel ?? .035;
@@ -126,8 +139,11 @@ function setView(id, ready = false) {
   renderer.waterRadius = lighting.waterRadius ?? 0;
   renderer.skyTint = lighting.skyTint ?? [1, 1, 1];
   renderer.lights = id ? [] : lighting.lights ?? [];
+  if (beacon) renderer.lights = [...renderer.lights, beacon.light];
+  ui.beacon.hidden = !beacon;
+  ui.beacon.setAttribute('aria-pressed', String(beacon?.enabled ?? false));
   if (!ready) {
-    renderer.setScene(id ? [{id, asset:id, position:[0,0,0]}] : active.scene.items);
+    renderer.setScene(id ? [{id, asset:id, position:[0,0,0]}] : active.items);
   }
   const asset = active.definitions.get(id)?.asset;
   ui['asset-links'].hidden = !asset;
@@ -150,6 +166,7 @@ function changed() {
 }
 
 function draw() {
+  if (!selected) active.beacon?.update(time);
   renderer.mode = ui.mode.value;
   renderer.render(camera, time);
   dirty = false;
@@ -162,6 +179,9 @@ function capture() {
   const {raw, pixel, detailsMask, metadata} = renderer.captureComparison();
   const stem = [active.id, selected].filter(Boolean).join('-');
   const report = {...metadata, scene: active.id, asset: selected || null, diagnostics: renderer.stats};
+  if (!selected && active.beacon) {
+    report.interaction = {beaconEnabled:active.beacon.enabled, receiverYaw:active.beacon.receiverYaw};
+  }
   const reportURL = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(report, null, 2));
   const files = {'raw':raw, 'pixel':pixel, 'details':detailsMask, 'metadata':reportURL};
   for (const [name, url] of Object.entries(files)) {
@@ -178,6 +198,13 @@ for (const tab of tabs) tab.onclick = () => switchScene(tab.dataset.scene);
 ui.asset.onchange = () => setView(ui.asset.value);
 ui.mode.onchange = () => { if (renderer) dirty = true; };
 ui.motion.onclick = () => setMotion(!playing);
+function toggleBeacon() {
+  if (selected || !active?.beacon) return;
+  active.beacon.toggle();
+  ui.beacon.setAttribute('aria-pressed', String(active.beacon.enabled));
+  changed();
+}
+ui.beacon.onclick = toggleBeacon;
 ui.reset.onclick = () => { camera = homeCamera(); changed(); };
 ui.compare.onclick = capture;
 new ResizeObserver(() => { if (renderer) changed(); }).observe(canvas);
@@ -205,6 +232,12 @@ canvas.addEventListener('wheel', event => {
 canvas.onkeydown = event => {
   if (!renderer) return;
   switch (event.key) {
+    case 'b': case 'B':
+      if (!selected && active.beacon) {
+        event.preventDefault();
+        if (!event.repeat) toggleBeacon();
+      }
+      return;
     case 'ArrowLeft': camera.yaw -= .14; break;
     case 'ArrowRight': camera.yaw += .14; break;
     case 'ArrowUp': camera.pitch = Math.min(1.24, camera.pitch + .08); break;

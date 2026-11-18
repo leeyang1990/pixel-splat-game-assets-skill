@@ -1,0 +1,446 @@
+{
+  "camera": {
+    "yaw": 0.35,
+    "pitch": 0.38,
+    "span": 8.02,
+    "target": [
+      0.05,
+      1.3,
+      0.2
+    ]
+  },
+  "lighting": {
+    "skyTint": [
+      0.91,
+      1.005,
+      1.09
+    ],
+    "waterReflections": false,
+    "lights": [
+      {
+        "position": [
+          -2.45,
+          1.02,
+          1.18
+        ],
+        "color": [
+          1,
+          0.56,
+          0.23
+        ],
+        "intensity": 1.42
+      },
+      {
+        "position": [
+          2.65,
+          2.9,
+          -1.86
+        ],
+        "color": [
+          0.43,
+          0.68,
+          1.0
+        ],
+        "intensity": 1.17
+      }
+    ]
+  },
+  "demo": {
+    "beacon": {
+      "lens": "beacon-lens",
+      "glow": "beacon-glow",
+      "receiver": "dish",
+      "angularSpeed": 0.96,
+      "light": {
+        "position": [
+          0.48,
+          2.9,
+          0.77
+        ],
+        "color": [
+          0.3,
+          0.91,
+          1
+        ],
+        "intensity": 2.4
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "ridge-base",
+      "asset": "snow-shelf",
+      "position": [
+        0,
+        0.03,
+        -0.59
+      ],
+      "scale": [
+        3.68,
+        1.06,
+        2.49
+      ],
+      "yaw": 0.18
+    },
+    {
+      "id": "relay-terrace",
+      "asset": "snow-shelf",
+      "position": [
+        0.43,
+        0.65,
+        -0.69
+      ],
+      "scale": [
+        1.89,
+        0.61,
+        1.36
+      ],
+      "yaw": -0.17
+    },
+    {
+      "id": "west-terrace",
+      "asset": "snow-shelf",
+      "position": [
+        -2.04,
+        0.28,
+        0.32
+      ],
+      "scale": [
+        1.56,
+        0.62,
+        1.37
+      ],
+      "yaw": 0.13
+    },
+    {
+      "id": "eastern-shoulder",
+      "asset": "snow-shelf",
+      "position": [
+        2.76,
+        0.12,
+        -0.51
+      ],
+      "scale": [
+        1.31,
+        0.78,
+        1.64
+      ],
+      "yaw": 0.39
+    },
+    {
+      "id": "stair-footing",
+      "asset": "snow-shelf",
+      "position": [
+        0.48,
+        -0.41,
+        2.51
+      ],
+      "scale": [
+        1.55,
+        0.48,
+        0.93
+      ],
+      "yaw": -0.13
+    },
+    {
+      "id": "rear-spur",
+      "asset": "snow-shelf",
+      "position": [
+        -1.9,
+        0.25,
+        -2.09
+      ],
+      "scale": [
+        1.17,
+        0.56,
+        1.23
+      ],
+      "yaw": -0.36
+    },
+    {
+      "id": "lower-drift",
+      "asset": "snow-shelf",
+      "position": [
+        -1.26,
+        -0.25,
+        2.08
+      ],
+      "scale": [
+        1.24,
+        0.66,
+        0.94
+      ],
+      "yaw": 0.4
+    },
+    {
+      "id": "east-lip",
+      "asset": "snow-shelf",
+      "position": [
+        2.75,
+        -0.13,
+        1.37
+      ],
+      "scale": [
+        1.13,
+        0.64,
+        1.08
+      ],
+      "yaw": 0.56
+    },
+    {
+      "id": "ice-fragment-west",
+      "asset": "snow-shelf",
+      "position": [
+        -3.32,
+        -0.62,
+        1.23
+      ],
+      "scale": [
+        0.31,
+        0.38,
+        0.42
+      ],
+      "yaw": 0.3
+    },
+    {
+      "id": "ice-fragment-east",
+      "asset": "snow-shelf",
+      "position": [
+        3.7,
+        -0.43,
+        0.73
+      ],
+      "scale": [
+        0.36,
+        0.38,
+        0.35
+      ],
+      "yaw": -0.41
+    },
+    {
+      "id": "ice-fragment-front",
+      "asset": "snow-shelf",
+      "position": [
+        1.23,
+        -0.68,
+        3.13
+      ],
+      "scale": [
+        0.41,
+        0.37,
+        0.38
+      ],
+      "yaw": 0.74
+    },
+    {
+      "id": "station",
+      "asset": "relay-tower",
+      "position": [
+        0.48,
+        0.65,
+        -0.31
+      ],
+      "scale": 1,
+      "yaw": 0
+    },
+    {
+      "id": "dish",
+      "asset": "receiver-dish",
+      "position": [
+        0.48,
+        3.33,
+        -0.31
+      ],
+      "scale": 1,
+      "yaw": 0.32
+    },
+    {
+      "id": "beacon-lens",
+      "asset": "signal-lens",
+      "position": [
+        0.48,
+        2.746,
+        0.478
+      ],
+      "scale": 1,
+      "yaw": 0
+    },
+    {
+      "id": "beacon-glow",
+      "asset": "signal-glow",
+      "position": [
+        0.48,
+        2.746,
+        0.478
+      ],
+      "scale": 1,
+      "yaw": 0
+    },
+    {
+      "id": "approach",
+      "asset": "ridge-stairs",
+      "position": [
+        0.48,
+        -0.37,
+        2.56
+      ],
+      "scale": 1,
+      "yaw": 0
+    },
+    {
+      "id": "cabin",
+      "asset": "signal-cabin",
+      "position": [
+        -2.11,
+        0.3,
+        0.46
+      ],
+      "scale": 1.04,
+      "yaw": -0.15
+    },
+    {
+      "id": "pine-00",
+      "asset": "frost-pine",
+      "position": [
+        -3.1,
+        0.22,
+        0.49
+      ],
+      "scale": 1.08,
+      "yaw": 0.38
+    },
+    {
+      "id": "pine-01",
+      "asset": "frost-pine",
+      "position": [
+        -2.77,
+        0.37,
+        -1.46
+      ],
+      "scale": 1.06,
+      "yaw": 1.12
+    },
+    {
+      "id": "pine-02",
+      "asset": "frost-pine",
+      "position": [
+        -1.69,
+        0.29,
+        -2.4
+      ],
+      "scale": 0.89,
+      "yaw": 0.17
+    },
+    {
+      "id": "pine-03",
+      "asset": "frost-pine",
+      "position": [
+        -3.37,
+        0.27,
+        -1.34
+      ],
+      "scale": 0.69,
+      "yaw": 0.88
+    },
+    {
+      "id": "pine-04",
+      "asset": "frost-pine",
+      "position": [
+        -1.47,
+        -0.23,
+        1.91
+      ],
+      "scale": 0.85,
+      "yaw": 1.55
+    },
+    {
+      "id": "pine-05",
+      "asset": "frost-pine",
+      "position": [
+        -0.71,
+        -0.29,
+        2.57
+      ],
+      "scale": 0.63,
+      "yaw": 0.28
+    },
+    {
+      "id": "pine-06",
+      "asset": "frost-pine",
+      "position": [
+        2.85,
+        0.18,
+        -1.37
+      ],
+      "scale": 1.17,
+      "yaw": 0.73
+    },
+    {
+      "id": "pine-07",
+      "asset": "frost-pine",
+      "position": [
+        3.45,
+        0.135,
+        -0.55
+      ],
+      "scale": 0.83,
+      "yaw": 1.66
+    },
+    {
+      "id": "pine-08",
+      "asset": "frost-pine",
+      "position": [
+        2.59,
+        0.21,
+        0.49
+      ],
+      "scale": 0.91,
+      "yaw": 0.58
+    },
+    {
+      "id": "pine-09",
+      "asset": "frost-pine",
+      "position": [
+        3.22,
+        -0.09,
+        1.63
+      ],
+      "scale": 0.7,
+      "yaw": 0.17
+    },
+    {
+      "id": "pine-10",
+      "asset": "frost-pine",
+      "position": [
+        1.86,
+        0.62,
+        -0.74
+      ],
+      "scale": 0.68,
+      "yaw": -0.35
+    },
+    {
+      "id": "pine-11",
+      "asset": "frost-pine",
+      "position": [
+        1.7,
+        -0.36,
+        2.77
+      ],
+      "scale": 0.66,
+      "yaw": 0.5
+    },
+    {
+      "id": "flurry",
+      "asset": "snow-flurry",
+      "position": [
+        -0.38,
+        0.31,
+        -0.07
+      ],
+      "scale": 1,
+      "yaw": 0,
+      "alpha": 0.83
+    }
+  ]
+}

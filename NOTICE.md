@@ -1,7 +1,8 @@
 # 来源与许可
 
-熔潮铸炉、月汐温室与风尽之城的场景布置和主要资产由程序化源码生成。各场景目录保留构建指令和来源记录。
+暮雪信标、熔潮铸炉、月汐温室与风尽之城的场景布置和主要资产由程序化源码生成。各场景目录保留构建指令和来源记录。
 
+- [暮雪信标说明](examples/frostline-beacon/NOTICE.md)
 - [熔潮铸炉说明](examples/ember-foundry/NOTICE.md)
 - [月汐温室说明](examples/moonpool-conservatory/NOTICE.md)
 - [风尽之城来源](examples/windward-citadel/ATTRIBUTION.txt)与[许可](examples/windward-citadel/LICENSE.txt)

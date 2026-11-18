@@ -1,0 +1,632 @@
+{
+  "version": 2,
+  "pipeline": "pixel-gaussian-splat",
+  "pack": "frostline-beacon",
+  "units": {
+    "up": "+Y",
+    "forward": "+Z",
+    "tile": 1
+  },
+  "style": "style.json",
+  "budgets": {
+    "maxGaussiansPerAsset": 16000,
+    "maxSceneGaussians": 110000
+  },
+  "assets": [
+    {
+      "id": "snow-shelf",
+      "type": "terrain",
+      "usage": "decoration",
+      "seed": 2440037068,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/snow-shelf.splat",
+      "editable": "assets/snow-shelf.gaussians.json",
+      "gaussianCount": 1840,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.2099879236666047,
+          -1.5051908846765718,
+          -1.3729820199841218
+        ],
+        "max": [
+          1.2329687413304224,
+          0.18390624263758656,
+          1.1021677184678795
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1840,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 400,
+        "ambientOcclusionRays": 9200,
+        "aoMin": 0.31077998699168624,
+        "aoMax": 1.0,
+        "spacing": 0.099
+      },
+      "label": "\u96ea\u8986\u5ca9\u53f0"
+    },
+    {
+      "id": "relay-tower",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 4130324018,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/relay-tower.splat",
+      "editable": "assets/relay-tower.gaussians.json",
+      "gaussianCount": 10789,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.136239472677726,
+          -0.12411340542490833,
+          -1.1359749061928344
+        ],
+        "max": [
+          1.136239472677726,
+          2.725809345016048,
+          1.1359749061928344
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "receiverSeat": [
+          0,
+          2.68,
+          0
+        ],
+        "doorStep": [
+          0,
+          0.195,
+          0.92
+        ],
+        "lensSocket": [
+          0,
+          2.096,
+          0.788
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 10789,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 2100,
+        "ambientOcclusionRays": 53945,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.081
+      },
+      "label": "\u4fe1\u6807\u5854\u8eab"
+    },
+    {
+      "id": "receiver-dish",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 2628120868,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/receiver-dish.splat",
+      "editable": "assets/receiver-dish.gaussians.json",
+      "gaussianCount": 2357,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.7637893314296312,
+          -0.07300982743027128,
+          -0.403531354
+        ],
+        "max": [
+          0.7651635077309576,
+          1.7057287979644955,
+          0.7330215509999997
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "mastSeat": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 2357,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 864,
+        "ambientOcclusionRays": 9428,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.07
+      },
+      "label": "\u65cb\u8f6c\u5929\u7ebf",
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 2357
+        }
+      ]
+    },
+    {
+      "id": "signal-lens",
+      "type": "vfx",
+      "usage": "decoration",
+      "seed": 4046288906,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/signal-lens.splat",
+      "editable": "assets/signal-lens.gaussians.json",
+      "gaussianCount": 456,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.18419711170525294,
+          -0.04287421906560575,
+          -0.18428737422587038
+        ],
+        "max": [
+          0.18419711170525294,
+          0.3110100081360341,
+          0.18428737422587038
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "socket": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "prelit",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 456,
+          "kind": "emissive"
+        }
+      ],
+      "authoring": {
+        "triangles": 132,
+        "ambientOcclusionRays": 0,
+        "aoMin": 1.0,
+        "aoMax": 1.0,
+        "spacing": 0.032
+      },
+      "label": "\u53d1\u5149\u900f\u955c",
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 456
+        }
+      ]
+    },
+    {
+      "id": "signal-cabin",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 3764970023,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/signal-cabin.splat",
+      "editable": "assets/signal-cabin.gaussians.json",
+      "gaussianCount": 4791,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.0821268365936063,
+          -0.12603107226848603,
+          -0.7637485204434394
+        ],
+        "max": [
+          1.0796224878387235,
+          1.7500770856134644,
+          0.7637008963322639
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "doorStep": [
+          0.41,
+          0.3,
+          0.59
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 40,
+          "kind": "emissive"
+        },
+        {
+          "start": 40,
+          "count": 4751,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 502,
+        "ambientOcclusionRays": 28506,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.078
+      },
+      "label": "\u5c71\u810a\u4fe1\u53f7\u5c4b"
+    },
+    {
+      "id": "ridge-stairs",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 1748080059,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/ridge-stairs.splat",
+      "editable": "assets/ridge-stairs.gaussians.json",
+      "gaussianCount": 7714,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.7197487889027595,
+          -0.11127288485733107,
+          -2.1587451683446788
+        ],
+        "max": [
+          0.7188571630215644,
+          1.725784895399809,
+          0.12264744421938274
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "start": [
+          0,
+          0.13,
+          -0.12
+        ],
+        "end": [
+          0,
+          1.17,
+          -1.92
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 7714,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 1808,
+        "ambientOcclusionRays": 38570,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.071
+      },
+      "label": "\u68c0\u4fee\u697c\u68af",
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 7714
+        }
+      ]
+    },
+    {
+      "id": "frost-pine",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 2849792443,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/frost-pine.splat",
+      "editable": "assets/frost-pine.gaussians.json",
+      "gaussianCount": 1420,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.5440557138738568,
+          -0.15466386998333517,
+          -0.548665821282338
+        ],
+        "max": [
+          0.6287552169669856,
+          1.7155086489979225,
+          0.5445124094464545
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "root": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1282,
+          "kind": "foliage"
+        },
+        {
+          "start": 1282,
+          "count": 138,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 266,
+        "ambientOcclusionRays": 5680,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.071
+      },
+      "label": "\u79ef\u96ea\u677e\u6811"
+    },
+    {
+      "id": "signal-glow",
+      "type": "vfx",
+      "usage": "beacon halo",
+      "seed": 816659815,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/signal-glow.splat",
+      "editable": "assets/signal-glow.gaussians.json",
+      "gaussianCount": 3,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.75001,
+          -0.4040100140666962,
+          -0.24101000000000003
+        ],
+        "max": [
+          0.75001,
+          0.676010028848648,
+          0.41901000000000005
+        ]
+      },
+      "anchors": {
+        "socket": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "emissive",
+        "reflect": false,
+        "lighting": "prelit",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 3,
+          "kind": "emissive"
+        }
+      ],
+      "authoring": {},
+      "label": "\u4fe1\u6807\u5149\u6655"
+    },
+    {
+      "id": "snow-flurry",
+      "type": "vfx",
+      "usage": "snow particles",
+      "seed": 3197030010,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/snow-flurry.splat",
+      "editable": "assets/snow-flurry.gaussians.json",
+      "gaussianCount": 125,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -3.246003543,
+          0.6927050780000001,
+          -2.289844476
+        ],
+        "max": [
+          3.251074823009074,
+          4.504202470999999,
+          2.158327818
+        ]
+      },
+      "anchors": {
+        "emitter": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "falling-leaf",
+        "reflect": false,
+        "lighting": "prelit",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 125,
+          "kind": "falling-leaf"
+        }
+      ],
+      "authoring": {
+        "seed": 317
+      },
+      "label": "\u98d8\u96ea",
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 125
+        }
+      ],
+      "clips": [
+        {
+          "name": "snowfall",
+          "duration": 6,
+          "loop": true
+        }
+      ],
+      "animationBounds": {
+        "min": [
+          -4.7460035430000005,
+          -0.4672949219999998,
+          -2.529844476
+        ],
+        "max": [
+          4.751074823009073,
+          5.664202470999999,
+          2.3983278180000003
+        ]
+      }
+    }
+  ]
+}

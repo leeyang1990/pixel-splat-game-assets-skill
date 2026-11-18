@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "browser": "desktop Chromium / WebGL2",
+  "beacon": {
+    "frameOn": "8580e3a9",
+    "frameOff": "3798ac29",
+    "sameCamera": true,
+    "sameTime": true,
+    "enabled": true,
+    "disabled": true,
+    "keyboardEnabled": true,
+    "continuedSnow": true,
+    "stationaryWhileOff": true,
+    "rotatedWhileOn": true,
+    "changedPixels": 33297,
+    "pixelsChangingByMoreThan50RGBLevels": 1758
+  },
+  "pair": {
+    "sameSourceFrame": true,
+    "rawMatchesSource": true,
+    "protectedPixels": 64388,
+    "sourceResolution": [
+      1110,
+      624
+    ],
+    "pixelResolution": [
+      555,
+      312
+    ]
+  },
+  "solo": {
+    "asset": "receiver-dish",
+    "gaussians": 2357,
+    "cameraYaw": 0.41000000000000003,
+    "download": "./examples/frostline-beacon/assets/receiver-dish.splat"
+  }
+}
