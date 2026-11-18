@@ -1,0 +1,174 @@
+{
+  "ok": true,
+  "device": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2 Pro, Unspecified Version)",
+  "api": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+  "sourceResolution": [
+    1175,
+    881
+  ],
+  "renderedGaussians": 940723,
+  "sceneInstances": 72,
+  "sourceFingerprint": "9fa52c26",
+  "sameFrameRaw": true,
+  "pixelToggle": true,
+  "resizeBothAttachments": true,
+  "rotationAndReset": true,
+  "frontAndAlternateFrames": true,
+  "walkWorldDisplacementVerified": true,
+  "fxToggleKeepsFrozenSource": true,
+  "soloEffectMotion": [
+    "drifting-golden-leaves",
+    "rising-embers",
+    "cliff-mist"
+  ],
+  "soloLookAround": true,
+  "inspectLightPeak": 0.960661888137834,
+  "inspectLightReturnsToIdle": true,
+  "patrolStart": [
+    0.24,
+    -0.15,
+    5.46
+  ],
+  "patrolCapture": [
+    0.2,
+    -0.07200000000000001,
+    5.1854203125
+  ],
+  "soloViews": [
+    {
+      "asset": "ogive-gatehouse",
+      "count": 112325,
+      "splat": "assets/ogive-gatehouse.splat",
+      "editable": "assets/ogive-gatehouse.gaussians.json"
+    },
+    {
+      "asset": "lancet-wall-bay",
+      "count": 56423,
+      "splat": "assets/lancet-wall-bay.splat",
+      "editable": "assets/lancet-wall-bay.gaussians.json"
+    },
+    {
+      "asset": "carved-broken-column",
+      "count": 5523,
+      "splat": "assets/carved-broken-column.splat",
+      "editable": "assets/carved-broken-column.gaussians.json"
+    },
+    {
+      "asset": "crowned-rampart-tower",
+      "count": 129372,
+      "splat": "assets/crowned-rampart-tower.splat",
+      "editable": "assets/crowned-rampart-tower.gaussians.json"
+    },
+    {
+      "asset": "stratified-cliff-rock",
+      "count": 4125,
+      "splat": "assets/stratified-cliff-rock.splat",
+      "editable": "assets/stratified-cliff-rock.gaussians.json"
+    },
+    {
+      "asset": "shed-cliff-fragments",
+      "count": 1968,
+      "splat": "assets/shed-cliff-fragments.splat",
+      "editable": "assets/shed-cliff-fragments.gaussians.json"
+    },
+    {
+      "asset": "verdigris-roof-spire",
+      "count": 8115,
+      "splat": "assets/verdigris-roof-spire.splat",
+      "editable": "assets/verdigris-roof-spire.gaussians.json"
+    },
+    {
+      "asset": "ruined-arch-bridge",
+      "count": 29182,
+      "splat": "assets/ruined-arch-bridge.splat",
+      "editable": "assets/ruined-arch-bridge.gaussians.json"
+    },
+    {
+      "asset": "weathered-stone-stairs",
+      "count": 7150,
+      "splat": "assets/weathered-stone-stairs.splat",
+      "editable": "assets/weathered-stone-stairs.gaussians.json"
+    },
+    {
+      "asset": "wind-torn-ivy",
+      "count": 1855,
+      "splat": "assets/wind-torn-ivy.splat",
+      "editable": "assets/wind-torn-ivy.gaussians.json"
+    },
+    {
+      "asset": "windswept-grass",
+      "count": 198,
+      "splat": "assets/windswept-grass.splat",
+      "editable": "assets/windswept-grass.gaussians.json"
+    },
+    {
+      "asset": "tattered-war-banner",
+      "count": 1266,
+      "splat": "assets/tattered-war-banner.splat",
+      "editable": "assets/tattered-war-banner.gaussians.json"
+    },
+    {
+      "asset": "luminous-golden-tree",
+      "count": 26093,
+      "splat": "assets/luminous-golden-tree.splat",
+      "editable": "assets/luminous-golden-tree.gaussians.json"
+    },
+    {
+      "asset": "site-of-golden-grace",
+      "count": 1346,
+      "splat": "assets/site-of-golden-grace.splat",
+      "editable": "assets/site-of-golden-grace.gaussians.json"
+    },
+    {
+      "asset": "cliff-mist",
+      "count": 70,
+      "splat": "assets/cliff-mist.splat",
+      "editable": "assets/cliff-mist.gaussians.json"
+    },
+    {
+      "asset": "golden-grace-halo",
+      "count": 96,
+      "splat": "assets/golden-grace-halo.splat",
+      "editable": "assets/golden-grace-halo.gaussians.json"
+    },
+    {
+      "asset": "drifting-golden-leaves",
+      "count": 109,
+      "splat": "assets/drifting-golden-leaves.splat",
+      "editable": "assets/drifting-golden-leaves.gaussians.json"
+    },
+    {
+      "asset": "rising-embers",
+      "count": 48,
+      "splat": "assets/rising-embers.splat",
+      "editable": "assets/rising-embers.gaussians.json"
+    },
+    {
+      "asset": "golden-gate-mist",
+      "count": 793,
+      "splat": "assets/golden-gate-mist.splat",
+      "editable": "assets/golden-gate-mist.gaussians.json"
+    },
+    {
+      "asset": "storm-cloud-haze",
+      "count": 42,
+      "splat": "assets/storm-cloud-haze.splat",
+      "editable": "assets/storm-cloud-haze.gaussians.json"
+    },
+    {
+      "asset": "golden-tree-haze",
+      "count": 18,
+      "splat": "assets/golden-tree-haze.splat",
+      "editable": "assets/golden-tree-haze.gaussians.json"
+    },
+    {
+      "asset": "weathered-knight",
+      "count": 7408,
+      "splat": "assets/weathered-knight.splat",
+      "editable": "assets/weathered-knight.gaussians.json"
+    }
+  ],
+  "byteMatchedServedSplats": 22,
+  "seenUncaughtExceptions": 0,
+  "performanceClaim": "Smoke test on this desktop; no cross-device FPS claim"
+}

@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "fromEmptyAssetDirectory": true,
+  "blender": "4.5.9 LTS",
+  "assetsRebuilt": 22,
+  "deliveryMatchesCleanRebuild": true,
+  "editableAndBinaryHashesMatch": true,
+  "unchangedPriorityGeometry": {
+    "ogive-gatehouse": true,
+    "crowned-rampart-tower": true,
+    "luminous-golden-tree": true,
+    "stratified-cliff-rock": true,
+    "weathered-knight": true
+  },
+  "sceneConfigMatches": true
+}

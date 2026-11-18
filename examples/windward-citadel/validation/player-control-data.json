@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "control": "keyboard, camera relative",
+  "walkwaySupport": [
+    -0.15150000000000002,
+    0.25
+  ],
+  "edgeSliding": true,
+  "farEdgeBlocking": true,
+  "largeStepDidNotTunnel": true,
+  "nearbyFireOnly": true,
+  "lockedDuringReach": true,
+  "retriggerAfterRelease": true
+}

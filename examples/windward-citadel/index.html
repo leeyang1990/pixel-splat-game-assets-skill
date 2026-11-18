@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>风尽之城 · 3D 像素高斯场景</title><link rel="stylesheet" href="style.css">
+<main><header><div><h1>风尽之城 <em>Windward Citadel</em></h1></div><p>城墙之下，仍有微光。<br><span>原创悬崖城堡 · 三维像素高斯</span></p></header>
+<section class="stage"><canvas id="view" tabindex="0" aria-label="可拖动旋转的三维高斯场景"></canvas><div class="loading" id="loading">正在唤醒城堡…</div><div id="error" hidden></div><div class="scene-label"><span id="view-name">悬崖前的余火</span><small id="camera-help">拖动或方向键旋转 · 滚轮缩放</small></div><div class="play-controls"><button id="control" class="play-button" aria-pressed="false" disabled>控制旅人</button><div id="control-panel" hidden><span>WASD / 方向键 移动</span><span>R 回到起点 · Esc 退出</span><strong id="interaction-prompt" aria-live="polite"></strong></div></div></section>
+<details class="display-options" id="display-options">
+<summary>展示选项</summary>
+<div class="display-panel">
+<nav aria-label="场景与渲染选项"><div class="group"><button id="full" class="active">全景</button><button id="study">建筑细部</button><button id="fire-view">余火近景</button><select id="asset" aria-label="独立资产"><option value="">独立资产</option></select></div><div class="group"><button id="pixel" class="active">像素</button><button id="raw">原始高斯</button><button id="pause">暂停动效</button><button id="effects" aria-pressed="true">粒子</button><select id="action" aria-label="旅人动作"></select><button id="walk">旅人巡游</button><button id="reset">重置视角</button><button id="save">保存画面</button></div></nav>
+<div class="export-options"><a id="splat" href="manifest.json" download>资产清单</a><a id="editable" href="scene.json" download>场景配置</a><button id="compare">导出同帧对照</button></div>
+<details class="frame-info"><summary>资产与帧信息</summary><pre id="metadata"></pre></details>
+<div class="frame-downloads"><a id="frame-save" hidden download>下载帧参数</a><a id="raw-save" hidden download>下载原始帧</a><a id="pixel-save" hidden download>下载像素帧</a></div>
+</div>
+</details>
+<img id="comparison-raw" hidden><img id="comparison-pixel" hidden><img id="comparison-mask" hidden>
+</main><script type="module" src="viewer.mjs"></script></html>

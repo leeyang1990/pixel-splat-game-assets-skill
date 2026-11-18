@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "size": [
+    1175,
+    881
+  ],
+  "rawMatchesSharedSource": true,
+  "sourceFingerprint": "9fa52c26",
+  "pixelPaletteOnly": true,
+  "coarseGridScale": 2,
+  "uniformClustersOutsideNativeDetails": 254632,
+  "nativeDetailPixels": 10564
+}

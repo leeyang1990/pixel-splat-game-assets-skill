@@ -1,0 +1,63 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createPlayerControl,createWalkway,screenDirection} from '../src/player-control.mjs';
+
+const scene=JSON.parse(await readFile(new URL('../scene.json',import.meta.url)));
+const spawn=scene.items.find(i=>i.id==='explorer');
+const player=createPlayerControl(scene.items,spawn);
+const floor=createWalkway(scene.items);
+let time=0, minY=Infinity, maxY=-Infinity;
+function step(input={},yaw=0,dt=1/60){
+  time+=dt;
+  const result=player.step(dt,input,yaw,time);
+  const [x,y,z]=result.position;
+  assert.ok(floor.canOccupy(x,z,.12),'footprint must remain on the deck or stairs');
+  minY=Math.min(minY,y);maxY=Math.max(maxY,y);
+  return result;
+}
+function travel(frames,input,yaw=0){let result;for(let i=0;i<frames;i++)result=step(input,yaw);return result;}
+assert.ok(screenDirection(1,0,0).x===1&&screenDirection(1,0,0).z===0);
+assert.ok(screenDirection(0,1,Math.PI/2).x<-.99);
+assert.equal(step({action:true}).clip,'idle');
+assert.equal(player.state.interactions,0,'cannot act outside interaction radius');
+const start=spawn.position.slice();
+const deck=travel(130,{vertical:1});
+assert.ok(deck.position[2]<4.16);
+assert.ok(deck.position[1]>.22);
+assert.equal(deck.clip,'walk');
+const edge=travel(150,{horizontal:1});
+assert.ok(edge.position[0]>.7&&edge.position[0]<.79);
+assert.equal(edge.blocked,true);
+assert.equal(edge.clip,'idle');
+const tangent=travel(72,{horizontal:1,vertical:1});
+assert.ok(tangent.position[2]<edge.position[2]-.35,'movement can slide along the edge');
+const far=travel(330,{vertical:1});
+assert.ok(far.position[2]>=1.315&&far.position[2]<1.34,'closed end stops the explorer');
+assert.equal(far.blocked,true);
+const beforeLag=[...far.position];
+const afterLag=step({vertical:1},0,15).position;
+assert.ok(afterLag[0]===beforeLag[0]&&afterLag[2]===beforeLag[2],'a long frame cannot tunnel off the walkway');
+
+player.reset();
+assert.deepEqual(player.state.position.slice(0,1),start.slice(0,1));
+travel(65,{horizontal:-1});
+travel(35,{vertical:1});
+const ready=step();
+assert.equal(ready.nearFire,true);
+const reaching=step({action:true});
+assert.equal(reaching.clip,'inspect-light');
+assert.equal(player.state.interactions,1);
+const peak=travel(97,{vertical:1,action:true});
+assert.equal(peak.clip,'inspect-light');
+assert.ok(peak.pulse>.9);
+assert.deepEqual(peak.position.slice(0,1),reaching.position.slice(0,1));
+assert.equal(peak.position[2],reaching.position[2]);
+assert.equal(player.state.interactions,1);
+const idle=travel(110,{action:true});
+assert.equal(idle.clip,'idle');
+assert.equal(idle.pulse,0);
+assert.equal(player.state.interactions,1);
+step();
+assert.equal(step({action:true}).clip,'inspect-light');
+assert.equal(player.state.interactions,2);
+console.log(JSON.stringify({ok:true,control:'keyboard, camera relative',walkwaySupport:[minY,maxY],edgeSliding:true,farEdgeBlocking:true,largeStepDidNotTunnel:true,nearbyFireOnly:true,lockedDuringReach:true,retriggerAfterRelease:true},null,2));

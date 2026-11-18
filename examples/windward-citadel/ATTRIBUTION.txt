@@ -1,0 +1,11 @@
+Windward Citadel / 风尽之城
+Original procedural environment arrangement, assets and lighting study.
+
+Visual references for atmosphere and broad architectural vocabulary:
+https://upsurge_studios.artstation.com/projects/LexEOP?album_id=2081785
+https://en.bandainamcoent.eu/elden-ring/elden-ring/media
+ELDEN RING © Bandai Namco Entertainment Inc. / © FromSoftware, Inc.
+The programmatic citadel layout, tiered amber tree and stratified terrain are original designs. Original game files, artwork and screenshots are outside the archive.
+
+Bundled modules originate from the local make-game-assets skill and Drowned Abbey Kit. Source license appears in LICENSE.txt. The 32-byte binary layout is compatible with antimatter15/splat:
+https://github.com/antimatter15/splat

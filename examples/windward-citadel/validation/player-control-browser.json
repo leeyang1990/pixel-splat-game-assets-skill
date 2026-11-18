@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2 Pro, Unspecified Version)",
+  "sceneInstances": 72,
+  "spawn": [
+    0.24,
+    -0.15150000000000002,
+    5.46
+  ],
+  "onBridge": [
+    -0.4058377723817443,
+    0.2499999963375637,
+    3.6342424596444816
+  ],
+  "sideEdge": [
+    -0.7836515919307229,
+    0.24999999999999878,
+    3.759387772196472
+  ],
+  "nearFire": [
+    -0.33902304032610914,
+    -0.04244741219091791,
+    5.18357904715541
+  ],
+  "checks": [
+    "keyboard focus and WASD drive world motion",
+    "arrow keys drive world motion in control mode",
+    "movement stops on key release and lost focus",
+    "steps bring actor to bridge height",
+    "left edge keeps full footprint supported",
+    "E triggers only within range and holds once through gesture",
+    "reach pauses movement and drives existing light pulse",
+    "R moves back to spawn",
+    "Escape returns to original view",
+    "patrol and standalone actor still work"
+  ]
+}

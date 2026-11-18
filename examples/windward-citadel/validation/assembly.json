@@ -1,0 +1,30 @@
+{
+  "assets": 22,
+  "uniqueGaussians": 393525,
+  "instances": 72,
+  "drawnGaussians": 940723,
+  "assetHashes": {
+    "ogive-gatehouse": "56a19b0c7edf6bf99a4a79fc99c366a09592a954a705cf83785768ab85d5af86",
+    "lancet-wall-bay": "7ad8cab4763b9266fc8ddfe70d8e2d41e6c1a685ba9710aef25ea2c64bba994f",
+    "carved-broken-column": "c2237a5edc66e4a3e0f932ee5e65d216a1628e9980d380ec5661080107c7773d",
+    "crowned-rampart-tower": "22803b1c732748c35dfe40060d51eb4efd2c66a342d9970d82a9a61faa831576",
+    "stratified-cliff-rock": "372f5a03fc1282fd46c1bc56605a0db920cc256081072d39356f68db66f38bd1",
+    "shed-cliff-fragments": "f24de672d611d5a8ebf4dcd0b437c40334b9415916051161c63d6abf84d5cf0d",
+    "verdigris-roof-spire": "4d01767c69a75f0be95c443f6ba8866b3c39a357c68db782a6cede5dbb7ec587",
+    "ruined-arch-bridge": "ff4d7602998734a5d89cf2524d56c91590ddf99f3e4ac51825a2af066dedda16",
+    "weathered-stone-stairs": "af464cee0db2ab3d44c6b79496f82862318c9631ce43a12220777b0b9d54af3e",
+    "wind-torn-ivy": "f7a528a1fc6276ecf6ec5d96c5529928e32201cdf9eaa40cb560d15ea1c078e6",
+    "windswept-grass": "78492ff0341b0ad64d4024c7f82f8153b17a0b3a47d0e732510884bd3c8bdcd8",
+    "tattered-war-banner": "30d2287e6d61b01186be5d8769c5400b2daa52f71214d1fc36347ac07f6c59b8",
+    "luminous-golden-tree": "35c8835f9b7896b7cd91c99bd8437a1e0e420b229f22c312e34613e96ac8fe21",
+    "site-of-golden-grace": "347792aa5dfbe7e02787029a77d32ca5581f0289b76c43fe82c636762ca82b71",
+    "cliff-mist": "5b8eb8cd2c6c35e1cb1db992323a19ae4491860c5ac6ae8dca1575748393bfd4",
+    "golden-grace-halo": "6ce4c99eedaa5c8ddb299724dbbe1ee97d36bd3d3647dcbbfd9816eeac2a0deb",
+    "drifting-golden-leaves": "575f7afda76c1c5f1ad28b21fd7f2928ff2bef14e44b85b697be4eb9f6129655",
+    "rising-embers": "4ff5fb77d0c1b4d2e990cb7987b26fa7f1536b5303a653281e6533bf573b3f7c",
+    "golden-gate-mist": "361ec71e3a09cac7b1f7323bf37fb9e736671435ee83c57603f9254867bae37d",
+    "storm-cloud-haze": "267f9def6307c8e4b29d6a5d52e66aa0ec37b892a4a41ed89b1e80fda691a10c",
+    "golden-tree-haze": "ee53b3904f048dd28591fbc13494d7ee5cd441f79c2ebd22b4e9dacd90ef0614",
+    "weathered-knight": "d8ee4bb90818cf1fdfd32c9b767439d8f713338248022c2a1779235f4718b9e4"
+  }
+}
