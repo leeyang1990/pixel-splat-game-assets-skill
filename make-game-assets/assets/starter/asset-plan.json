@@ -1,0 +1,47 @@
+{
+  "assets": [
+    {
+      "id": "grass-meadow",
+      "type": "terrain",
+      "usage": "walkable",
+      "seed": 11,
+      "label": "草地 · 苔绿"
+    },
+    {
+      "id": "crate-oak",
+      "type": "prop",
+      "usage": "static-obstacle",
+      "seed": 31,
+      "label": "木箱 · 蜂蜜橡木"
+    },
+    {
+      "id": "pickup-ember",
+      "type": "pickup",
+      "usage": "trigger",
+      "seed": 51,
+      "label": "晶体 · 琥珀微光"
+    },
+    {
+      "id": "tree-canopy",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 71,
+      "label": "树木 · 层叠树冠"
+    },
+    {
+      "id": "arch-moss",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 91,
+      "label": "建筑 · 苔石拱门"
+    },
+    {
+      "id": "tree-canopy-small",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 72,
+      "scale": 0.65,
+      "label": "变体 · 幼树"
+    }
+  ]
+}

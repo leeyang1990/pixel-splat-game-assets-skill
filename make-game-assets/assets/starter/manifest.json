@@ -1,0 +1,299 @@
+{
+  "version": 2,
+  "pipeline": "pixel-gaussian-splat",
+  "pack": "moss-ember-gaussian-kit",
+  "units": {
+    "up": "+Y",
+    "forward": "+Z",
+    "tile": 1
+  },
+  "seed": 92741,
+  "style": "style.json",
+  "budgets": {
+    "maxGaussiansPerAsset": 8000,
+    "maxSceneGaussians": 100000
+  },
+  "renderer": {
+    "implementation": "src/renderer.mjs",
+    "projection": "orthographic",
+    "covariance": "anisotropic-3d",
+    "falloff": "gaussian",
+    "sorting": "global-back-to-front",
+    "pixelPass": "low-resolution-palette-bayer-nearest"
+  },
+  "assets": [
+    {
+      "id": "grass-meadow",
+      "type": "terrain",
+      "usage": "walkable",
+      "seed": 11,
+      "label": "草地 · 苔绿",
+      "representation": "gaussian-splat",
+      "file": "assets/grass-meadow.splat",
+      "editable": "assets/grass-meadow.gaussians.json",
+      "source": "src/generate.mjs",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.6185814285714285,
+          -0.25929571447730065,
+          -0.6185814285714285
+        ],
+        "max": [
+          0.6185814285714284,
+          0.0892957164144516,
+          0.6185814285714284
+        ]
+      },
+      "gaussianCount": 308,
+      "license": "original",
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "crate-oak",
+      "type": "prop",
+      "usage": "static-obstacle",
+      "seed": 31,
+      "label": "木箱 · 蜂蜜橡木",
+      "representation": "gaussian-splat",
+      "file": "assets/crate-oak.splat",
+      "editable": "assets/crate-oak.gaussians.json",
+      "source": "src/generate.mjs",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.44751,
+          -0.07250999999999998,
+          -0.44750999999999996
+        ],
+        "max": [
+          0.44751,
+          0.8225100202655792,
+          0.44750999999999996
+        ]
+      },
+      "gaussianCount": 1350,
+      "license": "original",
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [
+        {
+          "shape": "box",
+          "center": [
+            0,
+            0.375,
+            0
+          ],
+          "size": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pickup-ember",
+      "type": "pickup",
+      "usage": "trigger",
+      "seed": 51,
+      "label": "晶体 · 琥珀微光",
+      "representation": "gaussian-splat",
+      "file": "assets/pickup-ember.splat",
+      "editable": "assets/pickup-ember.gaussians.json",
+      "source": "src/generate.mjs",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.24600524411060265,
+          0.015463892894216454,
+          -0.24477433360369133
+        ],
+        "max": [
+          0.252136460994262,
+          0.6957799600787679,
+          0.24586672682117
+        ]
+      },
+      "gaussianCount": 720,
+      "license": "original",
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "trigger": {
+        "shape": "circle-xz",
+        "radius": 0.34
+      },
+      "clips": [
+        {
+          "name": "idle",
+          "duration": 2.4,
+          "loop": true
+        },
+        {
+          "name": "collect",
+          "duration": 0.45,
+          "loop": false,
+          "events": [
+            {
+              "name": "consume",
+              "time": 0
+            }
+          ]
+        }
+      ],
+      "animationAdapter": "src/interaction.mjs",
+      "animationBounds": {
+        "min": [
+          -0.6,
+          -0.1,
+          -0.6
+        ],
+        "max": [
+          0.6,
+          1.3,
+          0.6
+        ]
+      }
+    },
+    {
+      "id": "tree-canopy",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 71,
+      "label": "树木 · 层叠树冠",
+      "representation": "gaussian-splat",
+      "file": "assets/tree-canopy.splat",
+      "editable": "assets/tree-canopy.gaussians.json",
+      "source": "src/generate.mjs",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.9806812368123804,
+          -0.08911311479121446,
+          -0.6988121481612085
+        ],
+        "max": [
+          1.0132410262108156,
+          2.609625260459373,
+          0.8656270708729711
+        ]
+      },
+      "gaussianCount": 2855,
+      "license": "original",
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "arch-moss",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 91,
+      "label": "建筑 · 苔石拱门",
+      "representation": "gaussian-splat",
+      "file": "assets/arch-moss.splat",
+      "editable": "assets/arch-moss.gaussians.json",
+      "source": "src/generate.mjs",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.933912297129321,
+          -0.10338500274181366,
+          -0.3269778060947917
+        ],
+        "max": [
+          0.9407552642917633,
+          2.0707874460315705,
+          0.3269701430585608
+        ]
+      },
+      "gaussianCount": 3259,
+      "license": "original",
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "tree-canopy-small",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 72,
+      "scale": 0.65,
+      "label": "变体 · 幼树",
+      "representation": "gaussian-splat",
+      "file": "assets/tree-canopy-small.splat",
+      "editable": "assets/tree-canopy-small.gaussians.json",
+      "source": "src/generate.mjs",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.6358231320795379,
+          -0.06586246078665367,
+          -0.4563720161164426
+        ],
+        "max": [
+          0.6533787633851568,
+          1.6945881532711706,
+          0.5560908962348207
+        ]
+      },
+      "gaussianCount": 2855,
+      "license": "original",
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "method": "manual UI verification in the in-app browser",
+  "renderer": "anisotropic 3D Gaussian covariance projection, Gaussian alpha falloff, global back-to-front blend",
+  "passed": [
+    "6 binary .splat resources loaded",
+    "same asset switches between Gaussian and pixel-art display",
+    "arch rotated to 35 degrees, tree rotated to 45 degrees",
+    "per-asset binary and editable download links resolved",
+    "keyboard D stopped at crate X=-2.07",
+    "W and A bypassed obstacle and pickup count became 1/3",
+    "six behavior checks displayed pass",
+    "custom one-asset plan built and opened catalog without missing-resource errors",
+    "no browser error logs"
+  ],
+  "unmeasured": [
+    "GPU elapsed time",
+    "real mobile or low-end performance",
+    "external engine import"
+  ],
+  "screenshots": [
+    "pixel-gaussian-pipeline.jpg",
+    "gaussian-asset-raw.jpg",
+    "gaussian-asset-pixel.jpg"
+  ],
+  "screenshotPathsRelativeToReport": true
+}

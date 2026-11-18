@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10201d"><title>苔光 · 3D 像素高斯资产管线</title>
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="styles.css?v=gaussian-v2">
+</head>
+<body>
+  <main>
+    <header><div class="brand"><span class="brand-icon">✦</span><div><p class="eyebrow">MOSS & EMBER / GAUSSIAN ASSET PIPELINE</p><h1>苔光<span>3D 像素高斯资产工坊</span></h1></div></div><div class="edition">草地 / 木箱 / 晶体 / 树木 / 石拱门<br><span>独立资产 · 同一画风 · 可组合</span></div></header>
+    <nav aria-label="预览视图"><button id="scene-tab" aria-pressed="true">01　组合验证场</button><button id="catalog-tab" aria-pressed="false">02　资产目录</button><span id="load-status" role="status">载入资产…</span></nav>
+    <section class="workspace">
+      <div class="stage-column">
+        <div class="stage-top"><span id="stage-title">12 × 9 / 草地拼接</span><label>出图 <select id="render-look" aria-label="出图方式"><option value="pixel">像素风</option><option value="gaussian">原始高斯</option></select></label></div>
+        <div class="canvas-wrap" id="canvas-wrap"><canvas id="view" width="640" height="400" tabindex="0" aria-label="三维资产预览，WASD 或方向键移动白色测试标记"></canvas><canvas id="overlay" width="640" height="400" aria-hidden="true"></canvas><div id="error" hidden></div></div>
+        <div id="scene-controls" class="stage-bottom"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> / 方向键移动</span><span>白色标记为碰撞测试体</span></div>
+        <div id="catalog-controls" class="stage-bottom" hidden><label>朝向 <input id="angle" type="range" min="0" max="360" value="0" step="1"><output id="angle-value">0°</output></label><button id="spin">自动旋转</button><label><input id="pause" type="checkbox">暂停动画</label></div>
+        <div class="legend"><span><i class="key grass"></i>1 单位可拼接草地</span><span><i class="key wood"></i>0.75 单位阻挡木箱</span><span><i class="key gold"></i>一次性发光拾取物</span></div>
+      </div>
+      <aside>
+        <div id="scene-panel"><p class="eyebrow">INTERACTION CHECK</p><h2>走近，绕过，拾取。</h2><p class="muted">沿草地移动白色标记。木箱挡路；靠近晶体即可拾取，光点会在收取后消散。</p><div class="counter"><span>拾取验证</span><strong id="count">0 <small>/ 3</small></strong></div><div class="readout"><span>碰撞反馈</span><strong id="collision" role="status">尚未触碰</strong></div><div class="readout"><span>位置 X / Z</span><code id="position">−4.00 / 0.00</code></div><div class="buttons"><button id="reset">重置场景 <span>R</span></button><button id="check">运行行为检查</button></div><div class="touch" aria-label="移动控制"><button data-move="up" aria-label="向上">↑</button><div><button data-move="left" aria-label="向左">←</button><button data-move="down" aria-label="向下">↓</button><button data-move="right" aria-label="向右">→</button></div></div><div id="check-results" aria-live="polite"></div></div>
+        <div id="catalog-panel" hidden><p class="eyebrow">ASSET LIBRARY</p><h2>同一尺度，独立资源。</h2><p class="muted">选择单件查看四周、变体与动画。十字为局部原点，虚线为一格比例参照。</p><div id="asset-list"></div><div id="asset-details"></div><div class="asset-downloads"><a id="download-splat" download>下载 .splat</a><a id="download-source" download>可编辑数据</a></div><button id="collect-preview">预览收取动画</button></div>
+        <label class="debug-toggle"><input type="checkbox" id="debug">显示碰撞、边界与原点</label><details><summary>运行统计</summary><pre id="stats"></pre></details>
+      </aside>
+    </section>
+    <footer><span>3D GAUSSIANS · .SPLAT EXPORT · NO DEPENDENCIES</span><span>像素风与原始高斯共用同一套资产</span></footer>
+  </main>
+  <script type="module" src="src/app.mjs"></script>
+</body>
+</html>

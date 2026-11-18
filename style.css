@@ -1,0 +1,46 @@
+:root {
+  color-scheme: dark;
+  font: 15px/1.5 system-ui, -apple-system, "PingFang SC", sans-serif;
+  background: #0b0e12;
+  color: #eef1ee;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; }
+main { width: min(1160px, 100%); margin: auto; padding: 26px 24px 48px; }
+header, .caption { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+header { margin-bottom: 16px; flex-wrap: wrap; }
+h1, h2, p, figure { margin: 0; }
+h1 { font-size: 18px; font-weight: 650; letter-spacing: .08em; }
+h2 { font-size: 22px; font-weight: 640; line-height: 1.35; }
+nav, .controls, .links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+button, select { font: inherit; color: inherit; padding: 6px 12px; border: 1px solid #343b42; border-radius: 5px; background: #151a20; }
+button:not(:disabled), select:not(:disabled), summary { cursor: pointer; }
+nav button { border-color: transparent; background: transparent; color: #b3b9bf; }
+nav button[aria-pressed=true], #motion[aria-pressed=true] { color: #f2e2b9; background: #272420; border-color: #4c4232; }
+button:disabled, select:disabled { opacity: .55; }
+button:hover:not(:disabled), select:hover:not(:disabled) { border-color: #8b8274; }
+:focus-visible { outline: 2px solid #dcba79; outline-offset: 3px; }
+.stage { position: relative; background: #050c10; border: 1px solid #242c32; border-radius: 8px; overflow: hidden; }
+canvas { display: block; width: 100%; height: clamp(270px, 56vw, 624px); touch-action: none; cursor: grab; }
+canvas:active { cursor: grabbing; }
+#message { position: absolute; z-index: 1; top: 12px; left: 14px; right: auto; max-width: calc(100% - 28px); padding: 6px 10px; border-radius: 4px; background: #131a20eb; }
+.caption { padding: 15px 0; align-items: flex-start; }
+#scene-description, .muted { color: #a3adb6; margin-top: 4px; }
+a { color: #eccd93; text-underline-offset: .2em; }
+#play { flex: none; padding-top: 4px; }
+details { border-top: 1px solid #2c3137; padding-top: 11px; color: #d0d6da; }
+summary { width: fit-content; }
+.controls, .links, #captures { margin-top: 12px; }
+.controls { gap: 10px; }
+select { max-width: 250px; }
+.comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.comparison img { width: 100%; display: block; }
+figcaption { padding-top: 5px; }
+@media (max-width: 540px) {
+  main { padding: 16px 12px 32px; }
+  h2 { font-size: 19px; }
+  nav button { padding-inline: 8px; }
+  .caption { flex-wrap: wrap; }
+  canvas { height: 66vw; min-height: 245px; }
+}

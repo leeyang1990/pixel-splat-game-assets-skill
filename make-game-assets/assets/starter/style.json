@@ -1,0 +1,118 @@
+{
+  "name": "Moss & Ember / 3D 像素高斯资产",
+  "description": "程序化表面采样得到三维各向异性高斯；共享像素色板与叠层树冠、苔石、暖木材质。",
+  "palette": {
+    "grass": [
+      "#4e7751",
+      "#638b55",
+      "#729c5b",
+      "#83a766"
+    ],
+    "clover": [
+      "#517a55",
+      "#648e5a",
+      "#759a62",
+      "#87a96c"
+    ],
+    "soil": [
+      "#394b3c",
+      "#445640",
+      "#53664a"
+    ],
+    "oak": [
+      "#93613d",
+      "#ac7848",
+      "#bc8a53",
+      "#c99b61"
+    ],
+    "weathered": [
+      "#6e6950",
+      "#848063",
+      "#9b9470",
+      "#ada27b"
+    ],
+    "brace": [
+      "#d4ab73",
+      "#bd925e"
+    ],
+    "iron": [
+      "#414948",
+      "#6c756b"
+    ],
+    "crystal": [
+      "#d9903b",
+      "#f4bb58",
+      "#ffda84",
+      "#fff2ba"
+    ],
+    "leaves": [
+      "#29472b",
+      "#436b32",
+      "#668e3f",
+      "#92b34c"
+    ],
+    "stone": [
+      "#536254",
+      "#6b7864",
+      "#819078",
+      "#a5ad8b"
+    ]
+  },
+  "units": {
+    "up": "+Y",
+    "forward": "+Z",
+    "tile": 1,
+    "pivot": "ground-center"
+  },
+  "particles": {
+    "representation": "anisotropic-3d-gaussian",
+    "editableStride": 14,
+    "export": "32-byte .splat",
+    "pixelPost": "low-res + palette + Bayer + nearest"
+  },
+  "lighting": {
+    "method": "baked quantized surface lighting",
+    "note": "颜色烘焙在资产中；实例旋转不会重新计算入射光。"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "yawDegrees": 0,
+    "pitchDegrees": 57,
+    "logicalResolution": [
+      640,
+      400
+    ],
+    "zoom": 36
+  },
+  "budget": {
+    "device": "desktop browser with WebGL2",
+    "maxGaussiansPerAsset": 8000,
+    "maxSceneGaussians": 100000,
+    "measured": false
+  },
+  "pixelArt": {
+    "resolutionScale": 0.5,
+    "ditherStrength": 0.35,
+    "palette": [
+      "#10201d",
+      "#233b2b",
+      "#344c32",
+      "#4d6b3e",
+      "#688d49",
+      "#86a453",
+      "#adc26e",
+      "#44544e",
+      "#68766b",
+      "#91a18a",
+      "#654834",
+      "#916039",
+      "#bc874e",
+      "#dbb977",
+      "#e4a542",
+      "#ffe2a0",
+      "#fff1ca",
+      "#cde3d9",
+      "#e5f1e9"
+    ]
+  }
+}

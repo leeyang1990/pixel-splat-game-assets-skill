@@ -1,0 +1,4 @@
+interface:
+  display_name: "3D 像素高斯资产工坊"
+  short_description: "以画质目标校准代表资产，再制作精细、风格统一且可复用的 3D 像素高斯游戏资产"
+  default_prompt: "使用 $make-game-assets，从参考图或我的描述提炼品质标准，先校准代表资产的造型、材质、光照与游戏尺寸可读性，再制作风格统一且可独立复用的 3D 像素高斯资产，并交付源码、.splat 与实际验证证据。"

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Make Game Assets · 高斯场景集</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>高斯场景集</h1>
+      <nav id="scenes" aria-label="切换场景">
+        <button type="button" data-scene="ember-foundry" aria-pressed="true">熔潮铸炉</button>
+        <button type="button" data-scene="moonpool-conservatory" aria-pressed="false">月汐温室</button>
+        <button type="button" data-scene="windward-citadel" aria-pressed="false">风尽之城</button>
+      </nav>
+    </header>
+    <section aria-labelledby="scene-name">
+      <div class="stage">
+        <canvas id="stage" tabindex="0" aria-label="拖动或使用方向键旋转，滚轮缩放"></canvas>
+        <p id="message" role="status">正在加载场景…</p>
+      </div>
+      <div class="caption">
+        <div>
+          <h2 id="scene-name">熔潮铸炉</h2>
+          <p id="scene-description"></p>
+        </div>
+        <a id="play" hidden>进入可玩版 ↗</a>
+      </div>
+    </section>
+    <details id="inspector">
+      <summary>资产与出图</summary>
+      <div class="controls">
+        <label>查看 <select id="asset" aria-label="查看独立资产" disabled><option value="">完整场景</option></select></label>
+        <label>出图 <select id="mode"><option value="pixel">像素后处理</option><option value="raw">原始高斯</option></select></label>
+        <button type="button" id="motion" aria-pressed="false" disabled>播放动态</button>
+        <button type="button" id="reset" disabled>复位镜头</button>
+        <button type="button" id="compare" disabled>导出同帧对比</button>
+      </div>
+      <p id="view-info" class="muted" aria-live="polite"></p>
+      <div id="asset-links" class="links" hidden>
+        <a id="download-splat" download>下载 .splat</a>
+        <a id="download-editable" download>下载可编辑数据</a>
+      </div>
+      <div id="captures" hidden>
+        <div class="comparison">
+          <figure><img id="raw-preview" alt="原始高斯"><figcaption><a id="capture-raw" download>原始高斯 PNG</a></figcaption></figure>
+          <figure><img id="pixel-preview" alt="像素后处理"><figcaption><a id="capture-pixel" download>像素后处理 PNG</a></figcaption></figure>
+        </div>
+        <div class="links">
+          <a id="capture-details" download>细节遮罩 PNG</a>
+          <a id="capture-metadata" download>帧信息 JSON</a>
+        </div>
+      </div>
+    </details>
+    <noscript>请启用 JavaScript 以渲染三维场景。</noscript>
+  </main>
+  <script type="module" src="./gallery.mjs"></script>
+</body>
+</html>

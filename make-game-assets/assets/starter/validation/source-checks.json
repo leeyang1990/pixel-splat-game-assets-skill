@@ -1,0 +1,101 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "name": "grass-meadow: 生成确定、真实高斯字段、.splat 往返与三倍标准差范围",
+      "ok": true,
+      "gaussians": 308
+    },
+    {
+      "name": "crate-oak: 生成确定、真实高斯字段、.splat 往返与三倍标准差范围",
+      "ok": true,
+      "gaussians": 1350
+    },
+    {
+      "name": "pickup-ember: 生成确定、真实高斯字段、.splat 往返与三倍标准差范围",
+      "ok": true,
+      "gaussians": 720
+    },
+    {
+      "name": "tree-canopy: 生成确定、真实高斯字段、.splat 往返与三倍标准差范围",
+      "ok": true,
+      "gaussians": 2855
+    },
+    {
+      "name": "arch-moss: 生成确定、真实高斯字段、.splat 往返与三倍标准差范围",
+      "ok": true,
+      "gaussians": 3259
+    },
+    {
+      "name": "tree-canopy-small: 生成确定、真实高斯字段、.splat 往返与三倍标准差范围",
+      "ok": true,
+      "gaussians": 2855
+    },
+    {
+      "name": "协方差、旋转、线性标准差、32字节布局及非法数据",
+      "ok": true
+    },
+    {
+      "name": "参数变体同步缩放位置与三维标准差，保留旋转与颜色",
+      "ok": true
+    },
+    {
+      "name": "地形中心高度、跨格高斯采样间距与覆盖连续",
+      "ok": true
+    },
+    {
+      "name": "正面阻挡与大步长防穿透",
+      "ok": true,
+      "detail": {
+        "stoppedX": -2.0799999999999983,
+        "crateFace": -1.875,
+        "playerRadius": 0.18
+      }
+    },
+    {
+      "name": "绕箱通行、穿过格线与沿边滑动",
+      "ok": true,
+      "detail": {
+        "x": 2.3999999999999972,
+        "z": 2.100000000000001
+      }
+    },
+    {
+      "name": "圆角碰撞精度与地图边界",
+      "ok": true,
+      "detail": {
+        "x": -5.809954751131215,
+        "z": -4.298642533936641
+      }
+    },
+    {
+      "name": "拾取仅一次、动画结束回收、实例独立",
+      "ok": true,
+      "detail": {
+        "collected": 1,
+        "activeEffects": 0
+      }
+    },
+    {
+      "name": "待机循环连续、时间输入确定",
+      "ok": true,
+      "detail": {
+        "periodSeconds": 2.4
+      }
+    },
+    {
+      "name": "全部拾取、无重复与可重置",
+      "ok": true,
+      "detail": {
+        "collected": 3
+      }
+    }
+  ],
+  "scene": {
+    "assetDefinitions": 6,
+    "assetInstances": 121,
+    "visibleAssetGaussians": 56853,
+    "maxSceneGaussians": 100000
+  },
+  "note": "结构、交换格式与逻辑检查；浏览器与性能需独立验证。"
+}

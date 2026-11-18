@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "pipeline": "pixel-gaussian-splat",
+  "input": {
+    "references": [],
+    "description": "",
+    "existingProject": null
+  },
+  "game": {
+    "camera": null,
+    "targetPlatform": "browser",
+    "engine": null
+  },
+  "style": {
+    "theme": null,
+    "silhouette": null,
+    "palette": [],
+    "light": null,
+    "gaussianSpacingWorld": null,
+    "lowResolution": null,
+    "dither": {
+      "mode": "none",
+      "strength": 0
+    },
+    "displayFilter": "nearest",
+    "referenceNotes": []
+  },
+  "units": {
+    "up": "+Y",
+    "forward": "+Z",
+    "tile": 1
+  },
+  "seed": 92741,
+  "conventions": {
+    "groundPropPivot": "bottom-center",
+    "terrainPivot": "walkable-top-center",
+    "terrainTopY": 0,
+    "scaleMeaning": "positive-linear-standard-deviation",
+    "editableQuaternionOrder": "XYZW",
+    "binaryQuaternionOrder": "WXYZ"
+  },
+  "runtime": {
+    "renderer": "shared-anisotropic-gaussian",
+    "existingRenderer": null,
+    "adapterNeeded": null,
+    "editableFormat": "gaussians-json-v1-stride14",
+    "binaryFormat": "antimatter15-splat-32-byte"
+  },
+  "assetPlan": [],
+  "budgets": {
+    "device": null,
+    "expectedVisibleInstances": null,
+    "targetFrameTimeMs": null,
+    "measured": false
+  },
+  "assumptions": [],
+  "quality": {
+    "referenceUse": "quality-and-style",
+    "targetDescription": "",
+    "mustReadAtGameScale": [],
+    "criteria": [],
+    "representativeAssets": [],
+    "technicalStatus": "unverified",
+    "visualStatus": "unverified",
+    "reuseStatus": "unverified",
+    "evidence": [],
+    "unresolvedGaps": []
+  }
+}
