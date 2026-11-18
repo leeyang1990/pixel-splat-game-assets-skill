@@ -1,4 +1,4 @@
-# Make Game Assets
+# Pixel Splat Game Assets Skill
 
 一个面向游戏制作的 Codex skill。将参考图、视频或美术对话变成可独立加载、编辑及拼装的 3D 像素风 Gaussian splat 资产。有照片训练需求的场景可使用自己的重建流程，本项目的三个样例均用程序化造型生成。
 
@@ -19,8 +19,8 @@
 ## 本地查看
 
 ```sh
-git clone https://github.com/leeyang1990/make-game-assets.git
-cd make-game-assets
+git clone https://github.com/leeyang1990/pixel-splat-game-assets-skill.git
+cd pixel-splat-game-assets-skill
 python3 -m http.server 8776 --bind 127.0.0.1
 ```
 
