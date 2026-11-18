@@ -40,7 +40,7 @@ The prebuilt demos run from the static server. Build instructions are provided f
 
 ## Classic Red Alert 2 scenes
 
-Four locations from the base game's Allied campaign are available under **Red Alert 2 gameplay references (红色警戒 2 原版关卡实录)** in the gallery. The links open ParallaxDG's recordings of the original missions.
+Start the local server above and open the [English mission preview page](http://127.0.0.1:8776/red-alert-2/?lang=en), or follow **红色警戒 2 原版关卡预览** from the gallery. Choose a mission to see its poster and play ParallaxDG's recording in the page. Each mission has a direct YouTube link. [Preview page source](red-alert-2/)
 
 | Allied mission | Setting | Recording |
 | --- | --- | --- |
