@@ -1,0 +1,1106 @@
+{
+  "version": 2,
+  "pipeline": "pixel-gaussian-splat",
+  "pack": "landmarks",
+  "units": {
+    "up": "+Y",
+    "forward": "+Z",
+    "tile": 1
+  },
+  "style": "style.json",
+  "budgets": {
+    "maxGaussiansPerAsset": 25000,
+    "maxSceneGaussians": 110000
+  },
+  "assets": [
+    {
+      "id": "park-island",
+      "type": "terrain",
+      "usage": "decoration",
+      "seed": 1900107178,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/park-island.splat",
+      "editable": "assets/park-island.gaussians.json",
+      "gaussianCount": 1020,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.1757347284689068,
+          -0.6212073435561436,
+          -1.2883561853758603
+        ],
+        "max": [
+          1.2798976944666438,
+          0.10264506161751226,
+          1.1756670916022494
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1020,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 336,
+        "ambientOcclusionRays": 4080,
+        "aoMin": 0.31976936326499306,
+        "aoMax": 1.0,
+        "spacing": 0.114
+      }
+    },
+    {
+      "id": "fort-wood",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 73539745,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/fort-wood.splat",
+      "editable": "assets/fort-wood.gaussians.json",
+      "gaussianCount": 1356,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.1085899328102107,
+          -0.48267078560494564,
+          -1.1138320794844458
+        ],
+        "max": [
+          1.137521850602935,
+          0.07939439256551713,
+          1.099734332888192
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "pedestalSeat": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1356,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 308,
+        "ambientOcclusionRays": 5424,
+        "aoMin": 0.4000561007476165,
+        "aoMax": 1.0,
+        "spacing": 0.085
+      }
+    },
+    {
+      "id": "granite-pedestal",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 4006844531,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/granite-pedestal.splat",
+      "editable": "assets/granite-pedestal.gaussians.json",
+      "gaussianCount": 5984,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.00899015499115,
+          -0.11337351992097247,
+          -0.9852166676393114
+        ],
+        "max": [
+          1.0190733535385132,
+          2.1768432421779633,
+          0.9794308079558516
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "statueSeat": [
+          0,
+          2.12,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 5984,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 1320,
+        "ambientOcclusionRays": 29920,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.103
+      }
+    },
+    {
+      "id": "liberty-statue",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 3034336349,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/liberty-statue.splat",
+      "editable": "assets/liberty-statue.gaussians.json",
+      "gaussianCount": 3230,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.9027011045061116,
+          -0.12842673188786863,
+          -0.3458876365671514
+        ],
+        "max": [
+          0.5184180794608063,
+          3.2616606626763103,
+          0.3657024908852263
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 3230,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 1142,
+        "ambientOcclusionRays": 16150,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.064
+      },
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 3230
+        }
+      ]
+    },
+    {
+      "id": "arizona-memorial",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 4112711966,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/arizona-memorial.splat",
+      "editable": "assets/arizona-memorial.gaussians.json",
+      "gaussianCount": 7203,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -2.5820691095841037,
+          -0.1202086825464289,
+          -0.7845909432335326
+        ],
+        "max": [
+          3.300255217947054,
+          1.5160819285881453,
+          0.7833209688327759
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "dock": [
+          2.7,
+          0.246,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 7203,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 1436,
+        "ambientOcclusionRays": 28812,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.102
+      },
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 7203
+        }
+      ]
+    },
+    {
+      "id": "harbor-landing",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 3104850272,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/harbor-landing.splat",
+      "editable": "assets/harbor-landing.gaussians.json",
+      "gaussianCount": 1480,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.86471428109169,
+          -0.540569389,
+          -0.48093731890212105
+        ],
+        "max": [
+          0.8573373122310638,
+          0.5498869506812095,
+          0.4851796742334033
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "deck": [
+          0,
+          0.31,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1480,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 476,
+        "ambientOcclusionRays": 5920,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.082
+      },
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 1480
+        }
+      ]
+    },
+    {
+      "id": "coastal-limestone",
+      "type": "terrain",
+      "usage": "decoration",
+      "seed": 1498502148,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/coastal-limestone.splat",
+      "editable": "assets/coastal-limestone.gaussians.json",
+      "gaussianCount": 1324,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.1708481138904159,
+          -1.1492301988250264,
+          -1.2798987856376685
+        ],
+        "max": [
+          1.2706224503928785,
+          0.1457182183533708,
+          1.176361146239027
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1324,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 336,
+        "ambientOcclusionRays": 6620,
+        "aoMin": 0.7208666442184638,
+        "aoMax": 1.0,
+        "spacing": 0.108
+      }
+    },
+    {
+      "id": "el-castillo-temple",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 595241402,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/el-castillo-temple.splat",
+      "editable": "assets/el-castillo-temple.gaussians.json",
+      "gaussianCount": 11657,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.9270420385694504,
+          -0.20272047508916152,
+          -1.3260925853283179
+        ],
+        "max": [
+          1.9393522305583955,
+          2.7627136273479462,
+          2.302469663578337
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "terrace": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 11657,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 1984,
+        "ambientOcclusionRays": 58285,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.112
+      }
+    },
+    {
+      "id": "limestone-wall",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 2570421515,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/limestone-wall.splat",
+      "editable": "assets/limestone-wall.gaussians.json",
+      "gaussianCount": 1478,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.074853056499958,
+          -0.1375827606179529,
+          -0.30949790027980384
+        ],
+        "max": [
+          1.111795792672138,
+          0.6593450246548652,
+          0.33724034930792507
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1478,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 616,
+        "ambientOcclusionRays": 5912,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.088
+      }
+    },
+    {
+      "id": "coastal-palm",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 2279414442,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/coastal-palm.splat",
+      "editable": "assets/coastal-palm.gaussians.json",
+      "gaussianCount": 872,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.610632971720297,
+          -0.1330751048441631,
+          -0.8051010588281015
+        ],
+        "max": [
+          1.104558428043339,
+          1.7489321102959128,
+          0.765755116016779
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "root": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 662,
+          "kind": "foliage"
+        },
+        {
+          "start": 662,
+          "count": 210,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 156,
+        "ambientOcclusionRays": 3488,
+        "aoMin": 0.0020024632524035324,
+        "aoMax": 1.0,
+        "spacing": 0.084
+      },
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 872
+        }
+      ]
+    },
+    {
+      "id": "mossy-granite",
+      "type": "terrain",
+      "usage": "decoration",
+      "seed": 2204482230,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/mossy-granite.splat",
+      "editable": "assets/mossy-granite.gaussians.json",
+      "gaussianCount": 1320,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.171220345704319,
+          -1.1168549174580882,
+          -1.2805571334885044
+        ],
+        "max": [
+          1.27091885147812,
+          0.14235061643659164,
+          1.1762767698704437
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1320,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 336,
+        "ambientOcclusionRays": 5280,
+        "aoMin": 0.608667952968967,
+        "aoMax": 1.0,
+        "spacing": 0.107
+      }
+    },
+    {
+      "id": "forest-spruce",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 694238138,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/forest-spruce.splat",
+      "editable": "assets/forest-spruce.gaussians.json",
+      "gaussianCount": 877,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.4942798433699877,
+          -0.1956094481428568,
+          -0.5355639684228937
+        ],
+        "max": [
+          0.5300477417708385,
+          2.020758038142857,
+          0.5654098617428757
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "root": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 751,
+          "kind": "foliage"
+        },
+        {
+          "start": 751,
+          "count": 126,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 238,
+        "ambientOcclusionRays": 3508,
+        "aoMin": 0.0046115199548586346,
+        "aoMax": 1.0,
+        "spacing": 0.092
+      },
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 877
+        }
+      ]
+    },
+    {
+      "id": "forest-footbridge",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 2562850796,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/forest-footbridge.splat",
+      "editable": "assets/forest-footbridge.gaussians.json",
+      "gaussianCount": 2445,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.2570093625890866,
+          -0.08177915720105171,
+          -0.40008214839824463
+        ],
+        "max": [
+          1.2559251976675831,
+          0.6897337299999999,
+          0.39639516528939217
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "deck": [
+          0,
+          0.23,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 2445,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 724,
+        "ambientOcclusionRays": 9780,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.074
+      },
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 2445
+        }
+      ]
+    },
+    {
+      "id": "cascade-sheet",
+      "type": "vfx",
+      "usage": "decoration",
+      "seed": 1285513609,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/cascade-sheet.splat",
+      "editable": "assets/cascade-sheet.gaussians.json",
+      "gaussianCount": 754,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.6267327669832529,
+          0.012326470188453176,
+          -0.06930376467173632
+        ],
+        "max": [
+          0.74776933688243,
+          0.9892690212918172,
+          1.101791011143572
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "entry": [
+          0,
+          0.95,
+          0
+        ],
+        "exit": [
+          0,
+          0.05,
+          1.03
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "prelit",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 754,
+          "kind": "emissive"
+        }
+      ],
+      "authoring": {
+        "triangles": 130,
+        "ambientOcclusionRays": 0,
+        "aoMin": 1.0,
+        "aoMax": 1.0,
+        "spacing": 0.081
+      }
+    },
+    {
+      "id": "harbor-water",
+      "type": "vfx",
+      "usage": "decoration",
+      "seed": 690759765,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/harbor-water.splat",
+      "editable": "assets/harbor-water.gaussians.json",
+      "gaussianCount": 1194,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -2.298092684,
+          -0.0180100001564622,
+          -1.9103389470076562
+        ],
+        "max": [
+          2.3910043252801896,
+          0.0180100001564622,
+          1.8887490717864037
+        ]
+      },
+      "anchors": {
+        "surface": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "water",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1194,
+          "kind": "water"
+        }
+      ],
+      "authoring": {
+        "seed": 193
+      },
+      "animationBounds": {
+        "min": [
+          -2.298092684,
+          -0.0430100001564622,
+          -1.9103389470076562
+        ],
+        "max": [
+          2.3910043252801896,
+          0.0430100001564622,
+          1.8887490717864037
+        ]
+      }
+    },
+    {
+      "id": "caribbean-water",
+      "type": "vfx",
+      "usage": "decoration",
+      "seed": 741064008,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/caribbean-water.splat",
+      "editable": "assets/caribbean-water.gaussians.json",
+      "gaussianCount": 1194,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -2.2978129400110245,
+          -0.0180100001564622,
+          -1.906102637
+        ],
+        "max": [
+          2.390104056725502,
+          0.0180100001564622,
+          1.8980382490000003
+        ]
+      },
+      "anchors": {
+        "surface": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "water",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1194,
+          "kind": "water"
+        }
+      ],
+      "authoring": {
+        "seed": 253
+      },
+      "animationBounds": {
+        "min": [
+          -2.2978129400110245,
+          -0.0430100001564622,
+          -1.906102637
+        ],
+        "max": [
+          2.390104056725502,
+          0.0430100001564622,
+          1.8980382490000003
+        ]
+      }
+    },
+    {
+      "id": "river-spray",
+      "type": "vfx",
+      "usage": "decoration",
+      "seed": 2232732430,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/river-spray.splat",
+      "editable": "assets/river-spray.gaussians.json",
+      "gaussianCount": 52,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.49597611,
+          -0.011412376000000005,
+          -0.26659540600000003
+        ],
+        "max": [
+          0.49869207424879075,
+          0.328713231,
+          0.486536008695364
+        ]
+      },
+      "anchors": {
+        "emitter": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "flow-mist",
+        "reflect": false,
+        "lighting": "prelit",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 52,
+          "kind": "flow-mist"
+        }
+      ],
+      "authoring": {
+        "seed": 811
+      },
+      "animationBounds": {
+        "min": [
+          -1.11597611,
+          -0.075412376,
+          -0.381595406
+        ],
+        "max": [
+          1.1186920742487907,
+          0.392713231,
+          0.601536008695364
+        ]
+      }
+    }
+  ]
+}

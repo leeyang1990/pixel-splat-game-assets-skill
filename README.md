@@ -4,24 +4,24 @@ English · [简体中文](README.zh-CN.md)
 
 A Codex skill for producing reusable 3D pixel-art Gaussian splat assets from a reference image, video, or art brief. Each scene ships with individual `.splat` files, editable Gaussian data, and the source that generates them.
 
-[![Frostline Beacon rendered in pixel mode](examples/frostline-beacon/previews/scene-pixel.png)](examples/frostline-beacon/)
+**[Open the 3D scene gallery](https://leeyang1990.github.io/pixel-splat-game-assets-skill/?lang=en)**
 
 ## Demo gallery
 
-Four original scenes contain **49 independent assets**. The interactive gallery lets you orbit each scene, inspect and download single assets, and export a matched pair of raw and pixel-art renders.
+One grid lists all eight scenes. Click any card for a full-screen 3D preview. Drag to orbit, scroll or pinch to zoom, and press Esc or close the preview to return to the grid. Each scene uses the same viewer and supports single-asset inspection and same-frame raw/pixel export.
 
-| Scene | What you can see or do | Assets |
+| Scene | Setting | Assets in scene |
 | --- | --- | ---: |
-| [Frostline Beacon](examples/frostline-beacon/) | Switch the beacon on and off. Watch the receiver turn and snow drift over the ridge. | 9 |
-| [Ember Foundry](examples/ember-foundry/) | Inspect the copper furnace, molten runoff, and rising embers. | 9 |
-| [Moonpool Conservatory](examples/moonpool-conservatory/) | Orbit vaulted ribs, luminous plants, and animated water with real-time reflections. | 9 |
-| [Windward Citadel](examples/windward-citadel/) | Walk the stone bridge and steps as the traveler and interact with the ember. | 22 |
+| [Ember Foundry](examples/ember-foundry/) | Copper furnace and molten runoff | 9 |
+| [Moonpool Conservatory](examples/moonpool-conservatory/) | Glazed arches, luminous plants, and reflections | 9 |
+| [Windward Citadel](examples/windward-citadel/) | Cliffside citadel, golden tree, and playable traveler | 22 |
+| [Frostline Beacon](examples/frostline-beacon/) | Snowfall, rotating dish, and an interactive beacon | 9 |
+| [Liberty Island](examples/landmarks/scenes/liberty-island.json) | Statue of Liberty and star-shaped Fort Wood | 7 |
+| [Pearl Harbor](examples/landmarks/scenes/pearl-harbor.json) | The USS Arizona Memorial above the harbor | 3 |
+| [Tulum](examples/landmarks/scenes/tulum.json) | El Castillo on a limestone cliff above the Caribbean | 5 |
+| [Black Forest Falls](examples/landmarks/scenes/black-forest.json) | The cascades and woodland footbridge at Triberg | 6 |
 
-| Ember Foundry | Moonpool Conservatory | Windward Citadel |
-| --- | --- | --- |
-| ![Copper foundry](examples/ember-foundry/previews/scene-pixel.png) | ![Flooded conservatory](examples/moonpool-conservatory/previews/scene-pixel.png) | ![Cliffside citadel](examples/windward-citadel/previews/clean-display.jpg) |
-
-[Beacon off](examples/frostline-beacon/previews/beacon-off-pixel.png) · [Beacon raw frame](examples/frostline-beacon/previews/scene-raw.png) · [Windward Citadel motion clip](examples/windward-citadel/previews/windward-motion.mp4)
+The gallery uses 66 standalone assets across the scene packs. The landmark scenes share a reusable pack based on physical sites. [Landmark sources and build instructions](examples/landmarks/NOTICE.md)
 
 ### Run locally
 
@@ -31,23 +31,9 @@ cd pixel-splat-game-assets-skill
 python3 -m http.server 8776 --bind 127.0.0.1
 ```
 
-Open [Frostline Beacon](http://127.0.0.1:8776/#frostline-beacon) in a WebGL2 browser. Drag to orbit and scroll to zoom. When the canvas has focus, the arrow and plus/minus keys do the same. Expand **Assets and rendering (资产与出图)** to select one asset, switch render modes, or export both from the same frame.
+Open the [English gallery](http://127.0.0.1:8776/?lang=en) in a WebGL2 browser. The preview canvas also supports the arrow keys and plus/minus keys. Expand **Assets and rendering** to inspect assets, export a comparison, or play motion. In Frostline Beacon, press **B** with the canvas focused to toggle the beacon. Windward Citadel has a playable mode with **WASD** and **E** near the ember.
 
-- In **Frostline Beacon**, click **Beacon (信标)** or press **B** while the canvas has focus. Choose **Play motion (播放动态)** to see the dish turn and snow fall. Switching the beacon off dims the lens and stops the dish while snow keeps falling.
-- In **Windward Citadel**, open **Playable version (进入可玩版)**, choose **Control traveler (控制旅人)**, then use **WASD** to move and **E** near the ember. The playable area covers the lower steps and bridge.
-
-The prebuilt demos run from the static server. Build instructions are provided for [Frostline Beacon](examples/frostline-beacon/NOTICE.md), [Ember Foundry](examples/ember-foundry/NOTICE.md), [Moonpool Conservatory](examples/moonpool-conservatory/NOTICE.md), and [Windward Citadel](examples/windward-citadel/使用说明.md).
-
-## Classic Red Alert 2 scenes
-
-Start the local server above and open the [English mission preview page](http://127.0.0.1:8776/red-alert-2/?lang=en), or follow **红色警戒 2 原版关卡预览** from the gallery. Choose a mission to see its poster and play ParallaxDG's recording in the page. Each mission has a direct YouTube link. [Preview page source](red-alert-2/)
-
-| Allied mission | Setting | Recording |
-| --- | --- | --- |
-| 1 · Lone Guardian | New York and the Statue of Liberty waterfront | [Watch](https://www.youtube.com/watch?v=OITgFTEUTFI) |
-| 7 · Deep Sea | Pearl Harbor, islands and naval facilities | [Watch](https://www.youtube.com/watch?v=Rhv3rNEdT14) |
-| 9 · Sun Temple | Tulum, tropical coast and ruins | [Watch](https://www.youtube.com/watch?v=oZx_sbLsN9A) |
-| 10 · Mirage | The Black Forest and Einstein's laboratory | [Watch](https://www.youtube.com/watch?v=gC3nP2FsMSc) |
+Each pack includes prebuilt assets and a generator. [Frostline Beacon](examples/frostline-beacon/NOTICE.md) · [Ember Foundry](examples/ember-foundry/NOTICE.md) · [Moonpool Conservatory](examples/moonpool-conservatory/NOTICE.md) · [Windward Citadel](examples/windward-citadel/使用说明.md) · [Landmarks](examples/landmarks/NOTICE.md)
 
 ## Install the skill
 

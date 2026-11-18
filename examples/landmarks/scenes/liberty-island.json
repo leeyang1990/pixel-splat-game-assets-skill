@@ -1,0 +1,228 @@
+{
+  "camera": {
+    "yaw": -0.22,
+    "pitch": 0.32,
+    "span": 8.25,
+    "target": [
+      0,
+      2.49,
+      0.13
+    ]
+  },
+  "lighting": {
+    "skyTint": [
+      1.04,
+      1.04,
+      1.01
+    ],
+    "waterLevel": 0.035,
+    "waterReflections": true,
+    "reflectionStrength": 0.82
+  },
+  "items": [
+    {
+      "id": "harbor",
+      "asset": "harbor-water",
+      "position": [
+        0,
+        0.035,
+        0.02
+      ],
+      "scale": [
+        2.02,
+        1,
+        1.93
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "island",
+      "asset": "park-island",
+      "position": [
+        -0.43,
+        0.4,
+        -0.081
+      ],
+      "scale": [
+        2.96,
+        0.93,
+        2.26
+      ],
+      "yaw": 0.09
+    },
+    {
+      "id": "west-berm",
+      "asset": "park-island",
+      "position": [
+        -2.16,
+        0.34,
+        -0.47
+      ],
+      "scale": [
+        1.16,
+        0.78,
+        1.11
+      ],
+      "yaw": 0.24
+    },
+    {
+      "id": "small-embankment",
+      "asset": "park-island",
+      "position": [
+        -1.31,
+        0.36,
+        1.53
+      ],
+      "scale": [
+        0.94,
+        0.65,
+        0.76
+      ],
+      "yaw": -0.27
+    },
+    {
+      "id": "star-fort",
+      "asset": "fort-wood",
+      "position": [
+        0.56,
+        0.86,
+        -0.43
+      ],
+      "scale": [
+        1.72,
+        1.33,
+        1.72
+      ],
+      "yaw": 0.103
+    },
+    {
+      "id": "pedestal",
+      "asset": "granite-pedestal",
+      "position": [
+        0.56,
+        0.858,
+        -0.43
+      ],
+      "scale": 1.06,
+      "yaw": 0.02
+    },
+    {
+      "id": "statue",
+      "asset": "liberty-statue",
+      "position": [
+        0.56,
+        3.105,
+        -0.43
+      ],
+      "scale": 1,
+      "yaw": 0.02
+    },
+    {
+      "id": "landing",
+      "asset": "harbor-landing",
+      "position": [
+        -2.43,
+        0.025,
+        1.5
+      ],
+      "scale": [
+        1.45,
+        0.88,
+        1.2
+      ],
+      "yaw": 1.17
+    },
+    {
+      "id": "pier-approach",
+      "asset": "harbor-landing",
+      "position": [
+        -2.04,
+        0.13,
+        1.1
+      ],
+      "scale": [
+        1.02,
+        0.8,
+        1.22
+      ],
+      "yaw": 1.17
+    },
+    {
+      "id": "tree-0",
+      "asset": "forest-spruce",
+      "position": [
+        -1.42,
+        0.39,
+        -1.02
+      ],
+      "scale": 0.71,
+      "yaw": 0.0
+    },
+    {
+      "id": "tree-1",
+      "asset": "forest-spruce",
+      "position": [
+        -2.3,
+        0.39,
+        -0.57
+      ],
+      "scale": 0.76,
+      "yaw": 0.67
+    },
+    {
+      "id": "tree-2",
+      "asset": "forest-spruce",
+      "position": [
+        -2.44,
+        0.39,
+        -1.2
+      ],
+      "scale": 0.84,
+      "yaw": 1.34
+    },
+    {
+      "id": "tree-3",
+      "asset": "forest-spruce",
+      "position": [
+        -1.58,
+        0.39,
+        1.34
+      ],
+      "scale": 0.65,
+      "yaw": 2.0100000000000002
+    },
+    {
+      "id": "tree-4",
+      "asset": "forest-spruce",
+      "position": [
+        -0.34,
+        0.39,
+        1.44
+      ],
+      "scale": 0.62,
+      "yaw": 2.68
+    },
+    {
+      "id": "tree-5",
+      "asset": "forest-spruce",
+      "position": [
+        1.67,
+        0.39,
+        -1.72
+      ],
+      "scale": 0.61,
+      "yaw": 3.35
+    },
+    {
+      "id": "tree-6",
+      "asset": "forest-spruce",
+      "position": [
+        1.95,
+        0.39,
+        1.44
+      ],
+      "scale": 0.64,
+      "yaw": 4.0200000000000005
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "camera": {
+    "yaw": 0.32,
+    "pitch": 0.34,
+    "span": 7.76,
+    "target": [
+      0,
+      1.76,
+      0.06
+    ]
+  },
+  "lighting": {
+    "skyTint": [
+      0.98,
+      1.075,
+      1.009
+    ],
+    "waterLevel": 0.12,
+    "waterReflections": true,
+    "reflectionStrength": 0.82
+  },
+  "items": [
+    {
+      "id": "forest-base",
+      "asset": "mossy-granite",
+      "position": [
+        0.03,
+        0.05,
+        0.12
+      ],
+      "scale": [
+        3.02,
+        1.06,
+        2.17
+      ],
+      "yaw": 0.13
+    },
+    {
+      "id": "upper-ledge",
+      "asset": "mossy-granite",
+      "position": [
+        -0.18,
+        2.87,
+        -2.25
+      ],
+      "scale": [
+        1.84,
+        1.89,
+        0.92
+      ],
+      "yaw": 0.07
+    },
+    {
+      "id": "middle-ledge",
+      "asset": "mossy-granite",
+      "position": [
+        -0.02,
+        1.94,
+        -1.43
+      ],
+      "scale": [
+        1.51,
+        1.28,
+        0.64
+      ],
+      "yaw": -0.1
+    },
+    {
+      "id": "bottom-ledge",
+      "asset": "mossy-granite",
+      "position": [
+        0.02,
+        0.98,
+        -0.34
+      ],
+      "scale": [
+        1.56,
+        1.03,
+        0.52
+      ],
+      "yaw": 0.05
+    },
+    {
+      "id": "left-shoulder",
+      "asset": "mossy-granite",
+      "position": [
+        -1.78,
+        1.62,
+        -0.95
+      ],
+      "scale": [
+        1.08,
+        1.68,
+        0.96
+      ],
+      "yaw": -0.18
+    },
+    {
+      "id": "right-shoulder",
+      "asset": "mossy-granite",
+      "position": [
+        1.68,
+        1.25,
+        -0.81
+      ],
+      "scale": [
+        1.17,
+        1.48,
+        1.15
+      ],
+      "yaw": 0.21
+    },
+    {
+      "id": "left-bank",
+      "asset": "mossy-granite",
+      "position": [
+        -1.49,
+        0.46,
+        1.12
+      ],
+      "scale": [
+        0.96,
+        0.59,
+        0.91
+      ],
+      "yaw": -0.18
+    },
+    {
+      "id": "right-bank",
+      "asset": "mossy-granite",
+      "position": [
+        1.26,
+        0.45,
+        1.12
+      ],
+      "scale": [
+        0.83,
+        0.64,
+        0.9
+      ],
+      "yaw": 0.17
+    },
+    {
+      "id": "pool",
+      "asset": "caribbean-water",
+      "position": [
+        0.02,
+        0.12,
+        1.35
+      ],
+      "scale": [
+        0.85,
+        1,
+        0.6
+      ],
+      "yaw": 0.12
+    },
+    {
+      "id": "upper-drop",
+      "asset": "cascade-sheet",
+      "position": [
+        0,
+        1.965,
+        -1.65
+      ],
+      "scale": [
+        0.86,
+        0.96,
+        1.0
+      ],
+      "yaw": 0.067
+    },
+    {
+      "id": "middle-drop",
+      "asset": "cascade-sheet",
+      "position": [
+        0.028,
+        0.987,
+        -0.72
+      ],
+      "scale": [
+        1.03,
+        1.04,
+        0.93
+      ],
+      "yaw": -0.11
+    },
+    {
+      "id": "lower-drop",
+      "asset": "cascade-sheet",
+      "position": [
+        0.048,
+        0.096,
+        0.17
+      ],
+      "scale": [
+        1.27,
+        1.03,
+        1.17
+      ],
+      "yaw": -0.019
+    },
+    {
+      "id": "bridge",
+      "asset": "forest-footbridge",
+      "position": [
+        -0.03,
+        0.403,
+        1.36
+      ],
+      "scale": 1.21,
+      "yaw": -0.085
+    },
+    {
+      "id": "bottom-spray",
+      "asset": "river-spray",
+      "position": [
+        0.045,
+        0.134,
+        1.32
+      ],
+      "scale": 0.99,
+      "yaw": 0.05
+    },
+    {
+      "id": "middle-spray",
+      "asset": "river-spray",
+      "position": [
+        0.025,
+        1.03,
+        0.19
+      ],
+      "scale": 0.61,
+      "yaw": -0.11
+    },
+    {
+      "id": "spruce-0",
+      "asset": "forest-spruce",
+      "position": [
+        -1.37,
+        2.86,
+        -2.1
+      ],
+      "scale": 0.83,
+      "yaw": 0.0
+    },
+    {
+      "id": "spruce-1",
+      "asset": "forest-spruce",
+      "position": [
+        -0.68,
+        2.89,
+        -2.63
+      ],
+      "scale": 0.95,
+      "yaw": 0.89
+    },
+    {
+      "id": "spruce-2",
+      "asset": "forest-spruce",
+      "position": [
+        0.73,
+        2.86,
+        -2.42
+      ],
+      "scale": 0.83,
+      "yaw": 1.78
+    },
+    {
+      "id": "spruce-3",
+      "asset": "forest-spruce",
+      "position": [
+        1.17,
+        2.86,
+        -2.07
+      ],
+      "scale": 0.67,
+      "yaw": 2.67
+    },
+    {
+      "id": "spruce-4",
+      "asset": "forest-spruce",
+      "position": [
+        -1.97,
+        1.62,
+        -0.91
+      ],
+      "scale": 0.94,
+      "yaw": 3.56
+    },
+    {
+      "id": "spruce-5",
+      "asset": "forest-spruce",
+      "position": [
+        -2.22,
+        1.57,
+        -0.45
+      ],
+      "scale": 0.71,
+      "yaw": 4.45
+    },
+    {
+      "id": "spruce-6",
+      "asset": "forest-spruce",
+      "position": [
+        -2.13,
+        0.44,
+        1.25
+      ],
+      "scale": 0.91,
+      "yaw": 5.34
+    },
+    {
+      "id": "spruce-7",
+      "asset": "forest-spruce",
+      "position": [
+        -2.6,
+        0.07,
+        0.41
+      ],
+      "scale": 1.09,
+      "yaw": 6.23
+    },
+    {
+      "id": "spruce-8",
+      "asset": "forest-spruce",
+      "position": [
+        2.24,
+        1.23,
+        -1.39
+      ],
+      "scale": 1.02,
+      "yaw": 7.12
+    },
+    {
+      "id": "spruce-9",
+      "asset": "forest-spruce",
+      "position": [
+        1.78,
+        1.26,
+        -0.11
+      ],
+      "scale": 0.8,
+      "yaw": 8.01
+    },
+    {
+      "id": "spruce-10",
+      "asset": "forest-spruce",
+      "position": [
+        2.4,
+        0.08,
+        0.37
+      ],
+      "scale": 1.06,
+      "yaw": 8.9
+    },
+    {
+      "id": "spruce-11",
+      "asset": "forest-spruce",
+      "position": [
+        1.87,
+        0.46,
+        1.13
+      ],
+      "scale": 0.71,
+      "yaw": 9.790000000000001
+    },
+    {
+      "id": "spruce-12",
+      "asset": "forest-spruce",
+      "position": [
+        1.59,
+        0.43,
+        1.77
+      ],
+      "scale": 0.58,
+      "yaw": 10.68
+    },
+    {
+      "id": "spruce-13",
+      "asset": "forest-spruce",
+      "position": [
+        -1.62,
+        0.43,
+        1.67
+      ],
+      "scale": 0.67,
+      "yaw": 11.57
+    }
+  ]
+}

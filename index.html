@@ -4,62 +4,65 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <title>Make Game Assets · 高斯场景集</title>
+  <title>3D 场景集</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>高斯场景集</h1>
-      <nav id="scenes" aria-label="切换场景">
-        <button type="button" data-scene="ember-foundry" aria-pressed="true">熔潮铸炉</button>
-        <button type="button" data-scene="moonpool-conservatory" aria-pressed="false">月汐温室</button>
-        <button type="button" data-scene="windward-citadel" aria-pressed="false">风尽之城</button>
-        <button type="button" data-scene="frostline-beacon" aria-pressed="false">暮雪信标</button>
-      </nav>
+  <main class="gallery">
+    <header class="gallery-head">
+      <h1 data-en="Scene Gallery">场景集</h1>
+      <a id="language" href="?lang=en" lang="en">English</a>
     </header>
-    <section aria-labelledby="scene-name">
-      <div class="stage">
-        <canvas id="stage" tabindex="0" aria-label="拖动或使用方向键旋转，滚轮缩放"></canvas>
-        <p id="message" role="status">正在加载场景…</p>
-      </div>
-      <div class="caption">
+    <div id="scene-grid" class="scene-grid" aria-label="全部场景"></div>
+    <noscript>启用 JavaScript 后可以打开场景并环绕查看。</noscript>
+  </main>
+
+  <dialog id="viewer" aria-labelledby="scene-name">
+    <div class="viewer-shell">
+      <header class="viewer-head">
         <div>
-          <h2 id="scene-name">熔潮铸炉</h2>
+          <h2 id="scene-name"></h2>
           <p id="scene-description"></p>
         </div>
-        <a id="play" hidden>进入可玩版 ↗</a>
+        <button type="button" id="close-viewer" aria-label="关闭预览" autofocus>×</button>
+      </header>
+      <div class="stage">
+        <canvas id="stage" tabindex="0" aria-label="拖动或使用方向键旋转，滚轮缩放"></canvas>
+        <p id="message" role="status" hidden></p>
       </div>
-    </section>
-    <details id="inspector">
-      <summary>资产与出图</summary>
-      <div class="controls">
-        <label>查看 <select id="asset" aria-label="查看独立资产" disabled><option value="">完整场景</option></select></label>
-        <label>出图 <select id="mode"><option value="pixel">像素后处理</option><option value="raw">原始高斯</option></select></label>
-        <button type="button" id="motion" aria-pressed="false" disabled>播放动态</button>
-        <button type="button" id="beacon" aria-pressed="false" title="画面获得焦点后也可按 B" hidden>信标</button>
-        <button type="button" id="reset" disabled>复位镜头</button>
-        <button type="button" id="compare" disabled>导出同帧对比</button>
-      </div>
-      <p id="view-info" class="muted" aria-live="polite"></p>
-      <div id="asset-links" class="links" hidden>
-        <a id="download-splat" download>下载 .splat</a>
-        <a id="download-editable" download>下载可编辑数据</a>
-      </div>
-      <div id="captures" hidden>
-        <div class="comparison">
-          <figure><img id="raw-preview" alt="原始高斯"><figcaption><a id="capture-raw" download>原始高斯 PNG</a></figcaption></figure>
-          <figure><img id="pixel-preview" alt="像素后处理"><figcaption><a id="capture-pixel" download>像素后处理 PNG</a></figcaption></figure>
-        </div>
-        <div class="links">
-          <a id="capture-details" download>细节遮罩 PNG</a>
-          <a id="capture-metadata" download>帧信息 JSON</a>
-        </div>
-      </div>
-    </details>
-    <a class="references" href="./red-alert-2/">红色警戒 2 原版关卡预览 ↗</a>
-    <noscript>请启用 JavaScript 以渲染三维场景。</noscript>
-  </main>
+      <footer class="viewer-tools">
+        <a id="play" data-en="Play as the traveler ↗" hidden>进入可玩版 ↗</a>
+        <details id="inspector">
+          <summary data-en="Assets and rendering">资产与出图</summary>
+          <div class="inspector-panel">
+            <div class="controls">
+              <label><span data-en="View">查看</span> <select id="asset" aria-label="查看独立资产" disabled><option value="" data-en="Full scene">完整场景</option></select></label>
+              <label><span data-en="Render">出图</span> <select id="mode"><option value="pixel" data-en="Pixel art">像素后处理</option><option value="raw" data-en="Raw splats">原始高斯</option></select></label>
+              <button type="button" id="motion" aria-pressed="false" disabled data-en="Play motion">播放动态</button>
+              <button type="button" id="beacon" aria-pressed="false" title="画面获得焦点后也可按 B" hidden data-en="Beacon">信标</button>
+              <button type="button" id="reset" disabled data-en="Reset camera">复位镜头</button>
+              <button type="button" id="compare" disabled data-en="Export same-frame comparison">导出同帧对比</button>
+            </div>
+            <p id="view-info" class="muted" aria-live="polite"></p>
+            <div id="asset-links" class="links" hidden>
+              <a id="download-splat" download data-en="Download .splat">下载 .splat</a>
+              <a id="download-editable" download data-en="Download editable data">下载可编辑数据</a>
+            </div>
+            <div id="captures" hidden>
+              <div class="comparison">
+                <figure><img id="raw-preview" alt="原始高斯"><figcaption><a id="capture-raw" download data-en="Raw splats PNG">原始高斯 PNG</a></figcaption></figure>
+                <figure><img id="pixel-preview" alt="像素后处理"><figcaption><a id="capture-pixel" download data-en="Pixel art PNG">像素后处理 PNG</a></figcaption></figure>
+              </div>
+              <div class="links">
+                <a id="capture-details" download data-en="Detail mask PNG">细节遮罩 PNG</a>
+                <a id="capture-metadata" download data-en="Frame metadata JSON">帧信息 JSON</a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </footer>
+    </div>
+  </dialog>
   <script type="module" src="./gallery.mjs"></script>
 </body>
 </html>

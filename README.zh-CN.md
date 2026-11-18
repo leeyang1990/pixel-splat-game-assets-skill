@@ -4,24 +4,24 @@
 
 面向游戏制作的 Codex Skill。把参考图、视频或美术需求变成可独立加载和拼装的 3D 像素风 Gaussian splat 资产。每个场景包都附独立的 `.splat`、可编辑高斯数据和生成源码。
 
-[![暮雪信标像素出图](examples/frostline-beacon/previews/scene-pixel.png)](examples/frostline-beacon/)
+**[打开全部 3D 场景](https://leeyang1990.github.io/pixel-splat-game-assets-skill/)**
 
 ## 场景集
 
-四套原创场景共有 **49 件独立资产**。在交互展示页可以转动镜头、单独检查和下载资产，以及导出同一帧的原始高斯与像素图。
+首页网格直接显示八个场景。点任意卡片进入全屏 3D 预览，拖动环绕，滚轮或双指缩放。按 Esc 或点关闭回到列表。每个场景都可以单独检查资产并导出同一帧的原始高斯与像素图。
 
-| 场景 | 画面与交互 | 独立资产 |
+| 场景 | 画面与交互 | 场景用到的资产 |
 | --- | --- | ---: |
-| [暮雪信标](examples/frostline-beacon/) | 开关雪岭信标，查看天线转动、灯光和飘雪。 | 9 |
-| [熔潮铸炉](examples/ember-foundry/) | 检查铜制炉体、发光熔流和上升火星。 | 9 |
-| [月汐温室](examples/moonpool-conservatory/) | 查看玻璃断拱、发光水生植物、动态水波和实时倒影。 | 9 |
-| [风尽之城](examples/windward-citadel/) | 控制旅人走过石桥和台阶，靠近余火进行交互。 | 22 |
+| [熔潮铸炉](examples/ember-foundry/) | 铜制炉体与熔流 | 9 |
+| [月汐温室](examples/moonpool-conservatory/) | 残存玻璃、发光植物与水面倒影 | 9 |
+| [风尽之城](examples/windward-citadel/) | 崖顶城堡、金色树冠与可操控旅人 | 22 |
+| [暮雪信标](examples/frostline-beacon/) | 飘雪、旋转天线与可开关的信标 | 9 |
+| [自由岛](examples/landmarks/scenes/liberty-island.json) | 自由女神像与星形伍德堡 | 7 |
+| [珍珠港](examples/landmarks/scenes/pearl-harbor.json) | 水面上的亚利桑那号纪念馆 | 3 |
+| [图卢姆海崖](examples/landmarks/scenes/tulum.json) | 加勒比海岸的卡斯蒂略神庙 | 5 |
+| [黑森林瀑布](examples/landmarks/scenes/black-forest.json) | 特里贝格的阶梯瀑布和林间木桥 | 6 |
 
-| 熔潮铸炉 | 月汐温室 | 风尽之城 |
-| --- | --- | --- |
-| ![铜制铸炉](examples/ember-foundry/previews/scene-pixel.png) | ![淹水温室](examples/moonpool-conservatory/previews/scene-pixel.png) | ![悬崖城堡](examples/windward-citadel/previews/clean-display.jpg) |
-
-[信标熄灭图](examples/frostline-beacon/previews/beacon-off-pixel.png) · [信标原始高斯](examples/frostline-beacon/previews/scene-raw.png) · [风尽之城动态演示](examples/windward-citadel/previews/windward-motion.mp4)
+场景集包含 66 件独立资产。四套地标场景以真实地点为参考，共用一套可复用资产。 [地标参考与重建说明](examples/landmarks/NOTICE.md)
 
 ### 本地查看
 
@@ -31,23 +31,9 @@ cd pixel-splat-game-assets-skill
 python3 -m http.server 8776 --bind 127.0.0.1
 ```
 
-在支持 WebGL2 的浏览器中打开 [暮雪信标](http://127.0.0.1:8776/#frostline-beacon)。拖动旋转，滚轮缩放。画面获得焦点后也可以用方向键和加减键操作。展开「资产与出图」可单独查看资产、切换出图模式并导出同帧对照。
+在支持 WebGL2 的浏览器中打开 [场景集](http://127.0.0.1:8776/)。画面聚焦后也可用方向键环绕、加减键缩放。展开「资产与出图」可以查看单件资产、导出对比或播放动态。暮雪信标可按 **B** 开关信标。《风尽之城》的可玩版支持 **WASD** 移动，靠近余火按 **E** 交互。
 
-- 在**暮雪信标**中，点击「信标」，或在聚焦画面时按 **B**。打开「播放动态」可看到天线转动和飘雪。关闭信标后，透镜变暗，天线停下，飘雪继续。
-- 在**风尽之城**中，进入「可玩版」后点击「控制旅人」，用 **WASD** 移动，靠近余火按 **E**。可行走区域覆盖下段石阶和桥面。
-
-静态服务可以直接加载仓库里预生成的资产。重建命令见 [暮雪信标说明](examples/frostline-beacon/NOTICE.md)、[熔潮铸炉说明](examples/ember-foundry/NOTICE.md)、[月汐温室说明](examples/moonpool-conservatory/NOTICE.md)和[风尽之城说明](examples/windward-citadel/使用说明.md)。
-
-## 《红色警戒 2》经典场景
-
-启动上面的本地服务后，打开 [红色警戒 2 原版关卡预览](http://127.0.0.1:8776/red-alert-2/)，或从场景集点击同名入口。选择关卡即可查看封面，并在页面内播放 ParallaxDG 的原版游戏实录。页面支持中英文切换，也提供 YouTube 直达链接。 [预览页源码](red-alert-2/)
-
-| 盟军关卡 | 场景 | 实录 |
-| --- | --- | --- |
-| 第 1 关 · Lone Guardian | 纽约港与自由女神像 | [观看](https://www.youtube.com/watch?v=OITgFTEUTFI) |
-| 第 7 关 · Deep Sea | 珍珠港、岛屿与海军设施 | [观看](https://www.youtube.com/watch?v=Rhv3rNEdT14) |
-| 第 9 关 · Sun Temple | 图卢姆的热带海岸和遗迹 | [观看](https://www.youtube.com/watch?v=oZx_sbLsN9A) |
-| 第 10 关 · Mirage | 德国黑森林与爱因斯坦实验室 | [观看](https://www.youtube.com/watch?v=gC3nP2FsMSc) |
+各场景包附预生成资产和生成器。 [暮雪信标](examples/frostline-beacon/NOTICE.md) · [熔潮铸炉](examples/ember-foundry/NOTICE.md) · [月汐温室](examples/moonpool-conservatory/NOTICE.md) · [风尽之城](examples/windward-citadel/使用说明.md) · [地标场景](examples/landmarks/NOTICE.md)
 
 ## 安装与使用
 

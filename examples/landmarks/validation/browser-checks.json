@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "browser": "Chromium WebGL2",
+  "scenes": {
+    "liberty-island": {
+      "camera": {
+        "yaw": -0.22,
+        "pitch": 0.32,
+        "span": 8.25,
+        "target": [
+          0,
+          2.49,
+          0.13
+        ]
+      },
+      "sourceResolution": [
+        1248,
+        734
+      ],
+      "initial": "b0a9ae99",
+      "orbit": "801cb14b",
+      "assets": 7,
+      "webGL": "GPU anisotropic Gaussian"
+    },
+    "pearl-harbor": {
+      "camera": {
+        "yaw": 0.45,
+        "pitch": 0.4,
+        "span": 6.42,
+        "target": [
+          0,
+          0.47,
+          0.06
+        ]
+      },
+      "sourceResolution": [
+        1248,
+        734
+      ],
+      "initial": "72782aa4",
+      "orbit": "c10983ce",
+      "assets": 3,
+      "webGL": "GPU anisotropic Gaussian"
+    },
+    "tulum": {
+      "camera": {
+        "yaw": 0.46,
+        "pitch": 0.44,
+        "span": 7.42,
+        "target": [
+          0.14,
+          1.09,
+          0.13
+        ]
+      },
+      "sourceResolution": [
+        1248,
+        734
+      ],
+      "initial": "03a1501a",
+      "orbit": "535087e5",
+      "assets": 5,
+      "webGL": "GPU anisotropic Gaussian"
+    },
+    "black-forest": {
+      "camera": {
+        "yaw": 0.32,
+        "pitch": 0.34,
+        "span": 7.76,
+        "target": [
+          0,
+          1.76,
+          0.06
+        ]
+      },
+      "sourceResolution": [
+        1248,
+        734
+      ],
+      "initial": "940fc390",
+      "orbit": "066d8b55",
+      "assets": 6,
+      "webGL": "GPU anisotropic Gaussian"
+    }
+  }
+}

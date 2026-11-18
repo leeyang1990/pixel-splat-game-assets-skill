@@ -2,55 +2,86 @@ import { GaussianRenderer } from './make-game-assets/assets/advanced-runtime/ren
 import { decodeSplat } from './make-game-assets/assets/advanced-runtime/gaussians.mjs';
 import { createBeacon } from './examples/frostline-beacon/src/beacon.mjs';
 
-const catalog = {
-  'ember-foundry': {
-    name: '熔潮铸炉',
-    description: '玄武岩台地上的铸炉，铜管通往炉膛，熔流从前方落入渣池。',
-  },
-  'moonpool-conservatory': {
-    name: '月汐温室',
-    description: '没入浅水的温室，旧玻璃和发光植物倒映在水面上。',
-  },
-  'windward-citadel': {
-    name: '风尽之城',
-    description: '层叠城垣、悬崖和金色树冠，沿石桥走进遗迹。',
-    playable: true,
-    lighting: {
-      skyTint: [1.03, 1.08, 1.07],
-      lights: [
-        { position: [-.93, .10, 5.03], color: [1, .58, .20], intensity: 2 },
-        { position: [-3.80, 6, -.8], color: [1, .66, .30], intensity: 2.2 },
-      ],
-    },
-  },
-  'frostline-beacon': {
-    name: '暮雪信标',
-    description: '雪岭上的信号站。展开「资产与出图」可控制信标，并播放天线与飘雪。',
-  },
-};
+import { catalog } from './catalog.mjs';
 
+const english = new URLSearchParams(location.search).get('lang') === 'en';
+const t = (zh, en) => english ? en : zh;
+const title = id => t(catalog[id].name, catalog[id].nameEn);
 const ui = Object.fromEntries([...document.querySelectorAll('[id]')].map(el => [el.id, el]));
 const canvas = ui.stage;
-const tabs = [...ui.scenes.querySelectorAll('button')];
 const cache = new Map();
+const pointers = new Map();
 let active, renderer, camera, request, selected = '', time = 0;
-let playing = false, dirty = false, pointer;
+let playing = false, dirty = false, browserFullscreen = false;
+
+document.documentElement.lang = t('zh-CN', 'en');
+document.title = t('3D 场景集', '3D Scene Gallery');
+if (english) {
+  for (const node of document.querySelectorAll('[data-en]')) node.textContent = node.dataset.en;
+  ui['scene-grid'].setAttribute('aria-label', 'All scenes');
+  ui['close-viewer'].setAttribute('aria-label', 'Close preview');
+  ui.stage.setAttribute('aria-label', 'Drag or use arrow keys to orbit. Scroll to zoom.');
+  ui.asset.setAttribute('aria-label', 'View an individual asset');
+  ui.beacon.title = 'Press B when the canvas has focus';
+}
+ui.language.textContent = t('English', '简体中文');
+ui.language.lang = t('en', 'zh-CN');
+const languageRoute = new URL(location.href);
+languageRoute.hash = '';
+if (english) languageRoute.searchParams.delete('lang');
+else languageRoute.searchParams.set('lang', 'en');
+ui.language.href = languageRoute.href;
+
+for (const [id, scene] of Object.entries(catalog)) {
+  const card = document.createElement('button');
+  card.type = 'button';
+  card.className = 'scene-card';
+  card.dataset.scene = id;
+  const poster = document.createElement('img');
+  poster.src = scene.poster;
+  poster.alt = '';
+  poster.decoding = 'async';
+  poster.loading = 'lazy';
+  const name = document.createElement('span');
+  name.textContent = title(id);
+  card.append(poster, name);
+  card.onclick = () => openPreview(id, true);
+  ui['scene-grid'].append(card);
+}
 
 async function get(path, signal, format = 'json') {
-  const response = await fetch(path, {signal});
+  let response;
+  try {
+    response = await fetch(path, {signal});
+  } catch (error) {
+    if (signal.aborted) throw error;
+    try {
+      response = await fetch(path, {signal});
+    } catch (retryError) {
+      throw Error(`${path} (${retryError.message})`, {cause: retryError});
+    }
+  }
   if (!response.ok) throw new Error(`${path} (${response.status})`);
   return response[format]();
 }
 
 async function loadPack(id, signal) {
-  if (cache.has(id)) return cache.get(id);
-  const base = `./examples/${id}/`;
+  if (cache.has(id)) {
+    const cached = cache.get(id);
+    cache.delete(id);
+    cache.set(id, cached);
+    return cached;
+  }
+  const entry = catalog[id];
+  const base = `./examples/${entry.pack ?? id}/`;
   const [manifest, scene, style] = await Promise.all(
-    ['manifest.json', 'scene.json', 'style.json'].map(path => get(base + path, signal)),
+    ['manifest.json', entry.scene ?? 'scene.json', 'style.json'].map(path => get(base + path, signal)),
   );
+  const used = new Set(scene.items.map(item => item.asset));
+  const assets = manifest.assets.filter(asset => used.has(asset.id));
   const definitions = new Map();
-  for (let offset = 0; offset < manifest.assets.length; offset += 4) {
-    const batch = manifest.assets.slice(offset, offset + 4);
+  for (let offset = 0; offset < assets.length; offset += 4) {
+    const batch = assets.slice(offset, offset + 4);
     const loaded = await Promise.all(batch.map(async asset => ({
       asset, data: decodeSplat(await get(base + asset.file, signal, 'arrayBuffer')),
     })));
@@ -58,6 +89,7 @@ async function loadPack(id, signal) {
   }
   const pack = {id, base, scene, style, definitions};
   cache.set(id, pack);
+  if (cache.size > 2) cache.delete(cache.keys().next().value);
   return pack;
 }
 
@@ -66,43 +98,87 @@ function showMessage(message) {
   ui.message.hidden = !message;
 }
 
-async function switchScene(id) {
+function openPreview(id, fullscreen = false) {
+  if (!ui.viewer.open) ui.viewer.showModal();
+  if (fullscreen && document.fullscreenEnabled && !document.fullscreenElement) {
+    ui.viewer.requestFullscreen?.().catch(() => {});
+  }
+  history.replaceState(null, '', `#${id}`);
+  ui['scene-name'].textContent = title(id);
+  const {description, descriptionEn} = catalog[id];
+  ui['scene-description'].textContent = t(description, descriptionEn);
+  switchScene(id);
+}
+
+function releasePreview() {
   request?.abort();
+  request = null;
+  pointers.clear();
+  renderer?.dispose();
+  renderer = null;
+  active = null;
+  dirty = false;
+  setMotion(false);
+  invalidateCapture();
+}
+
+async function switchScene(id) {
+  releasePreview();
   const controller = request = new AbortController();
-  showMessage(`正在加载${catalog[id].name}…`);
+  ui.inspector.open = false;
+  ui.play.hidden = true;
+  ui.stage.hidden = true;
+  const controls = [ui.asset, ui.motion, ui.reset, ui.compare];
+  for (const control of controls) control.disabled = true;
+  showMessage(t(`正在加载${title(id)}…`, `Loading ${title(id)}…`));
   let next;
   try {
     const pack = await loadPack(id, controller.signal);
-    if (request !== controller) return;
+    if (request !== controller || !ui.viewer.open) return;
     next = new GaussianRenderer(canvas, pack.style);
     for (const {asset, data} of pack.definitions.values()) next.upload(asset, data);
     const items = structuredClone(pack.scene.items);
     const beacon = pack.scene.demo?.beacon ? createBeacon(pack.scene.demo.beacon, items) : null;
     next.setScene(items);
-    renderer?.dispose();
+
     active = {...pack, items, beacon};
     renderer = next;
     next = null;
-    ui.asset.replaceChildren(new Option('完整场景', ''));
+    ui.asset.replaceChildren(new Option(t('完整场景', 'Full scene'), ''));
     for (const {asset} of pack.definitions.values()) {
-      ui.asset.add(new Option(asset.label ?? asset.id, asset.id));
+      ui.asset.add(new Option(english ? asset.id : asset.label ?? asset.id, asset.id));
     }
-    ui['scene-name'].textContent = catalog[id].name;
-    ui['scene-description'].textContent = catalog[id].description;
     ui.play.hidden = !catalog[id].playable;
     if (catalog[id].playable) ui.play.href = pack.base;
-    for (const tab of tabs) tab.setAttribute('aria-pressed', String(tab.dataset.scene === id));
-    for (const control of [ui.asset, ui.motion, ui.reset, ui.compare]) control.disabled = false;
+    for (const control of controls) control.disabled = false;
+    ui.stage.hidden = false;
     setView('', true);
-    history.replaceState(null, '', `#${id}`);
     showMessage('');
   } catch (error) {
     next?.dispose();
     if (request === controller && !controller.signal.aborted) {
-      showMessage(`场景加载失败 · ${error.message}`);
+      showMessage(t(`场景加载失败 · ${error.message}`, `Could not load the scene · ${error.message}`));
     }
   }
 }
+
+ui['close-viewer'].onclick = () => ui.viewer.close();
+ui.viewer.addEventListener('close', () => {
+  if (ui.viewer.open) return;
+  releasePreview();
+  if (document.fullscreenElement === ui.viewer) document.exitFullscreen().catch(() => {});
+  if (Object.hasOwn(catalog, location.hash.slice(1))) {
+    history.replaceState(null, '', location.pathname + location.search);
+  }
+});
+document.addEventListener('fullscreenchange', () => {
+  if (document.fullscreenElement === ui.viewer) {
+    browserFullscreen = true;
+  } else if (browserFullscreen) {
+    browserFullscreen = false;
+    if (ui.viewer.open) ui.viewer.close();
+  }
+});
 
 function invalidateCapture() {
   ui.captures.hidden = true;
@@ -125,7 +201,7 @@ function homeCamera() {
 function setMotion(on) {
   playing = on;
   ui.motion.setAttribute('aria-pressed', String(on));
-  ui.motion.textContent = on ? '暂停动态' : '播放动态';
+  ui.motion.textContent = on ? t('暂停动态', 'Pause motion') : t('播放动态', 'Play motion');
   if (on) invalidateCapture();
 }
 
@@ -152,8 +228,9 @@ function setView(id, ready = false) {
     ui['download-editable'].href = active.base + asset.editable;
   }
   ui['view-info'].textContent = id
-    ? `${asset.gaussianCount.toLocaleString()} 高斯 · ${id}`
-    : `${active.definitions.size} 件独立资产 · ${active.scene.items.length} 个实例`;
+    ? t(`${asset.gaussianCount.toLocaleString()} 高斯 · ${id}`, `${asset.gaussianCount.toLocaleString()} splats · ${id}`)
+    : t(`${active.definitions.size} 件独立资产 · ${active.scene.items.length} 个实例`,
+        `${active.definitions.size} assets · ${active.scene.items.length} instances`);
   camera = homeCamera();
   time = 0;
   setMotion(false);
@@ -168,7 +245,9 @@ function changed() {
 function draw() {
   if (!selected) active.beacon?.update(time);
   renderer.mode = ui.mode.value;
-  renderer.render(camera, time);
+  const aspect = canvas.clientWidth / Math.max(1, canvas.clientHeight);
+  const fit = Math.max(1, 1.32 / Math.max(.1, aspect));
+  renderer.render({...camera, span: camera.span * fit}, time);
   dirty = false;
 }
 
@@ -194,7 +273,6 @@ function capture() {
   ui.captures.hidden = false;
 }
 
-for (const tab of tabs) tab.onclick = () => switchScene(tab.dataset.scene);
 ui.asset.onchange = () => setView(ui.asset.value);
 ui.mode.onchange = () => { if (renderer) dirty = true; };
 ui.motion.onclick = () => setMotion(!playing);
@@ -209,24 +287,38 @@ ui.reset.onclick = () => { camera = homeCamera(); changed(); };
 ui.compare.onclick = capture;
 new ResizeObserver(() => { if (renderer) changed(); }).observe(canvas);
 
+function zoom(factor) {
+  camera.span = Math.max(.15, Math.min(70, camera.span * factor));
+}
+
+function pointerDistance() {
+  const [first, second] = pointers.values();
+  return second ? Math.hypot(first.x - second.x, first.y - second.y) : 0;
+}
+
 canvas.onpointerdown = event => {
-  if (!renderer || event.button !== 0) return;
+  if (!renderer || event.button !== 0 || pointers.size >= 2) return;
   canvas.setPointerCapture(event.pointerId);
-  pointer = {id:event.pointerId, x:event.clientX, y:event.clientY};
+  pointers.set(event.pointerId, {x:event.clientX, y:event.clientY});
 };
 canvas.onpointermove = event => {
-  if (pointer?.id !== event.pointerId) return;
-  camera.yaw -= (event.clientX - pointer.x) * .006;
-  camera.pitch = Math.max(.02, Math.min(1.24, camera.pitch + (event.clientY - pointer.y) * .005));
-  pointer.x = event.clientX;
-  pointer.y = event.clientY;
+  const lastPointer = pointers.get(event.pointerId);
+  if (!lastPointer) return;
+  const priorDistance = pointerDistance();
+  pointers.set(event.pointerId, {x:event.clientX, y:event.clientY});
+  if (pointers.size === 1) {
+    camera.yaw -= (event.clientX - lastPointer.x) * .006;
+    camera.pitch = Math.max(.02, Math.min(1.24, camera.pitch + (event.clientY - lastPointer.y) * .005));
+  } else if (priorDistance > 0) {
+    zoom(priorDistance / Math.max(1, pointerDistance()));
+  }
   changed();
 };
-canvas.onlostpointercapture = () => { pointer = undefined; };
+canvas.onlostpointercapture = event => pointers.delete(event.pointerId);
 canvas.addEventListener('wheel', event => {
   if (!renderer) return;
   event.preventDefault();
-  camera.span = Math.max(.15, Math.min(70, camera.span * Math.exp(event.deltaY * .001)));
+  zoom(Math.exp(event.deltaY * .001));
   changed();
 }, {passive:false});
 canvas.onkeydown = event => {
@@ -242,8 +334,8 @@ canvas.onkeydown = event => {
     case 'ArrowRight': camera.yaw += .14; break;
     case 'ArrowUp': camera.pitch = Math.min(1.24, camera.pitch + .08); break;
     case 'ArrowDown': camera.pitch = Math.max(.02, camera.pitch - .08); break;
-    case '+': case '=': camera.span = Math.max(.15, camera.span * .87); break;
-    case '-': camera.span = Math.min(70, camera.span * 1.15); break;
+    case '+': case '=': zoom(.87); break;
+    case '-': zoom(1.15); break;
     default: return;
   }
   event.preventDefault();
@@ -260,12 +352,17 @@ function tick(now) {
     } catch (error) {
       setMotion(false);
       dirty = false;
-      showMessage(`渲染失败 · ${error.message}`);
+      showMessage(t(`渲染失败 · ${error.message}`, `Render failed · ${error.message}`));
     }
   }
   last = now;
   requestAnimationFrame(tick);
 }
 requestAnimationFrame(tick);
-const initial = location.hash.slice(1);
-switchScene(Object.hasOwn(catalog, initial) ? initial : 'ember-foundry');
+function followSceneLink() {
+  const id = location.hash.slice(1);
+  if (Object.hasOwn(catalog, id)) openPreview(id);
+  else if (ui.viewer.open) ui.viewer.close();
+}
+window.addEventListener('hashchange', followSceneLink);
+followSceneLink();
