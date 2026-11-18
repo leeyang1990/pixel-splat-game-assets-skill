@@ -1,0 +1,1771 @@
+{
+  "version": 2,
+  "pipeline": "pixel-gaussian-splat",
+  "pack": "windward-citadel",
+  "units": {
+    "up": "+Y",
+    "forward": "+Z",
+    "tile": 1
+  },
+  "style": "style.json",
+  "budgets": {
+    "maxGaussiansPerAsset": 230000
+  },
+  "assets": [
+    {
+      "id": "ogive-gatehouse",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 1538443162,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/ogive-gatehouse.splat",
+      "editable": "assets/ogive-gatehouse.gaussians.json",
+      "gaussianCount": 112325,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -2.09193911824124,
+          -0.088734148,
+          -0.668747125198414
+        ],
+        "max": [
+          2.0926753175149475,
+          4.874754812931356,
+          0.9166815246322795
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "threshold": [
+          0,
+          0,
+          0.6
+        ],
+        "towerBand": [
+          0,
+          4.18,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 112325,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 17476,
+        "ambientOcclusionRays": 898600,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.043,
+        "seconds": 16.87,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "lancet-wall-bay",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 1465672914,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/lancet-wall-bay.splat",
+      "editable": "assets/lancet-wall-bay.gaussians.json",
+      "gaussianCount": 56423,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.532984201331479,
+          -0.10644129779843488,
+          -0.537206358132119
+        ],
+        "max": [
+          1.5479679163768472,
+          3.7190312212250056,
+          0.7124384131160764
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "leftJoin": [
+          -1.325,
+          0,
+          0
+        ],
+        "rightJoin": [
+          1.325,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 56423,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 14972,
+        "ambientOcclusionRays": 451384,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.043,
+        "seconds": 8.997,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "carved-broken-column",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 1382158228,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/carved-broken-column.splat",
+      "editable": "assets/carved-broken-column.gaussians.json",
+      "gaussianCount": 5523,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.4216138235114263,
+          -0.05387288816719143,
+          -0.41254947593156027
+        ],
+        "max": [
+          0.4177895839514743,
+          1.6624060884587526,
+          0.40690153231486453
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 5523,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 648,
+        "ambientOcclusionRays": 55230,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.034,
+        "seconds": 0.826,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "crowned-rampart-tower",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 484716484,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/crowned-rampart-tower.splat",
+      "editable": "assets/crowned-rampart-tower.gaussians.json",
+      "gaussianCount": 129372,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.6376515072353113,
+          -0.26341591319658325,
+          -1.6260121698018597
+        ],
+        "max": [
+          1.6331676608745553,
+          7.4408016553772365,
+          1.6244994783737345
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "roofSeat": [
+          0,
+          6.38,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 129372,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 110856,
+        "ambientOcclusionRays": 1034976,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.057,
+        "seconds": 25.314,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "stratified-cliff-rock",
+      "type": "terrain",
+      "usage": "decoration",
+      "seed": 2116813314,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/stratified-cliff-rock.splat",
+      "editable": "assets/stratified-cliff-rock.gaussians.json",
+      "gaussianCount": 4125,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.325989071468297,
+          -2.9165463174023882,
+          -1.192624611002469
+        ],
+        "max": [
+          1.1475078141572779,
+          0.1390274838700592,
+          1.2974462140094651
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 4125,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 918,
+        "ambientOcclusionRays": 28875,
+        "aoMin": 0.5844494249219002,
+        "aoMax": 1,
+        "spacing": 0.064,
+        "seconds": 0.682,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "shed-cliff-fragments",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 273201441,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/shed-cliff-fragments.splat",
+      "editable": "assets/shed-cliff-fragments.gaussians.json",
+      "gaussianCount": 1968,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.5386960043427004,
+          -0.061574546424529246,
+          -0.6551541899239516
+        ],
+        "max": [
+          0.7280255549240376,
+          0.18500498211137545,
+          0.6922786659908716
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1968,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 680,
+        "ambientOcclusionRays": 9840,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.042,
+        "seconds": 0.275,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "verdigris-roof-spire",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 104635056,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/verdigris-roof-spire.splat",
+      "editable": "assets/verdigris-roof-spire.gaussians.json",
+      "gaussianCount": 8115,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.2359240515327454,
+          -0.1177179216972644,
+          -1.2359240515327454
+        ],
+        "max": [
+          1.2359240515327454,
+          3.0310595579872177,
+          1.2359240515327454
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "seat": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          2.95,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 8115,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 1054,
+        "ambientOcclusionRays": 40575,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.055,
+        "seconds": 0.998,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "ruined-arch-bridge",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 4289994007,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/ruined-arch-bridge.splat",
+      "editable": "assets/ruined-arch-bridge.gaussians.json",
+      "gaussianCount": 29182,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.2921661854330508,
+          -1.970569281777407,
+          -1.6655971210938483
+        ],
+        "max": [
+          1.2954193214916103,
+          0.7784463517045098,
+          1.6560274932141215
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "deckStart": [
+          0,
+          0.27,
+          -1.5
+        ],
+        "deckEnd": [
+          0,
+          0.27,
+          1.5
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 29182,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 11704,
+        "ambientOcclusionRays": 175092,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.052,
+        "seconds": 4.378,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "weathered-stone-stairs",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 3173034143,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/weathered-stone-stairs.splat",
+      "editable": "assets/weathered-stone-stairs.gaussians.json",
+      "gaussianCount": 7150,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.0836799838538753,
+          -0.13666135949850083,
+          -1.0046057146483567
+        ],
+        "max": [
+          1.085243849802874,
+          0.7228425989333869,
+          1.0044523974638857
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0.6,
+          -0.805
+        ],
+        "bottom": [
+          0,
+          0.075,
+          0.805
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 7150,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 1760,
+        "ambientOcclusionRays": 42900,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.047,
+        "seconds": 0.99,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "wind-torn-ivy",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 3477796135,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/wind-torn-ivy.splat",
+      "editable": "assets/wind-torn-ivy.gaussians.json",
+      "gaussianCount": 1855,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.6307587959374027,
+          -1.6092540146077294,
+          -0.22081761876693987
+        ],
+        "max": [
+          0.6290984225797313,
+          0.11886674699999998,
+          0.308506854987982
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "attach": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 944,
+          "kind": "foliage"
+        },
+        {
+          "start": 944,
+          "count": 911,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 588,
+        "ambientOcclusionRays": 5565,
+        "aoMin": 0.0008090267517581258,
+        "aoMax": 1,
+        "spacing": 0.035,
+        "seconds": 0.243,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      },
+      "animationBounds": {
+        "min": [
+          -0.6707587959374027,
+          -1.6092540146077294,
+          -0.22081761876693987
+        ],
+        "max": [
+          0.6690984225797313,
+          0.11886674699999998,
+          0.308506854987982
+        ]
+      }
+    },
+    {
+      "id": "windswept-grass",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 3016781143,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/windswept-grass.splat",
+      "editable": "assets/windswept-grass.gaussians.json",
+      "gaussianCount": 198,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.40595674895619505,
+          -0.03414413362515772,
+          -0.40053550099329865
+        ],
+        "max": [
+          0.46929572053204516,
+          0.14975844817028242,
+          0.3844891223759733
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 198,
+          "kind": "foliage"
+        }
+      ],
+      "authoring": {
+        "triangles": 55,
+        "ambientOcclusionRays": 594,
+        "aoMin": 0.009893518386947957,
+        "aoMax": 1,
+        "spacing": 0.029,
+        "seconds": 0.028,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      },
+      "animationBounds": {
+        "min": [
+          -0.445956748956195,
+          -0.03414413362515772,
+          -0.40053550099329865
+        ],
+        "max": [
+          0.5092957205320452,
+          0.14975844817028242,
+          0.3844891223759733
+        ]
+      }
+    },
+    {
+      "id": "tattered-war-banner",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 1318608413,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/tattered-war-banner.splat",
+      "editable": "assets/tattered-war-banner.gaussians.json",
+      "gaussianCount": 1266,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.0899951806461811,
+          -0.09798410294413566,
+          -0.043213208813712774
+        ],
+        "max": [
+          0.8495554299999996,
+          2.359229149,
+          0.07264685995712876
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "poleFoot": [
+          0,
+          0,
+          0
+        ],
+        "poleTop": [
+          0,
+          2.25,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 540,
+          "kind": "foliage"
+        },
+        {
+          "start": 540,
+          "count": 726,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 692,
+        "ambientOcclusionRays": 3798,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.034,
+        "seconds": 0.169,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      },
+      "animationBounds": {
+        "min": [
+          -0.1299951806461811,
+          -0.09798410294413566,
+          -0.043213208813712774
+        ],
+        "max": [
+          0.8895554299999996,
+          2.359229149,
+          0.07264685995712876
+        ]
+      }
+    },
+    {
+      "id": "luminous-golden-tree",
+      "type": "foliage",
+      "usage": "decoration",
+      "seed": 2833183803,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/luminous-golden-tree.splat",
+      "editable": "assets/luminous-golden-tree.gaussians.json",
+      "gaussianCount": 26093,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -3.5590815744957838,
+          -0.28317642889060307,
+          -2.602297513625668
+        ],
+        "max": [
+          3.798451136235155,
+          9.107442647990375,
+          2.6648652573674276
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "root": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "prelit-luminous",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 26093,
+          "kind": "emissive"
+        }
+      ],
+      "authoring": {
+        "triangles": 38270,
+        "ambientOcclusionRays": 0,
+        "aoMin": 1,
+        "aoMax": 1,
+        "spacing": 0.071,
+        "seconds": 3.435,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "site-of-golden-grace",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 366200899,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/site-of-golden-grace.splat",
+      "editable": "assets/site-of-golden-grace.gaussians.json",
+      "gaussianCount": 1346,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.28189936051894915,
+          -0.04188607271794472,
+          -0.2781977222940328
+        ],
+        "max": [
+          0.279141486878925,
+          0.40405734728229015,
+          0.27635426758606285
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "glowOrigin": [
+          0,
+          0.1,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 315,
+          "kind": "emissive"
+        },
+        {
+          "start": 315,
+          "count": 1031,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 852,
+        "ambientOcclusionRays": 4124,
+        "aoMin": 0,
+        "aoMax": 1,
+        "spacing": 0.024,
+        "seconds": 0.193,
+        "materialDesign": "low-frequency grouped variation; restrained microvariation; modeled structure"
+      }
+    },
+    {
+      "id": "cliff-mist",
+      "type": "vfx",
+      "usage": "effect",
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "seed": 81721,
+      "representation": "gaussian-splat",
+      "source": "src/generate-effects.mjs",
+      "file": "assets/cliff-mist.splat",
+      "editable": "assets/cliff-mist.gaussians.json",
+      "gaussianCount": 70,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -8.967068062553405,
+          -0.5221965911781787,
+          -5.509643064270019
+        ],
+        "max": [
+          8.872547297831165,
+          0.9472368670797348,
+          5.256565215032412
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "emitter": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "flow-mist",
+        "reflect": false,
+        "lighting": "prelit-volumetric"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 70,
+          "kind": "flow-mist"
+        }
+      ],
+      "animationBounds": {
+        "min": [
+          -9.587068062553405,
+          -0.5861965911781788,
+          -5.624643064270019
+        ],
+        "max": [
+          9.492547297831164,
+          1.0112368670797347,
+          5.371565215032412
+        ]
+      },
+      "clips": [
+        {
+          "name": "flow",
+          "duration": 11,
+          "loop": true,
+          "file": "src/particle-motion.mjs"
+        }
+      ]
+    },
+    {
+      "id": "golden-grace-halo",
+      "type": "vfx",
+      "usage": "effect",
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "seed": 81721,
+      "representation": "gaussian-splat",
+      "source": "src/generate-effects.mjs",
+      "file": "assets/golden-grace-halo.splat",
+      "editable": "assets/golden-grace-halo.gaussians.json",
+      "gaussianCount": 96,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.78001,
+          -0.440010019967556,
+          -0.78001
+        ],
+        "max": [
+          0.78001,
+          0.8000100044703483,
+          0.78001
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "beam",
+        "reflect": false,
+        "lighting": "prelit-volumetric"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 96,
+          "kind": "beam"
+        }
+      ],
+      "animationBounds": {
+        "min": [
+          -0.90001,
+          -0.560010019967556,
+          -0.90001
+        ],
+        "max": [
+          0.90001,
+          0.9200100044703483,
+          0.90001
+        ]
+      }
+    },
+    {
+      "id": "drifting-golden-leaves",
+      "type": "vfx",
+      "usage": "effect",
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "seed": 81721,
+      "representation": "gaussian-splat",
+      "source": "src/generate-effects.mjs",
+      "file": "assets/drifting-golden-leaves.splat",
+      "editable": "assets/drifting-golden-leaves.gaussians.json",
+      "gaussianCount": 109,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -2.0774573689311806,
+          -0.4231312213287152,
+          -0.6150160503794909
+        ],
+        "max": [
+          1.3661566192044163,
+          1.5745535883929556,
+          1.0251039852895345
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "emitter": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "falling-leaf",
+        "reflect": false,
+        "lighting": "prelit-volumetric"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 109,
+          "kind": "falling-leaf"
+        }
+      ],
+      "animationBounds": {
+        "min": [
+          -3.6974027873467716,
+          -1.7030766397443062,
+          -0.974961468795082
+        ],
+        "max": [
+          2.9861020376200074,
+          2.8544990068085467,
+          1.3850494037051255
+        ]
+      },
+      "clips": [
+        {
+          "name": "fall",
+          "duration": 6,
+          "loop": true,
+          "file": "src/particle-motion.mjs"
+        }
+      ],
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 109
+        }
+      ]
+    },
+    {
+      "id": "rising-embers",
+      "type": "vfx",
+      "usage": "effect",
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "seed": 81721,
+      "representation": "gaussian-splat",
+      "source": "src/generate-effects.mjs",
+      "file": "assets/rising-embers.splat",
+      "editable": "assets/rising-embers.gaussians.json",
+      "gaussianCount": 48,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.1636390516358789,
+          0.0006744698446686337,
+          -0.17499361319303514
+        ],
+        "max": [
+          0.14646556288701082,
+          0.3918504169380665,
+          0.16348237423570083
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "emitter": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "rising-ember",
+        "reflect": false,
+        "lighting": "prelit-volumetric"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 48,
+          "kind": "rising-ember"
+        }
+      ],
+      "animationBounds": {
+        "min": [
+          -0.7036390516358789,
+          -1.2793255301553315,
+          -0.37499361319303515
+        ],
+        "max": [
+          0.6864655628870109,
+          1.6718504169380666,
+          0.36348237423570084
+        ]
+      },
+      "clips": [
+        {
+          "name": "rise",
+          "duration": 3.8,
+          "loop": true,
+          "file": "src/particle-motion.mjs"
+        }
+      ],
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 48
+        }
+      ]
+    },
+    {
+      "id": "golden-gate-mist",
+      "type": "vfx",
+      "usage": "effect",
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "seed": 81721,
+      "representation": "gaussian-splat",
+      "source": "src/generate-effects.mjs",
+      "file": "assets/golden-gate-mist.splat",
+      "editable": "assets/golden-gate-mist.gaussians.json",
+      "gaussianCount": 793,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.9550100056624412,
+          -0.30001,
+          -0.2800076468086243
+        ],
+        "max": [
+          0.9745210496878624,
+          3.612010085413456,
+          0.2800100011920929
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "beam",
+        "reflect": false,
+        "lighting": "prelit-volumetric"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 793,
+          "kind": "beam"
+        }
+      ],
+      "animationBounds": {
+        "min": [
+          -1.0750100056624412,
+          -0.42001,
+          -0.4000076468086243
+        ],
+        "max": [
+          1.0945210496878623,
+          3.732010085413456,
+          0.4000100011920929
+        ]
+      }
+    },
+    {
+      "id": "storm-cloud-haze",
+      "type": "vfx",
+      "usage": "effect",
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "seed": 81721,
+      "representation": "gaussian-splat",
+      "source": "src/generate-effects.mjs",
+      "file": "assets/storm-cloud-haze.splat",
+      "editable": "assets/storm-cloud-haze.gaussians.json",
+      "gaussianCount": 42,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -15.238991975056232,
+          -5.336853430995941,
+          -2.5972983325070147
+        ],
+        "max": [
+          14.456043237650992,
+          5.417808236804083,
+          2.5833493709734086
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "emissive",
+        "reflect": false,
+        "lighting": "prelit-volumetric"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 42,
+          "kind": "emissive"
+        }
+      ]
+    },
+    {
+      "id": "golden-tree-haze",
+      "type": "vfx",
+      "usage": "effect",
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "seed": 81721,
+      "representation": "gaussian-splat",
+      "source": "src/generate-effects.mjs",
+      "file": "assets/golden-tree-haze.splat",
+      "editable": "assets/golden-tree-haze.gaussians.json",
+      "gaussianCount": 18,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -7.078483567962646,
+          -3.8444527251815797,
+          -1.4772322489118577
+        ],
+        "max": [
+          6.688301311264038,
+          3.576531821851682,
+          1.377232247188911
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "emissive",
+        "reflect": false,
+        "lighting": "prelit-volumetric"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 18,
+          "kind": "emissive"
+        }
+      ]
+    },
+    {
+      "id": "weathered-knight",
+      "type": "character",
+      "usage": "actor",
+      "seed": 20261116,
+      "license": "original-procedural-fan-art; see ATTRIBUTION.txt",
+      "representation": "gaussian-splat",
+      "source": "src/adventurer.mjs",
+      "file": "assets/weathered-knight.splat",
+      "editable": "assets/weathered-knight.gaussians.json",
+      "gaussianCount": 7408,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.25392884295744217,
+          -0.000026531933259789077,
+          -0.2589246318298097
+        ],
+        "max": [
+          0.7805194138374255,
+          1.0502656070538436,
+          0.13835024623097186
+        ]
+      },
+      "animationBounds": {
+        "min": [
+          -0.3400203396040551,
+          -0.03500000000000001,
+          -0.3941682452318459
+        ],
+        "max": [
+          0.8184387232491501,
+          1.087585620796479,
+          0.3580394097533507
+        ]
+      },
+      "parts": [
+        {
+          "name": "pelvis",
+          "start": 0,
+          "count": 935,
+          "pivot": [
+            0,
+            0.49,
+            0
+          ]
+        },
+        {
+          "name": "torso",
+          "start": 935,
+          "count": 1123,
+          "pivot": [
+            0,
+            0.55,
+            0
+          ]
+        },
+        {
+          "name": "head",
+          "start": 2058,
+          "count": 637,
+          "pivot": [
+            0,
+            0.825,
+            0
+          ]
+        },
+        {
+          "name": "leftUpperArm",
+          "start": 2695,
+          "count": 192,
+          "pivot": [
+            -0.16,
+            0.765,
+            0
+          ]
+        },
+        {
+          "name": "leftForearm",
+          "start": 2887,
+          "count": 218,
+          "pivot": [
+            -0.19,
+            0.61,
+            0.018
+          ]
+        },
+        {
+          "name": "leftThigh",
+          "start": 3105,
+          "count": 132,
+          "pivot": [
+            -0.067,
+            0.49,
+            0
+          ]
+        },
+        {
+          "name": "leftShin",
+          "start": 3237,
+          "count": 191,
+          "pivot": [
+            -0.067,
+            0.29,
+            0.018
+          ]
+        },
+        {
+          "name": "leftBoot",
+          "start": 3428,
+          "count": 304,
+          "pivot": [
+            -0.067,
+            0.11,
+            0.006
+          ]
+        },
+        {
+          "name": "rightUpperArm",
+          "start": 3732,
+          "count": 192,
+          "pivot": [
+            0.16,
+            0.765,
+            0
+          ]
+        },
+        {
+          "name": "rightForearm",
+          "start": 3924,
+          "count": 373,
+          "pivot": [
+            0.19,
+            0.61,
+            0.018
+          ]
+        },
+        {
+          "name": "rightThigh",
+          "start": 4297,
+          "count": 132,
+          "pivot": [
+            0.067,
+            0.49,
+            0
+          ]
+        },
+        {
+          "name": "rightShin",
+          "start": 4429,
+          "count": 191,
+          "pivot": [
+            0.067,
+            0.29,
+            0.018
+          ]
+        },
+        {
+          "name": "rightBoot",
+          "start": 4620,
+          "count": 304,
+          "pivot": [
+            0.067,
+            0.11,
+            0.006
+          ]
+        },
+        {
+          "name": "capeLeft",
+          "start": 4924,
+          "count": 828,
+          "pivot": [
+            -0.077,
+            0.798,
+            -0.095
+          ]
+        },
+        {
+          "name": "capeCenter",
+          "start": 5752,
+          "count": 828,
+          "pivot": [
+            0,
+            0.798,
+            -0.095
+          ]
+        },
+        {
+          "name": "capeRight",
+          "start": 6580,
+          "count": 828,
+          "pivot": [
+            0.077,
+            0.798,
+            -0.095
+          ]
+        }
+      ],
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          1.01,
+          0
+        ],
+        "leftHand": [
+          -0.184,
+          0.48,
+          0.047
+        ],
+        "rightHand": [
+          0.184,
+          0.48,
+          0.047
+        ],
+        "leftFoot": [
+          -0.067,
+          0,
+          0.025
+        ],
+        "rightFoot": [
+          0.067,
+          0,
+          0.025
+        ],
+        "cape": [
+          0,
+          0.798,
+          -0.095
+        ],
+        "weaponGrip": [
+          0.108,
+          0.568,
+          -0.022
+        ],
+        "heldWeaponGrip": [
+          0.225,
+          0.49,
+          0.075
+        ]
+      },
+      "clips": [
+        {
+          "name": "idle",
+          "duration": 4,
+          "loop": true,
+          "inPlace": true,
+          "file": "src/character-motion.mjs",
+          "events": []
+        },
+        {
+          "name": "interact",
+          "duration": 1,
+          "loop": false,
+          "inPlace": true,
+          "file": "src/character-motion.mjs",
+          "events": [
+            {
+              "name": "activate",
+              "time": 0.45
+            }
+          ]
+        },
+        {
+          "name": "look-around",
+          "duration": 3.6,
+          "loop": false,
+          "inPlace": true,
+          "file": "src/character-motion.mjs",
+          "events": []
+        },
+        {
+          "name": "inspect-light",
+          "duration": 2.8,
+          "loop": false,
+          "inPlace": true,
+          "file": "src/character-motion.mjs",
+          "events": [
+            {
+              "name": "light-pulse",
+              "time": 1.16
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 1.2,
+          "loop": true,
+          "inPlace": true,
+          "file": "src/character-motion.mjs",
+          "events": [
+            {
+              "name": "footstep-right",
+              "time": 0
+            },
+            {
+              "name": "footstep-left",
+              "time": 0.6
+            }
+          ]
+        }
+      ],
+      "animationSampling": {
+        "samplesPerClip": 61,
+        "padding": 0.035,
+        "scope": "sampled support envelope"
+      },
+      "anchorParts": {
+        "head": "head",
+        "leftHand": "leftForearm",
+        "rightHand": "rightForearm",
+        "leftFoot": "leftBoot",
+        "rightFoot": "rightBoot",
+        "cape": "torso",
+        "weaponGrip": "pelvis",
+        "heldWeaponGrip": "rightForearm"
+      },
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "world-normal-lighting",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 7408,
+          "kind": "solid"
+        }
+      ]
+    }
+  ]
+}
