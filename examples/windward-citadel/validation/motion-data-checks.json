@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "particles": [
+    {
+      "asset": "cliff-mist",
+      "records": 70,
+      "samplesPerRecord": 97
+    },
+    {
+      "asset": "drifting-golden-leaves",
+      "records": 109,
+      "samplesPerRecord": 97
+    },
+    {
+      "asset": "rising-embers",
+      "records": 48,
+      "samplesPerRecord": 97
+    }
+  ],
+  "decodedActorRecords": 7408,
+  "clips": [
+    "idle",
+    "interact",
+    "look-around",
+    "inspect-light",
+    "walk"
+  ],
+  "armPivotContinuity": true,
+  "patrolAndLightCue": true
+}
