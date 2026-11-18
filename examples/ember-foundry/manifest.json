@@ -1,0 +1,615 @@
+{
+  "version": 2,
+  "pipeline": "pixel-gaussian-splat",
+  "pack": "ember-foundry",
+  "units": {
+    "up": "+Y",
+    "forward": "+Z",
+    "tile": 1
+  },
+  "style": "style.json",
+  "budgets": {
+    "maxGaussiansPerAsset": 95000
+  },
+  "assets": [
+    {
+      "id": "copper-crucible",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 814269163,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/copper-crucible.splat",
+      "editable": "assets/copper-crucible.gaussians.json",
+      "gaussianCount": 13288,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.5912029666735892,
+          -0.1107171552931137,
+          -1.5848753480284445
+        ],
+        "max": [
+          1.5831907299420525,
+          1.3522092899477482,
+          1.8743460450918636
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "basin": [
+          0,
+          1.22,
+          0
+        ],
+        "tap": [
+          0,
+          0.65,
+          1.72
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 84,
+          "kind": "emissive"
+        },
+        {
+          "start": 84,
+          "count": 13204,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 3396,
+        "ambientOcclusionRays": 92428,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.058
+      }
+    },
+    {
+      "id": "draft-stack",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 728244575,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/draft-stack.splat",
+      "editable": "assets/draft-stack.gaussians.json",
+      "gaussianCount": 6753,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.8132441356686392,
+          -0.11678419394254684,
+          -0.813244136218925
+        ],
+        "max": [
+          0.8248922093009948,
+          2.81951007006526,
+          0.8248922093009948
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "pipeSocket": [
+          0,
+          1.3,
+          0.62
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 6753,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 2440,
+        "ambientOcclusionRays": 40518,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.069
+      }
+    },
+    {
+      "id": "arched-feed-pipe",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 3128755815,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/arched-feed-pipe.splat",
+      "editable": "assets/arched-feed-pipe.gaussians.json",
+      "gaussianCount": 2820,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.3043118697181864,
+          -0.10632048306822776,
+          -0.30240628719821744
+        ],
+        "max": [
+          1.8264165963522623,
+          1.4097276137256878,
+          0.30048475428261884
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "inlet": [
+          0,
+          0,
+          0
+        ],
+        "outlet": [
+          1.53,
+          0.6,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 2820,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 728,
+        "ambientOcclusionRays": 11280,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.049
+      }
+    },
+    {
+      "id": "maintenance-gantry",
+      "type": "building",
+      "usage": "decoration",
+      "seed": 4186728841,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/maintenance-gantry.splat",
+      "editable": "assets/maintenance-gantry.gaussians.json",
+      "gaussianCount": 4013,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.4407227350568772,
+          -0.16966357214212419,
+          -0.7121028198625751
+        ],
+        "max": [
+          1.4444246230816842,
+          0.7740265561708132,
+          0.7112324330183303
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "walkTop": [
+          0,
+          0.35,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 4013,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 1696,
+        "ambientOcclusionRays": 24078,
+        "aoMin": 0.0,
+        "aoMax": 1.0,
+        "spacing": 0.068
+      }
+    },
+    {
+      "id": "cracked-basalt",
+      "type": "terrain",
+      "usage": "decoration",
+      "seed": 3845210478,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/cracked-basalt.splat",
+      "editable": "assets/cracked-basalt.gaussians.json",
+      "gaussianCount": 1387,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.150114751347288,
+          -1.5286917090078238,
+          -1.096502832051553
+        ],
+        "max": [
+          1.2712739781217273,
+          0.14978080658962073,
+          1.0535460935400747
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 1387,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 196,
+        "ambientOcclusionRays": 6935,
+        "aoMin": 1.0,
+        "aoMax": 1.0,
+        "spacing": 0.078
+      }
+    },
+    {
+      "id": "control-pedestal",
+      "type": "prop",
+      "usage": "decoration",
+      "seed": 2590716066,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/control-pedestal.splat",
+      "editable": "assets/control-pedestal.gaussians.json",
+      "gaussianCount": 1884,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.27284699810504914,
+          -0.032588438775435886,
+          -0.2516744709807554
+        ],
+        "max": [
+          0.27352907640695573,
+          0.6346905220368808,
+          0.24975569315730722
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "display": [
+          0,
+          0.59,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": true,
+        "lighting": "ray-baked-local-occlusion-plus-world-light",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 126,
+          "kind": "emissive"
+        },
+        {
+          "start": 126,
+          "count": 1758,
+          "kind": "solid"
+        }
+      ],
+      "authoring": {
+        "triangles": 266,
+        "ambientOcclusionRays": 8790,
+        "aoMin": 0.03510364237016215,
+        "aoMax": 1.0,
+        "spacing": 0.035
+      }
+    },
+    {
+      "id": "melt-basin",
+      "type": "vfx",
+      "usage": "decoration",
+      "seed": 2225494356,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/melt-basin.splat",
+      "editable": "assets/melt-basin.gaussians.json",
+      "gaussianCount": 2648,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -1.220196796039343,
+          -0.012650000320971013,
+          -1.22041
+        ],
+        "max": [
+          1.220196796039343,
+          0.012649998000000003,
+          1.22041
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "surface": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "prelit",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 2648,
+          "kind": "emissive"
+        }
+      ],
+      "authoring": {
+        "triangles": 5296,
+        "ambientOcclusionRays": 0,
+        "aoMin": 1.0,
+        "aoMax": 1.0,
+        "spacing": 0.043
+      }
+    },
+    {
+      "id": "melt-spill",
+      "type": "vfx",
+      "usage": "decoration",
+      "seed": 3026808592,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/melt-spill.splat",
+      "editable": "assets/melt-spill.gaussians.json",
+      "gaussianCount": 792,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.28809955755084754,
+          -0.022322450733164256,
+          -0.03211452271775935
+        ],
+        "max": [
+          0.2481168065389991,
+          0.6643160138721316,
+          1.153045360283614
+        ]
+      },
+      "anchors": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "source": [
+          0,
+          0.66,
+          0
+        ],
+        "outlet": [
+          -0.09589242746631385,
+          0,
+          1.13
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "solid",
+        "reflect": false,
+        "lighting": "prelit",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 792,
+          "kind": "emissive"
+        }
+      ],
+      "authoring": {
+        "triangles": 168,
+        "ambientOcclusionRays": 0,
+        "aoMin": 1.0,
+        "aoMax": 1.0,
+        "spacing": 0.035
+      }
+    },
+    {
+      "id": "furnace-embers",
+      "type": "vfx",
+      "usage": "decoration",
+      "seed": 713425364,
+      "license": "original; see NOTICE.md",
+      "representation": "gaussian-splat",
+      "source": "src/build.py",
+      "file": "assets/furnace-embers.splat",
+      "editable": "assets/furnace-embers.gaussians.json",
+      "gaussianCount": 56,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -0.8320509589999999,
+          -0.05323627499999999,
+          -0.883724303
+        ],
+        "max": [
+          0.8955889309999999,
+          0.386104274,
+          0.893862233
+        ]
+      },
+      "anchors": {
+        "emitter": [
+          0,
+          0,
+          0
+        ]
+      },
+      "colliders": [],
+      "material": {
+        "kind": "rising-ember",
+        "reflect": false,
+        "lighting": "prelit",
+        "normalBasis": "quaternion-local +Z"
+      },
+      "materialRanges": [
+        {
+          "start": 0,
+          "count": 56,
+          "kind": "rising-ember"
+        }
+      ],
+      "authoring": {
+        "seed": 197
+      },
+      "animationBounds": {
+        "min": [
+          -1.3820509589999999,
+          -1.333236275,
+          -1.083724303
+        ],
+        "max": [
+          1.445588931,
+          1.666104274,
+          1.093862233
+        ]
+      },
+      "pixelDetailRanges": [
+        {
+          "start": 0,
+          "count": 56
+        }
+      ],
+      "clips": [
+        {
+          "name": "rise",
+          "duration": 3.8,
+          "loop": true
+        }
+      ]
+    }
+  ]
+}

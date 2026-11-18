@@ -1,0 +1,422 @@
+{
+  "camera": {
+    "yaw": 0.22,
+    "pitch": 0.42,
+    "span": 8.42,
+    "target": [
+      0,
+      0.53,
+      0.06
+    ]
+  },
+  "lighting": {
+    "skyTint": [
+      0.97,
+      1.05,
+      1.11
+    ],
+    "waterReflections": false,
+    "lights": [
+      {
+        "position": [
+          0,
+          1.74,
+          -0.33
+        ],
+        "color": [
+          1,
+          0.53,
+          0.19
+        ],
+        "intensity": 2.75
+      },
+      {
+        "position": [
+          0,
+          0.41,
+          2.23
+        ],
+        "color": [
+          1,
+          0.38,
+          0.13
+        ],
+        "intensity": 2.1
+      },
+      {
+        "position": [
+          2.66,
+          2.04,
+          1.05
+        ],
+        "color": [
+          0.28,
+          0.7,
+          0.88
+        ],
+        "intensity": 1.2
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "foundry-core",
+      "asset": "cracked-basalt",
+      "position": [
+        0,
+        0.07,
+        -0.38
+      ],
+      "scale": [
+        2.26,
+        1.18,
+        1.93
+      ],
+      "yaw": 0.14
+    },
+    {
+      "id": "west-buttress",
+      "asset": "cracked-basalt",
+      "position": [
+        -2.18,
+        -0.04,
+        -0.71
+      ],
+      "scale": [
+        1.48,
+        1.15,
+        1.39
+      ],
+      "yaw": 0.52
+    },
+    {
+      "id": "east-buttress",
+      "asset": "cracked-basalt",
+      "position": [
+        2.21,
+        -0.08,
+        -0.93
+      ],
+      "scale": [
+        1.46,
+        1.1,
+        1.62
+      ],
+      "yaw": -0.42
+    },
+    {
+      "id": "rear-wall",
+      "asset": "cracked-basalt",
+      "position": [
+        0.11,
+        -0.23,
+        -2.15
+      ],
+      "scale": [
+        2.3,
+        0.87,
+        1.42
+      ],
+      "yaw": 0.11
+    },
+    {
+      "id": "front-left",
+      "asset": "cracked-basalt",
+      "position": [
+        -1.65,
+        -0.2,
+        1.54
+      ],
+      "scale": [
+        1.32,
+        0.89,
+        1.3
+      ],
+      "yaw": 0.25
+    },
+    {
+      "id": "front-right",
+      "asset": "cracked-basalt",
+      "position": [
+        1.24,
+        -0.19,
+        1.9
+      ],
+      "scale": [
+        1.28,
+        0.76,
+        1.3
+      ],
+      "yaw": -0.58
+    },
+    {
+      "id": "river-bed",
+      "asset": "cracked-basalt",
+      "position": [
+        -0.24,
+        -0.55,
+        2.25
+      ],
+      "scale": [
+        1.3,
+        0.55,
+        1.36
+      ],
+      "yaw": -0.24
+    },
+    {
+      "id": "far-lip",
+      "asset": "cracked-basalt",
+      "position": [
+        -0.43,
+        -0.48,
+        3.0
+      ],
+      "scale": [
+        1.2,
+        0.65,
+        0.67
+      ],
+      "yaw": 0.06
+    },
+    {
+      "id": "east-vent-ledge",
+      "asset": "cracked-basalt",
+      "position": [
+        2.44,
+        -0.34,
+        0.72
+      ],
+      "scale": [
+        0.96,
+        0.79,
+        0.94
+      ],
+      "yaw": 0.76
+    },
+    {
+      "id": "slag-1",
+      "asset": "cracked-basalt",
+      "position": [
+        -2.45,
+        -0.4,
+        1.51
+      ],
+      "scale": [
+        0.36,
+        0.42,
+        0.5
+      ],
+      "yaw": 0.38
+    },
+    {
+      "id": "slag-2",
+      "asset": "cracked-basalt",
+      "position": [
+        2.68,
+        -0.42,
+        1.73
+      ],
+      "scale": [
+        0.55,
+        0.51,
+        0.54
+      ],
+      "yaw": -0.21
+    },
+    {
+      "id": "crucible",
+      "asset": "copper-crucible",
+      "position": [
+        0,
+        0.04,
+        -0.36
+      ],
+      "scale": 1.09,
+      "yaw": 0
+    },
+    {
+      "id": "crucible-melt",
+      "asset": "melt-basin",
+      "position": [
+        0,
+        1.368,
+        -0.36
+      ],
+      "scale": 1.09,
+      "yaw": 0,
+      "intensity": 1.1
+    },
+    {
+      "id": "tap-runoff",
+      "asset": "melt-spill",
+      "position": [
+        0,
+        -0.02,
+        1.31
+      ],
+      "scale": [
+        1.09,
+        1.15,
+        0.8
+      ],
+      "yaw": 0,
+      "intensity": 1.08
+    },
+    {
+      "id": "slag-pool",
+      "asset": "melt-basin",
+      "position": [
+        0,
+        -0.38,
+        2.46
+      ],
+      "scale": [
+        0.65,
+        1,
+        0.9
+      ],
+      "yaw": -0.36,
+      "intensity": 0.98
+    },
+    {
+      "id": "west-rivulet",
+      "asset": "melt-basin",
+      "position": [
+        -2.24,
+        -0.16,
+        0.7
+      ],
+      "scale": [
+        0.53,
+        1,
+        0.34
+      ],
+      "yaw": 0.17,
+      "intensity": 0.82
+    },
+    {
+      "id": "draft-west",
+      "asset": "draft-stack",
+      "position": [
+        -2.45,
+        -0.02,
+        -0.54
+      ],
+      "scale": 1.04,
+      "yaw": 0.05
+    },
+    {
+      "id": "draft-east",
+      "asset": "draft-stack",
+      "position": [
+        2.16,
+        -0.05,
+        -1.38
+      ],
+      "scale": 0.84,
+      "yaw": -0.19
+    },
+    {
+      "id": "draft-back",
+      "asset": "draft-stack",
+      "position": [
+        1.12,
+        0.02,
+        -2.26
+      ],
+      "scale": 0.65,
+      "yaw": 0.13
+    },
+    {
+      "id": "west-feed",
+      "asset": "arched-feed-pipe",
+      "position": [
+        -2.38,
+        0.58,
+        -0.55
+      ],
+      "scale": 0.99,
+      "yaw": 0.05
+    },
+    {
+      "id": "east-feed",
+      "asset": "arched-feed-pipe",
+      "position": [
+        2.15,
+        0.77,
+        -1.42
+      ],
+      "scale": 0.82,
+      "yaw": 2.63
+    },
+    {
+      "id": "service-crossing",
+      "asset": "maintenance-gantry",
+      "position": [
+        1.85,
+        -0.07,
+        0.55
+      ],
+      "scale": 0.87,
+      "yaw": 1.27
+    },
+    {
+      "id": "entry-platform",
+      "asset": "maintenance-gantry",
+      "position": [
+        1.19,
+        -0.2,
+        2.41
+      ],
+      "scale": 0.71,
+      "yaw": 1.04
+    },
+    {
+      "id": "control",
+      "asset": "control-pedestal",
+      "position": [
+        1.79,
+        0.23,
+        0.81
+      ],
+      "scale": 0.86,
+      "yaw": -0.3
+    },
+    {
+      "id": "vent-pedestal",
+      "asset": "control-pedestal",
+      "position": [
+        -1.85,
+        -0.14,
+        1.66
+      ],
+      "scale": 0.68,
+      "yaw": 0.38
+    },
+    {
+      "id": "basin-embers",
+      "asset": "furnace-embers",
+      "position": [
+        0,
+        1.37,
+        -0.27
+      ],
+      "scale": 0.89,
+      "yaw": 0.42,
+      "motionEffect": true
+    },
+    {
+      "id": "runoff-embers",
+      "asset": "furnace-embers",
+      "position": [
+        -0.11,
+        -0.36,
+        2.42
+      ],
+      "scale": 0.64,
+      "yaw": -0.3,
+      "motionEffect": true
+    }
+  ]
+}

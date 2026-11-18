@@ -1,0 +1,144 @@
+{
+  "id": 122,
+  "time": 5.971500000000015,
+  "camera": {
+    "yaw": 0.22,
+    "pitch": 0.42,
+    "span": 8.42,
+    "target": [
+      0,
+      0.53,
+      0.06
+    ]
+  },
+  "sourceResolution": [
+    1110,
+    624
+  ],
+  "sourceFingerprint": "075a4cd6",
+  "rawFingerprint": "075a4cd6",
+  "rawMatchesSource": true,
+  "raw": {
+    "resolution": [
+      1110,
+      624
+    ],
+    "bloom": 0,
+    "palette": false,
+    "dither": 0
+  },
+  "pixel": {
+    "scale": 2,
+    "resolution": [
+      555,
+      312
+    ],
+    "viewport": [
+      0,
+      0,
+      1110,
+      624
+    ],
+    "sourceOrigin": [
+      0,
+      0
+    ],
+    "height": 360,
+    "minScale": 2,
+    "paletteEnabled": true,
+    "detailBias": 0.38,
+    "bloomStrength": 0.07,
+    "ditherStrength": 0,
+    "palette": [
+      "#050c10",
+      "#10151c",
+      "#191d26",
+      "#242633",
+      "#32343f",
+      "#43444d",
+      "#53545b",
+      "#67696d",
+      "#777a77",
+      "#91968a",
+      "#afb4a2",
+      "#1a2931",
+      "#25383d",
+      "#354a4b",
+      "#496060",
+      "#62817d",
+      "#80a198",
+      "#a7c1ad",
+      "#74cac8",
+      "#adf2de",
+      "#282020",
+      "#382522",
+      "#503127",
+      "#633d2c",
+      "#784933",
+      "#8f5537",
+      "#a76941",
+      "#bd8650",
+      "#d6a66a",
+      "#efc587",
+      "#311915",
+      "#4e1d17",
+      "#682317",
+      "#842819",
+      "#a4351b",
+      "#bd411c",
+      "#d94f1e",
+      "#f16625",
+      "#fa8738",
+      "#fca04b",
+      "#ffc264",
+      "#ffe18b",
+      "#fff4c3",
+      "#4a3f28",
+      "#6c5833",
+      "#8c7544",
+      "#b09b5e",
+      "#d1b976"
+    ],
+    "fineDetailResolution": [
+      1110,
+      624
+    ],
+    "markedPixels": 918,
+    "policy": "coarse clusters; marked lines and foliage use native palette pixels"
+  },
+  "sameSourceFrame": true,
+  "scene": "ember-foundry",
+  "asset": null,
+  "diagnostics": {
+    "gaussians": 75086,
+    "drawCalls": 2,
+    "groups": 27,
+    "modelTextureUploads": 1,
+    "gpuBytes": 15319320,
+    "sourceResolution": [
+      1110,
+      624
+    ],
+    "internalResolution": [
+      1110,
+      624
+    ],
+    "displayResolution": [
+      1110,
+      624
+    ],
+    "pixelScale": 1,
+    "detailResolution": [
+      1110,
+      624
+    ],
+    "pixelPolicy": "coarse clusters and native marked detail",
+    "paletteEnabled": false,
+    "paletteColors": 48,
+    "bloom": 0,
+    "cpuFrameMs": 1.5,
+    "projection": "GPU anisotropic Gaussian",
+    "sorting": "16-bit global counting",
+    "reflections": false
+  }
+}

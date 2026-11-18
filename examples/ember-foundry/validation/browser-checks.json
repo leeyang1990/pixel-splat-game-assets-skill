@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "browser": "desktop Chromium / WebGL2",
+  "coverage": "visual inspection and structural checks for pictured views",
+  "images": {
+    "scene": {
+      "asset": null,
+      "rawMatchesSource": true,
+      "sameSourceFrame": true,
+      "differentRGBPixelsExcludingBackground": 174456,
+      "protectedPixels": 943,
+      "sourceResolution": [
+        1110,
+        624
+      ],
+      "coarseGrid": [
+        555,
+        312
+      ]
+    },
+    "crucible": {
+      "asset": "copper-crucible",
+      "rawMatchesSource": true,
+      "sameSourceFrame": true,
+      "differentRGBPixelsExcludingBackground": 88253,
+      "protectedPixels": 0,
+      "sourceResolution": [
+        1110,
+        624
+      ],
+      "coarseGrid": [
+        555,
+        312
+      ]
+    }
+  },
+  "motion": {
+    "changedSourceAtSameCamera": true,
+    "seconds": [
+      0,
+      5.971500000000015
+    ],
+    "reflectionPassEnabled": false
+  }
+}

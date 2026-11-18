@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "tool": "Blender 4.5.9 LTS",
+  "files": {
+    "manifest.json": "5a524d78a2b3594d7a7450e0c64f0ca29b02fc75bffc1757a38c65e0046c0488",
+    "assets/arched-feed-pipe.gaussians.json": "f6165467cde2257f9e933cef8292178cf7711d44f05c3edbc7d800d866ef66c8",
+    "assets/arched-feed-pipe.splat": "0aae9c40b68d9e3519f4742c18666339049e297d7a95d04a90061a53eadaba90",
+    "assets/control-pedestal.gaussians.json": "3eb76b4a6977dde46f3dfbde8b56c5da06f3a6812d6e0f868b8d401b669fbac1",
+    "assets/control-pedestal.splat": "45afb1492dbb918c1d3483ad88b2b0d51300b0baf52612d6abb3ccae9fd5db7a",
+    "assets/copper-crucible.gaussians.json": "327f3045384458a669c12dd7f7a909f3c7f7a318e30a0e478051129088bcc665",
+    "assets/copper-crucible.splat": "2bad7c1ee82d02c7a3b6cec31d8b39d190adfddb413c709ca1e8e6eb5e8073f3",
+    "assets/cracked-basalt.gaussians.json": "490bb672fbb7bfcf23e84a415b354616317caf1a814d0a794dd95517a004463d",
+    "assets/cracked-basalt.splat": "712c50834077c5df23365af6f5cf956bb907c29d50dba2fd5307af835c708407",
+    "assets/draft-stack.gaussians.json": "de5d375fd28ff7a9ce042c261815546a450e333fa972f1de8ec1dbd775870bb5",
+    "assets/draft-stack.splat": "cf6332bba78f9cacb077f52daca60ba443f0e23a1971d05a9a718d40a0e30e0e",
+    "assets/furnace-embers.gaussians.json": "7f48ca83d0589aad3d65e3ddb615506831a850817b1505a04df6e59d13d5f180",
+    "assets/furnace-embers.splat": "f5f68a5a191668893416b7977355fb2a5aa31f6881fc6163586d20da87e49a6d",
+    "assets/maintenance-gantry.gaussians.json": "7f629dcb58a0fcf576d283473d17f52416e79d80c867fc880b9cfa891b488fb9",
+    "assets/maintenance-gantry.splat": "2ae97fc681971a6bbd54e04609a73d17eb6ec169ba8f7941512180ca21b14ae8",
+    "assets/melt-basin.gaussians.json": "04edb81dcbf7fee536d7a652a7e2088269efee4eebfd57eb276bd220c0aea67b",
+    "assets/melt-basin.splat": "9e105abf2e439b55a0d66b6263d34fffb50e4151344d26b1d464448a243919f1",
+    "assets/melt-spill.gaussians.json": "04672758ddfc23967e02b6ce720592ca1a3b4498b80caae90f76614804438392",
+    "assets/melt-spill.splat": "d2bdb3419ad03bbe9005b301b1d99d3a5296196e271f56d586bd64c898a09349"
+  }
+}
